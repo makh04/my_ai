@@ -2,8 +2,25 @@
 
 import { motion } from "framer-motion"
 import { Download, Play, ArrowRight, Sparkles } from "lucide-react"
+import { useState } from "react"
 
 export default function Hero() {
+  const [isDownloadClicked, setIsDownloadClicked] = useState(false)
+
+  const handleDownloadClick = () => {
+    // Track the event (if you are using Google Analytics)
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'download_click', {
+        event_category: 'Downloads',
+        event_label: 'PIKA Download Button',
+        value: 1,
+      });
+    }
+
+    // Hide the Download PIKA button and show the other buttons
+    setIsDownloadClicked(true)
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
@@ -58,16 +75,54 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <motion.button
-              className="group bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-2xl shadow-cyan-500/25 transition-all duration-300"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Download className="w-5 h-5" />
-              <span>Download JERVIS</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </motion.button>
+            {/* Show the Download PIKA button only when not clicked */}
+            {!isDownloadClicked && (
+              <motion.button
+                className="group bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-2xl shadow-cyan-500/25 transition-all duration-300"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={handleDownloadClick}  // Trigger the download button click
+              >
+                <Download className="w-5 h-5" />
+                <span>Download PIKA</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+              </motion.button>
+            )}
 
+            {/* Additional Buttons that appear after clicking Download */}
+            {isDownloadClicked && (
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-8">
+                <motion.button
+                  className="group bg-blue-600 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-xl shadow-blue-500/25 transition-all duration-300"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => window.open('https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing', '_blank')} // Beta Download Link
+                >
+                  <Download className="w-5 h-5" />
+                  <span>Download Beta</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                </motion.button>
+
+                <motion.button
+                  className="group bg-purple-600 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-xl shadow-purple-500/25 transition-all duration-300"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Download className="w-5 h-5" />
+                  <span>Pro Comming soon</span>
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                </motion.button>
+              </div>
+            )}
+          </motion.div>
+
+          {/* Watch Demo Button */}
+          <motion.div
+            className="flex justify-center mt-12"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
             <motion.button
               className="group flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200"
               whileHover={{ scale: 1.05 }}
@@ -78,27 +133,6 @@ export default function Hero() {
               </div>
               <span className="font-medium">Watch Demo</span>
             </motion.button>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 pt-12 border-t border-gray-800"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            {[
-              { number: "1M+", label: "Voice Commands" },
-              { number: "50+", label: "App Integrations" },
-              { number: "24/7", label: "AI Availability" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-400">{stat.label}</div>
-              </div>
-            ))}
           </motion.div>
         </div>
       </div>
