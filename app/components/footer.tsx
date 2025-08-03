@@ -14,6 +14,7 @@ export default function Footer() {
 
   const footerLinks = {
     Product: ["Features", "Pricing", "Documentation", "API"],
+
     Company: [
       { name: "About", href: "/about" },
       { name: "Blog", href: "#" },
@@ -32,6 +33,11 @@ export default function Footer() {
       { name: "Security", href: "#" },
       { name: "Cookies", href: "#" },
     ],
+
+    Company: ["About", "Blog", "Careers", "Press"],
+    Support: ["Help Center", "Community", "Contact", "Status"],
+    Legal: ["Privacy", "Terms", "Security", "Cookies"],
+
   }
 
   return (
@@ -107,9 +113,14 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {links.map((link, linkIndex) => (
                     <li key={linkIndex}>
+
                       <a href={link.href} className="text-gray-400 hover:text-white transition-colors duration-200">
                         {link.name}
                       </a>
+            <button className="text-gray-400 hover:text-white transition-colors duration-200 text-left">
+                        {link}
+                      </button>
+
                     </li>
                   ))}
                 </ul>
@@ -132,14 +143,23 @@ export default function Footer() {
               Ready to revolutionize how you interact with technology? Download PIKA AI and discover the power of
               voice-controlled computing.
             </p>
+
             <motion.a
               href="/about"
+
+            <motion.button
+
               className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg font-semibold transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+
               Learn More
             </motion.a>
+
+              Get Started
+            </motion.button>
+
           </div>
         </motion.div>
 
@@ -153,6 +173,7 @@ export default function Footer() {
         >
           <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2024 PIKA AI. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
+
             <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
               Privacy Policy
             </a>
@@ -162,6 +183,11 @@ export default function Footer() {
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
               Cookie Policy
             </a>
+
+            <button className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</button>
+            <button className="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</button>
+            <button className="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</button>
+
           </div>
         </motion.div>
       </div>
