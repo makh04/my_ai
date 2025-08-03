@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "JERVIS AI - Hey JERVIS, Your Voice-Activated AI Assistant",
+  title: "PIKA AI - PIKA, Your Voice-Activated AI Assistant",
   description:
     "Revolutionary AI assistant with wake word activation, instant app launching, WhatsApp integration, and real-time answers. Control your digital world with just your voice.",
     generator: 'v0.dev'
