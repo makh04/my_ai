@@ -57,7 +57,7 @@ export default function About() {
               intelligent assistant that understands natural speech and responds instantly to your needs.
             </p>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              Our mission is to eliminate the friction between thought and action in the digital world. With JERVIS,
+              Our mission is to eliminate the friction between thought and action in the digital world. With PIKA,
               your voice becomes the ultimate interface to control everything around you.
             </p>
 

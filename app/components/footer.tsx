@@ -41,7 +41,7 @@ export default function Footer() {
                   <Code2 className="w-5 h-5 text-white" />
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  JERVIS AI
+                  PIKA AI
                 </span>
               </motion.div>
 
@@ -114,7 +114,7 @@ export default function Footer() {
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Experience PIKA AI</h3>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Ready to revolutionize how you interact with technology? Download JERVIS AI and discover the power of
+              Ready to revolutionize how you interact with technology? Download PIKA AI and discover the power of
               voice-controlled computing.
             </p>
             <motion.button

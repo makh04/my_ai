@@ -31,7 +31,7 @@ export default function DownloadButton() {
         className="group bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 p-4 rounded-full shadow-2xl shadow-cyan-500/25 text-white font-semibold transition-all duration-300"
         whileHover={{ scale: 1.1, y: -2 }}
         whileTap={{ scale: 0.95 }}
-        aria-label="Download JERVIS AI"
+        aria-label="Download PIKA AI"
       >
         <Download className="w-6 h-6 group-hover:animate-bounce" />
       </motion.button>
@@ -42,7 +42,7 @@ export default function DownloadButton() {
         initial={{ opacity: 0 }}
         whileHover={{ opacity: 1 }}
       >
-        Download JERVIS AI
+        Download PIKA AI
         <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800" />
       </motion.div>
     </motion.div>

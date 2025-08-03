@@ -29,7 +29,7 @@ const features = [
     icon: Brain,
     title: "🧠 Answer Anything in Real-Time",
     description:
-      "Ask JERVIS anything — from math problems to random facts — and get instant answers, just like having your own personal AI genius.",
+      "Ask PIKA anything — from math problems to random facts — and get instant answers, just like having your own personal AI genius.",
     gradient: "from-purple-500 to-pink-500",
   },
   {
@@ -84,7 +84,7 @@ export default function Features() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            JERVIS AI brings you the most advanced voice-controlled features to revolutionize how you interact with
+            PIKA AI brings you the most advanced voice-controlled features to revolutionize how you interact with
             technology.
           </p>
         </motion.div>
