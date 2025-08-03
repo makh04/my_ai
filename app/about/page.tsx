@@ -1,0 +1,314 @@
+"use client"
+
+import { motion } from "framer-motion"
+import { Code, Globe, Zap, Users, Rocket, Star, Shield, Lock, Eye } from "lucide-react"
+
+export default function About() {
+  const features = [
+    {
+      icon: Code,
+      title: "Google Gemini Integration",
+      description: "Smart responses powered by Google's advanced AI technology",
+    },
+    {
+      icon: Zap,
+      title: "Voice & Text Commands",
+      description: "Seamless operation through both voice and text interfaces",
+    },
+    {
+      icon: Users,
+      title: "Google Login",
+      description: "Personalized experience with secure Google OAuth2 authentication",
+    },
+    {
+      icon: Star,
+      title: "Cyber-Style UI",
+      description: "Sleek PyQt5 GUI with futuristic design elements",
+    },
+    {
+      icon: Rocket,
+      title: "System & App Control",
+      description: "Launch, close, and manage applications with voice commands",
+    },
+    {
+      icon: Globe,
+      title: "Web Automation",
+      description: "Search websites, browse content, and stream media effortlessly",
+    },
+  ]
+
+  const commands = [
+    {
+      category: "System Control",
+      examples: ['"Open Chrome"', '"Close window"', '"Shutdown"'],
+    },
+    {
+      category: "Web/YouTube",
+      examples: ['"Search anime Jujutsu Kaisen"', '"Open Facebook"'],
+    },
+    {
+      category: "Utility Tools",
+      examples: ['"Set timer"', '"Take screenshot"'],
+    },
+    {
+      category: "Smart Reminders",
+      examples: ['"Remind me to study at 8pm"', '"Open my playlist"'],
+    },
+    {
+      category: "Information",
+      examples: ['"What\'s the time?"', '"Who is your founder?"'],
+    },
+  ]
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* Hero Section */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-blue-900/30 to-purple-900/30" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            className="text-center max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                About PIKA AI
+              </span>
+            </h1>
+            <p className="text-xl text-gray-300 mb-8">
+              A Python-based AI assistant integrating Google Gemini API for smart responses, voice/text control, and
+              personalized user experience.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Developer Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                  Meet the Developer
+                </span>
+              </h2>
+              <div className="space-y-4 text-gray-300">
+                <p className="text-lg">
+                  <strong className="text-white">Nabil Mukerrob Makhtum</strong> - A passionate 17-year-old developer
+                  from Bangladesh 🇧🇩
+                </p>
+                <p>
+                  Built with Python 3.10+ and advanced voice automation features, PIKA AI represents the culmination of
+                  innovative thinking and technical expertise.
+                </p>
+                <p>
+                  Powered by Google Gemini API and designed with a sleek Cyber-Style UI using PyQt5, this project
+                  showcases the future of AI-powered personal assistants.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6 mt-8">
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-4">
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">17</div>
+                  <div className="text-gray-400">Years Old</div>
+                </div>
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-4">
+                  <div className="text-2xl font-bold text-purple-400 mb-2">🇧🇩</div>
+                  <div className="text-gray-400">Bangladesh</div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-white mb-4">Technical Stack</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-300">Language</span>
+                    <span className="text-cyan-400 font-semibold">Python 3.10+</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-300">AI Engine</span>
+                    <span className="text-blue-400 font-semibold">Google Gemini API</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-300">UI Framework</span>
+                    <span className="text-purple-400 font-semibold">PyQt5</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-300">Authentication</span>
+                    <span className="text-green-400 font-semibold">Google OAuth2</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-gray-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                Key Features
+              </span>
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:bg-gray-800/70 transition-all duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sample Commands */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                Sample Commands
+              </span>
+            </h2>
+            <p className="text-xl text-gray-300">Here are some examples of what you can ask PIKA AI to do</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {commands.map((command, index) => (
+              <motion.div
+                key={index}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-lg font-semibold text-white mb-4">{command.category}</h3>
+                <div className="space-y-2">
+                  {command.examples.map((example, exampleIndex) => (
+                    <div key={exampleIndex} className="bg-gray-900/50 rounded-lg p-3">
+                      <code className="text-cyan-400 text-sm">{example}</code>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Future Features */}
+      <section className="py-20 bg-gray-900/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                Coming Soon
+              </span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {['"Read my file <file_name>"', '"Join Google Meet"', '"Analyze this PDF"'].map((feature, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <code className="text-purple-400 text-lg">{feature}</code>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Security Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                Security & Privacy
+              </span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+                <Shield className="w-8 h-8 text-green-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Google OAuth2</h3>
+                <p className="text-gray-400">Secure login authentication</p>
+              </div>
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+                <Lock className="w-8 h-8 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Local Storage</h3>
+                <p className="text-gray-400">Data stored locally by default</p>
+              </div>
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+                <Eye className="w-8 h-8 text-purple-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">No Ads</h3>
+                <p className="text-gray-400">No telemetry or advertising</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  )
+}
