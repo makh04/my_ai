@@ -10,7 +10,7 @@ const features = [
     icon: Brain,
     title: "🗣️ Wake Word Activation",
     description:
-      "Just say 'Hey JERVIS' to instantly activate your assistant — no clicking, no shortcuts, just pure hands-free control.",
+      "Just say 'Hey PIKA' or give a name according to your preference to instantly activate your assistant — no clicking, no shortcuts, just pure hands-free control.",
     gradient: "from-cyan-500 to-blue-500",
   },
   {

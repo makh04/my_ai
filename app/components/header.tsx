@@ -36,14 +36,14 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
-            <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              JERVIS AI
-            </span>
+         <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
+          <img
+            src="/logo.png"
+            alt="PIKA AI Logo"
+            className="h-8 w-auto"
+           />
           </motion.div>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

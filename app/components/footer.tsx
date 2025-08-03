@@ -112,7 +112,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">Experience JERVIS AI</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Experience PIKA AI</h3>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
               Ready to revolutionize how you interact with technology? Download JERVIS AI and discover the power of
               voice-controlled computing.
@@ -135,7 +135,7 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2024 JERVIS AI. All rights reserved.</p>
+          <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2024 PIKA AI. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
             <button className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</button>
             <button className="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</button>

@@ -49,11 +49,11 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                About JERVIS AI
+                About PIKA AI
               </span>
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              JERVIS AI represents the future of human-computer interaction. Born from the vision of creating a truly
+              PIKA AI represents the future of human-computer interaction. Born from the vision of creating a truly
               intelligent assistant that understands natural speech and responds instantly to your needs.
             </p>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
