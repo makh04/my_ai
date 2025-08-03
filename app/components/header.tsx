@@ -2,11 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
-
 import { Menu, X } from "lucide-react"
-
-import { Menu, X, Code2 } from "lucide-react"
-
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -25,7 +21,7 @@ export default function Header() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
-    setIsMobileMenuOpen(false)
+    setIsMobileMenuOpen(false) // Close the mobile menu after navigating
   }
 
   return (
@@ -40,27 +36,15 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-
           <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
             <img src="/logo.png" alt="PIKA AI Logo" className="h-8 w-auto" />
           </motion.div>
-
-
-         <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
-          <img
-            src="/logo.png"
-            alt="PIKA AI Logo"
-            className="h-8 w-auto"
-           />
-          </motion.div>
-
-
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {["Features", "About", "More"].map((item) => (
               <motion.button
-
+                key={item}
                 onClick={() => {
                   if (item === "About") {
                     window.location.href = "/about"
@@ -70,9 +54,6 @@ export default function Header() {
                     scrollToSection(item.toLowerCase())
                   }
                 }}
-
-                onClick={() => scrollToSection(item.toLowerCase())}
->>>>>>> 14b94a431bc872a0744f80d9bf3b9ff88f909a33
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -80,11 +61,9 @@ export default function Header() {
                 {item}
               </motion.button>
             ))}
+
             <motion.button
-
               onClick={() => (window.location.href = "/about")}
-
->>>>>>> 14b94a431bc872a0744f80d9bf3b9ff88f909a33
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -116,7 +95,6 @@ export default function Header() {
             {["Features", "About", "More"].map((item) => (
               <button
                 key={item}
-
                 onClick={() => {
                   if (item === "About") {
                     window.location.href = "/about"
@@ -126,9 +104,6 @@ export default function Header() {
                     scrollToSection(item.toLowerCase())
                   }
                 }}
-
-                onClick={() => scrollToSection(item.toLowerCase())}
-
                 className="block w-full text-left text-gray-300 hover:text-white transition-colors duration-200 font-medium"
               >
                 {item}
@@ -139,9 +114,6 @@ export default function Header() {
               onClick={() => (window.location.href = "/about")}
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
             >
-
-            <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200">
-
               Coming Soon
             </button>
           </div>

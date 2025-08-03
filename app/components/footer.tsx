@@ -14,7 +14,6 @@ export default function Footer() {
 
   const footerLinks = {
     Product: ["Features", "Pricing", "Documentation", "API"],
-
     Company: [
       { name: "About", href: "/about" },
       { name: "Blog", href: "#" },
@@ -33,11 +32,6 @@ export default function Footer() {
       { name: "Security", href: "#" },
       { name: "Cookies", href: "#" },
     ],
-
-    Company: ["About", "Blog", "Careers", "Press"],
-    Support: ["Help Center", "Community", "Contact", "Status"],
-    Legal: ["Privacy", "Terms", "Security", "Cookies"],
-
   }
 
   return (
@@ -73,8 +67,7 @@ export default function Footer() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                The most advanced voice-activated AI assistant. Control your digital world with just your voice —
-                faster, smarter, and more intuitive than ever before.
+                The most advanced voice-activated AI assistant. Control your digital world with just your voice — faster, smarter, and more intuitive than ever before.
               </motion.p>
 
               {/* Social Links */}
@@ -113,14 +106,9 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-
                       <a href={link.href} className="text-gray-400 hover:text-white transition-colors duration-200">
                         {link.name}
                       </a>
-            <button className="text-gray-400 hover:text-white transition-colors duration-200 text-left">
-                        {link}
-                      </button>
-
                     </li>
                   ))}
                 </ul>
@@ -140,26 +128,25 @@ export default function Footer() {
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Experience PIKA AI</h3>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Ready to revolutionize how you interact with technology? Download PIKA AI and discover the power of
-              voice-controlled computing.
+              Ready to revolutionize how you interact with technology? Download PIKA AI and discover the power of voice-controlled computing.
             </p>
 
             <motion.a
               href="/about"
-
-            <motion.button
-
               className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg font-semibold transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-
               Learn More
             </motion.a>
 
+            <motion.button
+              className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg font-semibold transition-all duration-300 mt-4"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               Get Started
             </motion.button>
-
           </div>
         </motion.div>
 
@@ -173,7 +160,6 @@ export default function Footer() {
         >
           <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2024 PIKA AI. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
-
             <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
               Privacy Policy
             </a>
@@ -183,11 +169,6 @@ export default function Footer() {
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
               Cookie Policy
             </a>
-
-            <button className="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</button>
-            <button className="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</button>
-            <button className="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</button>
-
           </div>
         </motion.div>
       </div>
