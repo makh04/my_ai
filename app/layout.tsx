@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "artificial intelligence tools",
     "AI technology for productivity",
     "intelligent assistant for desktop",
-    "AI solutions for businesses",
+    "Pika ai by makhtum",
     "virtual assistant technology",
     "smart productivity tools AI",
   ].join(", "),
