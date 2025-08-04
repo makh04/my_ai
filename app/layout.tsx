@@ -2,15 +2,89 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Analytics } from '@vercel/analytics/next'; // Import the Analytics component
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "PIKA AI - PIKA, Your Voice-Activated AI Assistant",
+  title: "Pika AI - Free Desktop Virtual Assistant for Productivity and Automation",
   description:
-    "Revolutionary AI assistant with wake word activation, instant app launching, WhatsApp integration, and real-time answers. Control your digital world with just your voice.",
-  generator: 'v0.dev',
+    "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
+  keywords: [
+    "Pika AI",
+    "AI assistant",
+    "virtual assistant",
+    "desktop assistant",
+    "productivity AI",
+    "Pika assistant download",
+    "AI for productivity",
+    "virtual assistant download",
+    "AI assistant for desktop",
+    "smart assistant software",
+    "AI personal assistant",
+    "desktop assistant software",
+    "best AI assistant for PC",
+    "virtual assistant for computer",
+    "free AI assistant software",
+    "AI assistant for Windows",
+    "AI-powered assistant",
+    "digital assistant for desktop",
+    "productivity AI assistant",
+    "artificial intelligence tools",
+    "AI technology for productivity",
+    "intelligent assistant for desktop",
+    "AI solutions for businesses",
+    "virtual assistant technology",
+    "smart productivity tools AI",
+  ].join(", "),
+  authors: [{ name: "Nabil Mukerrob Makhtum" }],
+  creator: "Nabil Mukerrob Makhtum",
+  publisher: "Pika AI",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://your-domain.com",
+    title: "Pika AI - Free Desktop Virtual Assistant for Productivity and Automation",
+    description:
+      "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
+    siteName: "Pika AI",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pika AI - Desktop Virtual Assistant",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pika AI - Free Desktop Virtual Assistant for Productivity and Automation",
+    description:
+      "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
+    images: ["/og-image.jpg"],
+    creator: "@PikaAI",
+  },
+  alternates: {
+    canonical: "https://your-domain.com",
+  },
+  category: "Technology",
+  classification: "AI Assistant Software",
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    yahoo: "your-yahoo-verification-code",
+  },
 }
 
 export default function RootLayout({
@@ -20,11 +94,57 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
-        {children}
-        {/* Add the Analytics component here */}
-        <Analytics />
-      </body>
+      <head>
+        {/* Additional SEO Meta Tags */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="application-name" content="Pika AI" />
+        <meta name="apple-mobile-web-app-title" content="Pika AI" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Pika AI",
+              description: "Free desktop virtual assistant for productivity and automation",
+              applicationCategory: "ProductivityApplication",
+              operatingSystem: "Windows",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              author: {
+                "@type": "Person",
+                name: "Nabil Mukerrob Makhtum",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Pika AI",
+              },
+              downloadUrl: "https://your-domain.com",
+              screenshot: "https://your-domain.com/screenshot.jpg",
+              softwareVersion: "1.0",
+              datePublished: "2024-01-01",
+              dateModified: "2024-01-01",
+            }),
+          }}
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

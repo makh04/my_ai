@@ -9,6 +9,7 @@ import DownloadButton from "./components/download-button"
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* SEO-optimized structured content */}
       <Header />
       <main>
         <Hero />
