@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     creator: "@PikaAI",
   },
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "https://pikaai.vercel.app/",
   },
   category: "Technology",
   classification: "AI Assistant Software",
