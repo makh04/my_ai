@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://pikaai.vercel.app",
     title: "Pika AI - Free Desktop Virtual Assistant for Productivity and Automation",
     description:
       "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
@@ -131,8 +131,8 @@ export default function RootLayout({
                 "@type": "Organization",
                 name: "Pika AI",
               },
-              downloadUrl: "https://your-domain.com",
-              screenshot: "https://your-domain.com/screenshot.jpg",
+              downloadUrl: "https://pikaai.vercel.app/download",
+              screenshot: "https://pikaai.vercel.app//screenshot.jpg",
               softwareVersion: "1.0",
               datePublished: "2024-01-01",
               dateModified: "2024-01-01",
