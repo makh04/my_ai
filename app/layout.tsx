@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   category: "Technology",
   classification: "AI Assistant Software",
   verification: {
-    google: "your-google-verification-code",
+    google: "K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
