@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   category: "Technology",
   classification: "AI Assistant Software",
   verification: {
-    google: "your-google-verification-code",
+    google: "K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA", // Google Site Verification Code
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
@@ -95,6 +95,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Google Site Verification Meta Tag */}
+        <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
+
         {/* Additional SEO Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
