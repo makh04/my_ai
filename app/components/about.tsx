@@ -83,6 +83,7 @@ export default function About() {
           </motion.div>
 
           {/* Right Content - Values */}
+          {/* Right Content - Values */}
           <motion.div
             className="space-y-6"
             initial={{ opacity: 0, x: 50 }}
