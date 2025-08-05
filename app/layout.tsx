@@ -87,7 +87,6 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   other: {
-    // Additional meta tags for better SEO
     "google-site-verification": "K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA",
     "msvalidate.01": "your-bing-verification-code",
     "yandex-verification": "your-yandex-verification-code",
@@ -165,7 +164,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+
+        {/* Vercel Analytics */}
+        <Analytics />
+      </body>
     </html>
   )
 }
