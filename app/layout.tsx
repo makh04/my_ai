@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Analytics } from '@vercel/analytics/next'; // Import the Analytics component
+import { Analytics } from '@vercel/analytics/next'; // Import the Vercel Analytics component
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -113,8 +113,23 @@ export default function RootLayout({
         {/* Google site verification */}
         <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
 
-        {/* Structured Data */}
+        {/* Google Analytics Script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JZ7TBFGN9W"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-JZ7TBFGN9W');
+            `,
+          }}
+        />
 
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
