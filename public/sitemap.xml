@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://pikaai.vercel.app/sitemap-pages.xml</loc>
-  </sitemap>
-  <sitemap>
+    <lastmod>2025-08-05T00:00:00Z</lastmod>
+  </url>
+  <url>
     <loc>https://pikaai.vercel.app/sitemap-about.xml</loc>
-  </sitemap>
-  <sitemap>
+    <lastmod>2025-08-05T00:00:00Z</lastmod>
+  </url>
+  <url>
     <loc>https://pikaai.vercel.app/sitemap-privacy.xml</loc>
-  </sitemap>
-  <sitemap>
+    <lastmod>2025-08-05T00:00:00Z</lastmod>
+  </url>
+  <url>
     <loc>https://pikaai.vercel.app/sitemap-support.xml</loc>
-  </sitemap>
-  <!-- Add more sitemap URLs if necessary -->
-</sitemapindex>
+    <lastmod>2025-08-05T00:00:00Z</lastmod>
+  </url>
+  <!-- Add more URLs if necessary -->
+</urlset>
