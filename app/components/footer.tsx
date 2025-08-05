@@ -158,7 +158,7 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2024 PIKA AI. All rights reserved.</p>
+          <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2025 PIKA AI. All rights reserved.</p>
           <div className="flex space-x-6 text-sm">
             <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
               Privacy Policy

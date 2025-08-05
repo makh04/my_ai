@@ -143,7 +143,7 @@ export default function RootLayout({
               downloadUrl: "https://pikaai.vercel.app/",
               screenshot: "https://pikaai.vercel.app/.screenshot.jpg",
               softwareVersion: "1.0",
-              datePublished: "2024-01-01",
+              datePublished: "2025-01-07",
               dateModified: "2025-01-08",
               aggregateRating: {
                 "@type": "AggregateRating",
