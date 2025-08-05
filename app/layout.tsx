@@ -114,6 +114,14 @@ export default function RootLayout({
         <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
 
         {/* Structured Data */}
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLNEL3REZQ"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-CLNEL3REZQ');
+        </script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
