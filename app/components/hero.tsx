@@ -17,6 +17,17 @@ export default function Hero() {
     }
     setIsDownloadClicked(true)
   }
+  const handleBetaDownload = () => {
+    // Track beta download in Google Analytics
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "download_beta", {
+        event_category: "Downloads",
+        event_label: "Pika AI Beta Download",
+        value: 1,
+      })
+    }
+    window.open("https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing", "_blank")
+  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
