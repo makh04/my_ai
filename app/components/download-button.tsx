@@ -26,6 +26,18 @@ export default function DownloadButton() {
     setIsModalOpen(false)
   }
 
+  const handleBetaDownload = () => {
+    const event = new CustomEvent("beta_download1")
+    window.dispatchEvent(event)
+    window.location.href = 'https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing'
+  }
+
+  const handleProDownload = () => {
+    const event = new CustomEvent("pro_download1")
+    window.dispatchEvent(event)
+    window.location.href = 'https://drive.google.com/file/d/1aYlwOEmN3CKyelHOG66sjvcvG8KujJzN/view?usp=sharing'
+  }
+
   if (!isVisible) return null
 
   return (
@@ -79,13 +91,13 @@ export default function DownloadButton() {
             <div className="flex flex-col gap-4">
               <button
                 className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white py-3 px-6 rounded-full hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 transition-all duration-300"
-                onClick={() => window.location.href = 'https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing'} // Replace with actual link
+                onClick={handleBetaDownload}
               >
                 Download Beta
               </button>
               <button
                 className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white py-3 px-6 rounded-full hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 transition-all duration-300"
-                onClick={() => window.location.href = '/download-pro'} // Replace with actual link
+                onClick={handleProDownload}
               >
                 Download Pro
               </button>

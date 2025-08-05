@@ -1,32 +1,34 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Download, Play, ArrowRight, Sparkles } from "lucide-react"
+import { Download, ArrowRight, Sparkles } from "lucide-react"
 import { useState } from "react"
 
 export default function Hero() {
   const [isDownloadClicked, setIsDownloadClicked] = useState(false)
 
-  const handleDownloadClick = () => {
+  const handleDownloadClick = (version: string) => {
+    // Track download event for either Beta or Pro
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "download_click", {
+      window.gtag("event", `download_${version}`, {
         event_category: "Downloads",
-        event_label: "Pika AI Download Button",
+        event_label: `Pika AI ${version} Download Button`,
         value: 1,
       })
     }
     setIsDownloadClicked(true)
   }
+
   const handleBetaDownload = () => {
-    // Track beta download in Google Analytics
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "download_beta", {
-        event_category: "Downloads",
-        event_label: "Pika AI Beta Download",
-        value: 1,
-      })
-    }
+    handleDownloadClick("beta")
+    // Open Beta Download Link
     window.open("https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing", "_blank")
+  }
+
+  const handleProDownload = () => {
+    handleDownloadClick("pro")
+    // Open Pro Download Link
+    window.open("https://drive.google.com/file/d/1aYlwOEmN3CKyelHOG66sjvcvG8KujJzN/view?usp=sharing", "_blank")
   }
 
   return (
@@ -88,7 +90,7 @@ export default function Hero() {
                 className="group bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-2xl shadow-cyan-500/25 transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={handleDownloadClick}
+                onClick={handleDownloadClick.bind(null, 'download')}
                 aria-label="Download Pika AI Desktop Assistant"
               >
                 <Download className="w-5 h-5" />
@@ -103,12 +105,7 @@ export default function Hero() {
                   className="group bg-blue-600 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-xl shadow-blue-500/25 transition-all duration-300"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  onClick={() =>
-                    window.open(
-                      "https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing",
-                      "_blank",
-                    )
-                  }
+                  onClick={handleBetaDownload}
                   aria-label="Download Pika AI Beta Version"
                 >
                   <Download className="w-5 h-5" />
@@ -120,10 +117,11 @@ export default function Hero() {
                   className="group bg-purple-600 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-xl shadow-purple-500/25 transition-all duration-300"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  aria-label="Pika AI Pro Version Coming Soon"
+                  onClick={handleProDownload}
+                  aria-label="Download Pika AI Pro Version"
                 >
                   <Download className="w-5 h-5" />
-                  <span>Pro Coming Soon</span>
+                  <span>Download Pro</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </motion.button>
               </div>
