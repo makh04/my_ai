@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { Analytics } from '@vercel/analytics/next'; // Import the Analytics component
 
 const inter = Inter({ subsets: ["latin"] })
 
