@@ -1,20 +1,23 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Download, ArrowRight, Sparkles } from "lucide-react"
+import { Download, ArrowRight, Sparkles, Play } from "lucide-react" // Importing Play here
 import { useState } from "react"
 
 export default function Hero() {
   const [isDownloadClicked, setIsDownloadClicked] = useState(false)
 
   const handleDownloadClick = (version: string) => {
-    // Track download event for either Beta or Pro
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", `download_${version}`, {
-        event_category: "Downloads",
-        event_label: `Pika AI ${version} Download Button`,
-        value: 1,
-      })
+    try {
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", `download_${version}`, {
+          event_category: "Downloads",
+          event_label: `Pika AI ${version} Download Button`,
+          value: 1,
+        })
+      }
+    } catch (error) {
+      console.error("Google Analytics event tracking failed:", error)
     }
     setIsDownloadClicked(true)
   }
@@ -90,7 +93,7 @@ export default function Hero() {
                 className="group bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-2xl shadow-cyan-500/25 transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={handleDownloadClick.bind(null, 'download')}
+                onClick={() => handleDownloadClick('download')}
                 aria-label="Download Pika AI Desktop Assistant"
               >
                 <Download className="w-5 h-5" />
