@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://pikaai.vercel.app",
-    title: "Pika AI - Free Desktop Virtual Assistant for Productivity and Automation",
+    title: "Pika AI - Free Desktop Virtual Assistant",
     description:
       "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
     siteName: "Pika AI",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pika AI - Free Desktop Virtual Assistant for Productivity and Automation",
+    title: "Pika AI - Free Desktop Virtual Assistant,
     description:
       "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
     images: ["/og-image.jpg"],
@@ -137,7 +137,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
               name: "Pika AI",
-              description: "Free desktop virtual assistant for productivity and automation",
+              description: "Free desktop virtual assistant ",
               applicationCategory: "ProductivityApplication",
               operatingSystem: "Windows",
               offers: {
