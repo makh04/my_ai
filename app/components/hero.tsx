@@ -31,7 +31,7 @@ export default function Hero() {
   const handleProDownload = () => {
     handleDownloadClick("pro")
     // Open Pro Download Link
-    window.open("https://drive.google.com/file/d/1aYlwOEmN3CKyelHOG66sjvcvG8KujJzN/view?usp=sharing", "_blank")
+    window.open("https://drive.google.com/file/d/1Nz6rZ6_PG2HoDZR6RsPesZEWCXzaSLfv/view?usp=sharing", "_blank")
   }
 
   return (

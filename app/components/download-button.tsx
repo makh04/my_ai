@@ -35,7 +35,7 @@ export default function DownloadButton() {
   const handleProDownload = () => {
     const event = new CustomEvent("pro_download1")
     window.dispatchEvent(event)
-    window.location.href = 'https://drive.google.com/file/d/1aYlwOEmN3CKyelHOG66sjvcvG8KujJzN/view?usp=sharing'
+    window.location.href = 'https://drive.google.com/file/d/1Nz6rZ6_PG2HoDZR6RsPesZEWCXzaSLfv/view?usp=sharing'
   }
 
   if (!isVisible) return null
