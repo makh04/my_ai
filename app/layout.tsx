@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pika AI - Free Desktop Virtual Assistant,
+    title: "Pika AI - Free Desktop Virtual Assistant",
     description:
       "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
     images: ["/og-image.jpg"],
