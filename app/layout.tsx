@@ -7,11 +7,11 @@ import { Analytics } from '@vercel/analytics/next'; // Import the Vercel Analyti
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Pika AI - Free Desktop Virtual Assistant",
+  title: "Pika Voice Assistant — Your Personal AI",
   description:
-    "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
+    "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and workflow automation. Boost your productivity today!",
   keywords: [
-    "Pika AI",
+    "Pika Voice Assistant",
     "AI assistant",
     "virtual assistant",
     "desktop assistant",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   ].join(", "),
   authors: [{ name: "Nabil Mukerrob Makhtum" }],
   creator: "Nabil Mukerrob Makhtum",
-  publisher: "Pika AI",
+  publisher: "Pika Voice Assistant",
   robots: {
     index: true,
     follow: true,
@@ -55,24 +55,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://pikaai.vercel.app",
-    title: "Pika AI - Free Desktop Virtual Assistant",
+    title: "Pika Voice Assistant — Your Personal AI",
     description:
-      "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
-    siteName: "Pika AI",
+      "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and workflow automation. Boost your productivity today!",
+    siteName: "Pika Voice Assistant",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Pika AI - Desktop Virtual Assistant",
+        alt: "Pika Voice Assistant — Your Personal AI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pika AI - Free Desktop Virtual Assistant",
+    title: "Pika Voice Assistant — Your Personal AI",
     description:
-      "Download Pika AI, a powerful desktop virtual assistant designed to help with task management, emails, and workflow automation. Boost your productivity with AI today!",
+      "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and workflow automation. Boost your productivity today!",
     images: ["/og-image.jpg"],
     creator: "@PikaAI",
   },
@@ -105,8 +105,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="application-name" content="Pika AI" />
-        <meta name="apple-mobile-web-app-title" content="Pika AI" />
+        <meta name="application-name" content="Pika Voice Assistant" />
+        <meta name="apple-mobile-web-app-title" content="Pika Voice Assistant" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -136,8 +136,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              name: "Pika AI",
-              description: "Free desktop virtual assistant ",
+              name: "Pika Voice Assistant",
+              description: "Free personal AI-powered desktop assistant",
               applicationCategory: "ProductivityApplication",
               operatingSystem: "Windows",
               offers: {
@@ -153,7 +153,7 @@ export default function RootLayout({
               },
               publisher: {
                 "@type": "Organization",
-                name: "Pika AI",
+                name: "Pika Voice Assistant",
               },
               downloadUrl: "https://pikaai.vercel.app/",
               screenshot: "https://pikaai.vercel.app/.screenshot.jpg",
