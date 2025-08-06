@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Code, Globe, Zap, Users, Rocket, Star, Shield, Lock, Eye } from "lucide-react"
+import Link from "next/link"
 
 export default function AboutClient() {
   const features = [
@@ -83,11 +84,13 @@ export default function AboutClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                About Pika AI Desktop Assistant
-              </span>
-            </h1>
+           <h1 className="text-4xl md:text-6xl font-bold mb-6">
+             <Link href="/" className="hover:underline focus:outline-none">
+               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                 About Pika AI Desktop Assistant
+               </span>
+             </Link>
+           </h1>
             <p className="text-xl text-gray-300 mb-8">
               A revolutionary Python-based AI virtual assistant integrating Google Gemini API for smart responses,
               voice/text control, and personalized desktop productivity experience.
