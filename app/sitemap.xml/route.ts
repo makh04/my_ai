@@ -22,7 +22,7 @@ export async function GET() {
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pikaai.vercel.app/contact/</loc>
+    <loc>https://pikaai.vercel.app/support/</loc>
     <lastmod>2025-08-05T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
