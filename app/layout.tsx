@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pika Voice Assistant — Your Personal AI",
     description:
-      "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and workflow automation. Boost your productivity today!",
+      "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and etc",
     images: ["/og-image.jpg"],
     creator: "@PikaAI",
   },
