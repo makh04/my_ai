@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       images: post.image ? [`https://pikaai.vercel.app/${post.image}`] : [],
     },
     alternates: {
-      canonical: `https://pikaai.vercel.app/${post.slug}`, // Canonical URL for individual blog posts
+      canonical: `https://pikaai.vercel.app/blog${post.slug}`, // Canonical URL for individual blog posts
     },
   }
 }
