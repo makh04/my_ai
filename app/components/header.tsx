@@ -42,7 +42,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {["Features", "About", "More"].map((item) => (
+            {["Features", "About", "More", "Blog"].map((item) => (
               <motion.button
                 key={item}
                 onClick={() => {
@@ -50,6 +50,8 @@ export default function Header() {
                     window.location.href = "/about"
                   } else if (item === "More") {
                     window.location.href = "/support"
+                  } else if (item === "Blog") {
+                    window.location.href = "/blog"
                   } else {
                     scrollToSection(item.toLowerCase())
                   }
