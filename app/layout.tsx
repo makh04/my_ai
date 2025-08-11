@@ -113,7 +113,6 @@ export default function RootLayout({
 
         {/* Google site verification */}
         <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
-        <meta name="monetag" content="02d4a6d454abb3624cfb1b7b6c81bc75" />
 
         {/* Google Analytics Script */}
         <script
