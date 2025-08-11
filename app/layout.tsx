@@ -109,10 +109,11 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Pika Voice Assistant" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="monetag" content="02d4a6d454abb3624cfb1b7b6c81bc75">
+
 
         {/* Google site verification */}
         <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
+        <meta name="monetag" content="02d4a6d454abb3624cfb1b7b6c81bc75" />
 
         {/* Google Analytics Script */}
         <script
