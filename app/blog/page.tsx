@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stay updated with the latest articles, tips, and insights on AI, productivity, desktop assistants, and technology from the Pika AI team.",
   keywords: "AI blog, productivity tips, AI news, desktop assistant insights, technology articles, Pika AI blog",
   alternates: {
-    canonical: "https://pikaai.vercel.app/blog", // Canonical URL for the blog listing page
+    canonical: "https://pikaai.vercel.app/blog/", // Canonical URL for the blog listing page
   },
 }
 
