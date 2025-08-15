@@ -21,7 +21,7 @@ export default function Header() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
-    setIsMobileMenuOpen(false) // Close the mobile menu after navigating
+    setIsMobileMenuOpen(false)
   }
 
   return (
@@ -35,10 +35,14 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
+          {/* Logo (clickable) */}
+          <motion.button
+            onClick={() => (window.location.href = "/")}
+            className="flex items-center space-x-2 focus:outline-none"
+            whileHover={{ scale: 1.05 }}
+          >
             <img src="/logo.png" alt="PIKA AI Logo" className="h-8 w-auto" />
-          </motion.div>
+          </motion.button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
