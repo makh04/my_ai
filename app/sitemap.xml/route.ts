@@ -14,13 +14,19 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
     <loc>https://pikaai.vercel.app/about/</loc>
     <lastmod>2025-08-05T00:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pikaai.vercel.app/privacy/</loc>
     <lastmod>2025-08-05T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pikaai.vercel.app/blog/best-free-ai-image-generators/</loc>
+    <lastmod>2025-08-05T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pikaai.vercel.app/support/</loc>

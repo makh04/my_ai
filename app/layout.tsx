@@ -130,45 +130,58 @@ export default function RootLayout({
           }}
         />
 
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Pika Voice Assistant",
-              description: "Free personal AI-powered desktop assistant",
-              applicationCategory: "ProductivityApplication",
-              operatingSystem: "Windows",
-              offers: {
-                "@type": "Offer",
-                price: "0",
-                priceCurrency: "USD",
-              },
-              author: {
-                "@type": "Person",
-                name: "Nabil Mukerrob Makhtum",
-                nationality: "Bangladeshi",
-                age: "17",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Pika Voice Assistant",
-              },
-              downloadUrl: "https://pikaai.vercel.app/",
-              screenshot: "https://pikaai.vercel.app/.screenshot.jpg",
-              softwareVersion: "1.0",
-              datePublished: "2025-01-07",
-              dateModified: "2025-01-08",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.8",
-                ratingCount: "1250",
-              },
-            }),
-          }}
-        />
+          {/* Structured Data */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  name: "Pika Voice Assistant",
+                  description: "Free personal AI-powered desktop assistant",
+                  applicationCategory: "ProductivityApplication",
+                  operatingSystem: "Windows",
+                  offers: {
+                    "@type": "Offer",
+                    price: "0",
+                    priceCurrency: "USD"
+                  },
+                  author: {
+                    "@type": "Person",
+                    name: "Nabil Mukerrob Makhtum",
+                    sameAs: "https://www.instagram.com/x_makhtum_x/"
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Pika Voice Assistant"
+                  },
+                  downloadUrl: "https://pikaai.vercel.app/",
+                  screenshot: "https://pikaai.vercel.app/.screenshot.jpg",
+                  softwareVersion: "1.0",
+                  datePublished: "2025-01-07",
+                  dateModified: "2025-01-08",
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "4.8",
+                    ratingCount: "1250"
+                  }
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SiteNavigationElement",
+                  name: ["Home", "Blog", "About", "Download", "Support"],
+                  url: [
+                    "https://pikaai.vercel.app/",
+                    "https://pikaai.vercel.app/blog",
+                    "https://pikaai.vercel.app/about",
+                    "https://pikaai.vercel.app/download",
+                    "https://pikaai.vercel.app/support"
+                  ]
+                }
+              ])
+            }}
+          />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
