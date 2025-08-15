@@ -173,10 +173,9 @@ export default function RootLayout({
                   name: ["Home", "Blog", "About", "Download", "Support"],
                   url: [
                     "https://pikaai.vercel.app/",
-                    "https://pikaai.vercel.app/blog",
-                    "https://pikaai.vercel.app/about",
-                    "https://pikaai.vercel.app/download",
-                    "https://pikaai.vercel.app/support"
+                    "https://pikaai.vercel.app/blog/",
+                    "https://pikaai.vercel.app/about/",
+                    "https://pikaai.vercel.app/support/"
                   ]
                 }
               ])
