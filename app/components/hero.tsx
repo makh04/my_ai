@@ -31,7 +31,7 @@ export default function Hero() {
   const handleProDownload = () => {
     handleDownloadClick("pro")
     // Open Pro Download Link
-    window.open("https://drive.usercontent.google.com/download?id=1X-lC2_nSD9oZ8VW9Gw4bXCMcMzt3lXqd&export=download&authuser=0&confirm=t&uuid=38b3d2f7-f73e-48d9-9510-e7408e6807cf&at=AN8xHoqvI1oYED3Og4TJT3SLWdHS:1754751430429", "_blank")
+    window.open("https://www.dropbox.com/scl/fi/sp5magjje3i1sv5hr5ix1/Pika-AI-PRO.exe?rlkey=9j4x0mz0ejni5cga2c9c0rrj8&st=pcivxyby&dl=1", "_blank")
   }
 
   return (
