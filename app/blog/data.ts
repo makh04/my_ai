@@ -18,17 +18,23 @@ export const blogPosts: BlogPost[] = [
     date: "2025-01-15",
     author: "Pika AI Team",
     content: `
-      <p class="text-lg text-gray-300 mb-6">
-        Ever since Tony Stark's AI assistant Jarvis graced our screens in the Iron Man movies, millions of tech enthusiasts have dreamed of having their own <strong>real life Jarvis</strong>. The good news? That dream is now a reality. Today's AI technology has advanced to the point where we can download and use <strong>Iron Man Jarvis</strong>-inspired applications that provide intelligent voice control, smart automation, and seamless digital assistance.
-      </p>
+  <section class="bg-gradient-to-br from-black via-gray-900 to-black py-16 px-6 md:px-12 text-white text-center rounded-xl mb-10 shadow-2xl">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+      Meet Your Real-Life Jarvis
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+      Unleash the power of AI voice assistants inspired by Iron Man. Control your PC, automate your world, and experience the future—today.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
+      <a href="#top-6" class="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-lg font-medium text-white shadow-md">
+        📋 See the Top 6 Now
+      </a>
+    </div>
+  </section>
 
-      <div class="relative w-full h-64 md:h-96 mb-8 rounded-xl overflow-hidden shadow-lg">
-        <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755691213/jarvis-hero_oeqrxa.jpg" alt="Real Life Jarvis AI Assistant Interface" class="w-full h-full object-cover" />
-      </div>
-
-      <p class="text-lg text-gray-300 mb-6">
-        Whether you're looking for a <strong>free Jarvis</strong> alternative or the <strong>best AI virtual assistant</strong> for desktop control, this comprehensive guide covers the top 6 applications that bring the Iron Man experience to your computer. These <strong>best Jarvis type apps</strong> offer voice activation, system control, and intelligent responses that would make Tony Stark proud.
-      </p>
+  <p class="text-lg text-gray-300 mb-6">
+    Ever since Tony Stark's AI assistant Jarvis graced our screens in the Iron Man movies, millions of tech enthusiasts have dreamed of having their own <strong>real life Jarvis</strong>. The good news? That dream is now a reality...
+  </p>
 
       <h2 class="text-3xl font-bold text-white mb-6">What Makes a Real Life Jarvis?</h2>
       <p class="text-gray-300 mb-6">
@@ -43,7 +49,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Integration:</strong> Works seamlessly with various apps and services</li>
       </ul>
 
-      <h2 class="text-3xl font-bold text-white mb-6">Top 6 Real Life Jarvis Applications</h2>
+      <h2  id="top-6" class="text-3xl font-bold text-white mb-6">Top 6 Real Life Jarvis Applications</h2>
 
       <h3 class="text-2xl font-bold text-white mb-4">1. Pika AI - The Ultimate Free Jarvis Alternative</h3>
       <div class="relative w-full h-100 md:h-100 mb-6 rounded-xl overflow-hidden shadow-lg">
