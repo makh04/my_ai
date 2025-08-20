@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
       </p>
 
       <div class="relative w-full h-64 md:h-96 mb-8 rounded-xl overflow-hidden shadow-lg">
-        <img src="/jarvis-hero.png" alt="Real Life Jarvis AI Assistant Interface" class="w-full h-full object-cover" />
+        <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755691213/jarvis-hero_oeqrxa.jpg" alt="Real Life Jarvis AI Assistant Interface" class="w-full h-full object-cover" />
       </div>
 
       <p class="text-lg text-gray-300 mb-6">
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
       <h3 class="text-2xl font-bold text-white mb-4">1. Pika AI - The Ultimate Free Jarvis Alternative</h3>
       <div class="relative w-full h-100 md:h-100 mb-6 rounded-xl overflow-hidden shadow-lg">
         <img
-          src="/pika-ai-interface.png"
+          src="https://res.cloudinary.com/deibcytx1/image/upload/v1755691222/pika-ai-interface_xz84rq.png"
           alt="Pika AI desktop assistant interface with voice command input and task automation features"
           title="Pika AI - Smart Jarvis-like Desktop Assistant"
           class="w-full h-full object-cover"
@@ -155,7 +155,7 @@ export const blogPosts: BlogPost[] = [
 
       <h3 class="text-2xl font-bold text-white mb-4">6. Braina AI</h3>
       <div class="relative w-full h-100 md:h-100 mb-6 rounded-xl overflow-hidden shadow-lg">
-        <img src="/virtual-assistant-comparison.png" alt="Virtual Assistant Comparison Chart" class="w-full h-full object-cover" />
+        <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755691224/virtual-assistant-comparison_ugh0mg.png" alt="Virtual Assistant Comparison Chart" class="w-full h-full object-cover" />
       </div>
       <p class="text-gray-400 mb-4">
         Braina AI is a powerful and versatile virtual assistant designed to bring an <strong>Iron Man Jarvis</strong>-like experience to Windows users. It offers advanced voice commands, dictation, and automation capabilities, enabling users to control their computers and perform tasks hands-free.
