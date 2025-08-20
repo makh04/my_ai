@@ -29,7 +29,7 @@ export default function DownloadButton() {
   const handleBetaDownload = () => {
     const event = new CustomEvent("beta_download1")
     window.dispatchEvent(event)
-    window.location.href = 'https://drive.google.com/file/d/1AXtqFktEW_CukGFnSFt4uxo2dD0S-9vt/view?usp=sharing'
+    window.location.href = 'https://www.dropbox.com/scl/fi/sp5magjje3i1sv5hr5ix1/Pika-AI-PRO.exe?rlkey=9j4x0mz0ejni5cga2c9c0rrj8&st=pcivxyby&dl=1'
   }
 
   const handleProDownload = () => {
