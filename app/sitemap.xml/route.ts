@@ -56,6 +56,13 @@ export async function GET() {
   </url>
 
   <url>
+    <loc>https://pikaai.vercel.app/blog/create-ai-assistant-no-code/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://pikaai.vercel.app/blog/best-free-ai-image-generators/</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -68,9 +75,9 @@ export async function GET() {
     status: 200,
     headers: {
       'Content-Type': 'application/xml',
-      'Cache-Control': 'no-cache, no-store, must-revalidate',
-      Pragma: 'no-cache',
-      Expires: '0',
+      'Cache-Control': 'public, max-age=86400', // Cache for 1 day
+      Pragma: 'public',
+      Expires: new Date(Date.now() + 86400 * 1000).toUTCString(), // 24-hour expiration
     },
   });
 }
