@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: "create-ai-assistant-no-code",
-    title: "How to Create Your Own AI Assistant Like Jarvis Without Coding",
+    title: "How to Create Your Own AI Assistant Without Coding",
     description:
       "Want to create your own AI assistant like Jarvis without coding? Learn how to use Gemini or ChatGPT to get an API key, run AI in a code editor. Complete Your Ai in 6 lines of code",
     date: "2025-08-22",
@@ -28,15 +28,15 @@ export const blogPosts: BlogPost[] = [
     </p>
   </section>
 
-  <!-- Image Placeholder 1 -->
+
   <div class="mb-10">
     <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755864688/assets_2Ftask_01k38d0hagedgrq6pnyx7qme62_2F1755850057_img_0_ef9tq9.webp" alt="No Code AI Assistant" class="rounded-xl shadow-lg mx-auto max-w-full" />
   </div>
 
   <section class="max-w-4xl mx-auto px-6 md:px-0">
-    <h2 class="text-3xl font-bold mb-4">Step 1: Choose Your AI — Gemini or ChatGPT</h2>
+    <h2 class="text-3xl font-bold mb-4">Step 1: Choose Your AI Gemini or ChatGPT</h2>
     <p class="mb-6">
-      To make your own AI assistant like Jarvis, you need an API that gives your assistant the power to understand and respond like a human. The two best options are:
+      To make your own AI assistant like Jarvis you need an API that gives your assistant the power to undrstand and respond like a human. The two best options are:
     </p>
 
     <ul class="list-disc pl-6 mb-6 space-y-2">
@@ -64,14 +64,14 @@ export const blogPosts: BlogPost[] = [
       <li>Click “Create new secret key” and save it securely.</li>
     </ol>
 
-    <!-- Image Placeholder 2 -->
+
     <div class="mb-10">
       <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755850653/api_key_tbqn4x.png" alt="Get API Key for AI Assistant" class="rounded-xl shadow-lg mx-auto max-w-full" />
     </div>
 
     <h2 class="text-3xl font-bold mb-4">Step 3: Open a Code Editor (No Coding Needed)</h2>
     <p class="mb-6">
-      You don’t need to know how to code. You just need a space to paste and run the code.
+      You dont need to know how to code. You just need a space to paste and run the code.
       <br />Here are free tools you can use:
     </p>
     <ul class="list-disc pl-6 mb-6 space-y-1">
@@ -89,7 +89,7 @@ export const blogPosts: BlogPost[] = [
     </div>
 
     <p class="mb-6">
-      Or <strong>just click this link</strong> to copy a ready-made code: <a href="https://drive.google.com/file/d/1Ae13uuGhi8xv5oaUMe-yU5zx0MXvqDuz/view?usp=sharing" class="text-blue-400 underline font-semibold">Get the Code</a>.
+      Or <strong>just click this link</strong> to copy a ready made code: <a href="https://drive.google.com/file/d/1Ae13uuGhi8xv5oaUMe-yU5zx0MXvqDuz/view?usp=sharing" class="text-blue-400 underline font-semibold">Get the Code</a>.
     </p>
        <p class="mb-6">
       Make sure u install all the libraries that your code need for example if you use the code I provided you should install these Libraries:
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       In the code Gemini or ChatGPT gives you, look for the line that contains <code>"your_api_key"</code> and replace it with your real API key that you got earlier. That’s all you need to do!
     </p>
 
-    <!-- Image Placeholder 3 -->
+
     <div class="mb-10">
       <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755851420/api_replace_izq4hx.png" alt="Replace API Key" class="rounded-xl shadow-lg mx-auto max-w-full" />
     </div>
@@ -116,7 +116,7 @@ export const blogPosts: BlogPost[] = [
 
     <h2 class="text-3xl font-bold mb-4">Step 6: Run the Code and Start Talking!</h2>
     <p class="mb-6">
-      Run the Python code in your editor. Type your question or request (like "What's the weather today?" or "Summarize this text"), and your AI assistant will reply like Jarvis!
+      Run the Python code in your editor. Type your question or request (like "What is the weather today?" or "Summarize this text"), and your AI assistant will reply like Jarvis!
     </p>
 
     <h2 class="text-3xl font-bold mb-4">That’s It! You Just Created an AI Assistant Like Jarvis!</h2>
