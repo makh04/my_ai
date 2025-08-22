@@ -10,6 +10,154 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+
+  {
+    slug: "create-ai-assistant-no-code",
+    title: "How to Create Your Own AI Assistant Like Jarvis Without Coding",
+    description:
+      "Want to create your own AI assistant like Jarvis without coding? Learn how to use Gemini or ChatGPT to get an API key, run AI in a code editor. Complete Your Ai in 6 lines of code",
+    date: "2025-08-22",
+    author: "Pika AI Team",
+    content: `
+  <section class="bg-gradient-to-br from-black via-gray-900 to-black py-16 px-6 md:px-12 text-white text-center rounded-xl mb-10 shadow-2xl">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+      How to Create Your Own AI Assistant Like Jarvis — No Coding Required
+    </h1>
+    <p class="text-lg max-w-3xl mx-auto">
+      Yes, you can create your very own <strong>AI assistant like Jarvis</strong> even if you have <strong>zero coding experience</strong>. In this guide, we'll walk you through the full process, from getting your free API key to running an AI with just a few steps.
+    </p>
+  </section>
+
+  <!-- Image Placeholder 1 -->
+  <div class="mb-10">
+    <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01k38d0hagedgrq6pnyx7qme62%2F1755850057_img_0.webp?st=2025-08-22T06%3A37%3A59Z&se=2025-08-28T07%3A37%3A59Z&sks=b&skt=2025-08-22T06%3A37%3A59Z&ske=2025-08-28T07%3A37%3A59Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=gv2vFtq%2BJHYqIdV2QGZUpgwoQgEKjZ7CV%2FkaP3ah59s%3D&az=oaivgprodscus" alt="No Code AI Assistant" class="rounded-xl shadow-lg mx-auto max-w-full" />
+  </div>
+
+  <section class="max-w-4xl mx-auto px-6 md:px-0">
+    <h2 class="text-3xl font-bold mb-4">Step 1: Choose Your AI — Gemini or ChatGPT</h2>
+    <p class="mb-6">
+      To make your own AI assistant like Jarvis, you need an API that gives your assistant the power to understand and respond like a human. The two best options are:
+    </p>
+
+    <ul class="list-disc pl-6 mb-6 space-y-2">
+      <li><strong>Gemini by Google</strong> – 100% free (for now), fast, and great for basic tasks.</li>
+      <li><strong>ChatGPT by OpenAI</strong> – Offers more advanced capabilities with a $5 trial credit when you sign up.</li>
+    </ul>
+
+    <p class="mb-6">
+      You can use either to power your assistant. If you're just starting, <strong>Gemini is a great free choice</strong>.
+    </p>
+
+    <h2 class="text-3xl font-bold mb-4">Step 2: Get Your API Key</h2>
+    <p class="mb-6">Here’s how to get your own API key in 2 minutes:</p>
+
+    <h3 class="text-xl font-semibold mb-2">🔑 For Gemini (Free):</h3>
+    <ol class="list-decimal pl-6 mb-4 space-y-1">
+      <li>Go to <a href="https://aistudio.google.com/app/apikey" class="text-blue-400 underline" target="_blank">Google AI Studio</a>.</li>
+      <li>Click “Create API Key” and copy it.</li>
+    </ol>
+
+    <h3 class="text-xl font-semibold mb-2">💬 For ChatGPT (GPT-4):</h3>
+    <ol class="list-decimal pl-6 mb-8 space-y-1">
+      <li>Go to <a href="https://platform.openai.com/account/api-keys" class="text-blue-400 underline" target="_blank">OpenAI Platform</a>.</li>
+      <li>Create an account (you’ll get a $5 free trial).</li>
+      <li>Click “Create new secret key” and save it securely.</li>
+    </ol>
+
+    <!-- Image Placeholder 2 -->
+    <div class="mb-10">
+      <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755850653/api_key_tbqn4x.png" alt="Get API Key for AI Assistant" class="rounded-xl shadow-lg mx-auto max-w-full" />
+    </div>
+
+    <h2 class="text-3xl font-bold mb-4">Step 3: Open a Code Editor (No Coding Needed)</h2>
+    <p class="mb-6">
+      You don’t need to know how to code. You just need a space to paste and run the code.
+      <br />Here are free tools you can use:
+    </p>
+    <ul class="list-disc pl-6 mb-6 space-y-1">
+      <li><a href="https://replit.com" class="text-blue-400 underline" target="_blank">Replit.com</a> – Easiest way to run Python in the browser.</li>
+      <li><a href="https://vscode.dev" class="text-blue-400 underline" target="_blank">VS Code (Web)</a> – Online coding with zero setup.</li>
+    </ul>
+
+    <h2 class="text-3xl font-bold mb-4">Step 4: Ask Gemini or ChatGPT for the Code</h2>
+    <p class="mb-6">
+      Go to <strong>Gemini</strong> or <strong>ChatGPT</strong> and ask:
+    </p>
+
+    <div class="bg-gray-800 text-white p-4 rounded-lg mb-6">
+      <code>Give me a simple Python code using Gemini API to create a Jarvis-like AI assistant that takes user input and gives AI responses.</code>
+    </div>
+
+    <p class="mb-6">
+      Or <strong>just click this link</strong> to copy a ready-made code: <a href="https://drive.google.com/file/d/1Ae13uuGhi8xv5oaUMe-yU5zx0MXvqDuz/view?usp=sharing" class="text-blue-400 underline font-semibold">Get the Code</a>.
+    </p>
+       <p class="mb-6">
+      Make sure u install all the libraries that your code need for example if you use the code I provided you should install these Libraries:
+    </p>
+        <div class="mb-10">
+      <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755851177/pip_g1zjod.png" alt="install libraries" class="rounded-xl shadow-lg mx-auto max-w-full" />
+    </div>
+
+    <h2 class="text-3xl font-bold mb-4">Step 5: Replace "your_api_key" with Your Own</h2>
+    <p class="mb-6">
+      In the code Gemini or ChatGPT gives you, look for the line that contains <code>"your_api_key"</code> and replace it with your real API key that you got earlier. That’s all you need to do!
+    </p>
+
+    <!-- Image Placeholder 3 -->
+    <div class="mb-10">
+      <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755851420/api_replace_izq4hx.png" alt="Replace API Key" class="rounded-xl shadow-lg mx-auto max-w-full" />
+    </div>
+
+    <h2 class="text-3xl font-bold mb-4">✨ Try a Ready-Made Jarvis Instead</h2>
+    <p class="mb-6">
+      Want to skip all the steps and try a pre-built AI assistant like Jarvis? <br />
+      <a href="/" class="text-blue-400 underline font-bold text-xl">Click here to try it now →</a>
+    </p>
+
+    <h2 class="text-3xl font-bold mb-4">Step 6: Run the Code and Start Talking!</h2>
+    <p class="mb-6">
+      Run the Python code in your editor. Type your question or request (like "What's the weather today?" or "Summarize this text"), and your AI assistant will reply like Jarvis!
+    </p>
+
+    <h2 class="text-3xl font-bold mb-4">That’s It! You Just Created an AI Assistant Like Jarvis!</h2>
+    <p class="mb-6">
+      You now have a basic AI assistant running with real-time intelligence. This is the easiest way to <strong>create an AI assistant like Jarvis without coding</strong>But you can upgrade it more further like the one I have already created. You can download that one from our home page.If you want it to upgrade more you need to split this project in some parts for this you should know minimum knowledge and if you want a blog post on taking it to the next level like the real jarvis of the Iron Man that will be able to automate like Iron man . Upgrade itself and do a lot more. You need to have some more knowledge.I will advice you to become a member of our community.This is just a basic AI.Once you've created your first basic AI assistant using Gemini or ChatGPT, there's a lot of room to level up and build something truly powerful and personal. Here's how you can upgrade your assistant, and what knowledge will help along the way.Final Thoughts
+
+You don’t need to know everything on day one. But if you want to turn your simple AI into a full-featured Jarvis-style assistant, learning these skills step by step will take you there.
+    </p>
+
+    <div class="text-center mt-10">
+      <p class="text-lg font-medium mb-4">
+        Want to take your assistant to the next level with voice control, desktop automation, and smart integrations?
+      </p>
+      <a href="/" class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+        Follow Pika AI for More Advanced Tools →
+      </a>
+    </div>
+  </section>
+    `,
+    keywords: [
+      "how to make ai",
+      "how to create AI assistant like Jarvis",
+      "AI assistant",
+      "create Jarvis AI without coding",
+      "Gemini AI assistant",
+      "GPT AI assistant",
+      "no code AI assistant",
+      "free AI assistant creation",
+      "how to make my own ai",
+      "build Jarvis with GPT",
+      "how to make an AI assistant without code",
+      "make ai without coding",
+      "Gemini API tutorial",
+      "ChatGPT API guide",
+      "AI assistant tutorial",
+      "easy AI assistant like Jarvis",
+    ],
+    image: "https://videos.openai.com/vg-assets/assets%2Ftask_01k38d0hagedgrq6pnyx7qme62%2F1755850057_img_0.webp?st=2025-08-22T06%3A37%3A59Z&se=2025-08-28T07%3A37%3A59Z&sks=b&skt=2025-08-22T06%3A37%3A59Z&ske=2025-08-28T07%3A37%3A59Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=gv2vFtq%2BJHYqIdV2QGZUpgwoQgEKjZ7CV%2FkaP3ah59s%3D&az=oaivgprodscus",
+  },
+
+
   {
     slug: "real-life-jarvis",
     title: "Real Life Jarvis: 6 Best AI Virtual Assistants That Bring Iron Man's Dream to Reality",
