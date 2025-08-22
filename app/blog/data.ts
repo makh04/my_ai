@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
 
   <!-- Image Placeholder 1 -->
   <div class="mb-10">
-    <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01k38d0hagedgrq6pnyx7qme62%2F1755850057_img_0.webp?st=2025-08-22T06%3A37%3A59Z&se=2025-08-28T07%3A37%3A59Z&sks=b&skt=2025-08-22T06%3A37%3A59Z&ske=2025-08-28T07%3A37%3A59Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=gv2vFtq%2BJHYqIdV2QGZUpgwoQgEKjZ7CV%2FkaP3ah59s%3D&az=oaivgprodscus" alt="No Code AI Assistant" class="rounded-xl shadow-lg mx-auto max-w-full" />
+    <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1755864688/assets_2Ftask_01k38d0hagedgrq6pnyx7qme62_2F1755850057_img_0_ef9tq9.webp" alt="No Code AI Assistant" class="rounded-xl shadow-lg mx-auto max-w-full" />
   </div>
 
   <section class="max-w-4xl mx-auto px-6 md:px-0">
@@ -154,7 +154,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
       "AI assistant tutorial",
       "easy AI assistant like Jarvis",
     ],
-    image: "https://videos.openai.com/vg-assets/assets%2Ftask_01k38d0hagedgrq6pnyx7qme62%2F1755850057_img_0.webp?st=2025-08-22T06%3A37%3A59Z&se=2025-08-28T07%3A37%3A59Z&sks=b&skt=2025-08-22T06%3A37%3A59Z&ske=2025-08-28T07%3A37%3A59Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=gv2vFtq%2BJHYqIdV2QGZUpgwoQgEKjZ7CV%2FkaP3ah59s%3D&az=oaivgprodscus",
+    image: "https://res.cloudinary.com/deibcytx1/image/upload/v1755864688/assets_2Ftask_01k38d0hagedgrq6pnyx7qme62_2F1755850057_img_0_ef9tq9.webp",
   },
 
 
