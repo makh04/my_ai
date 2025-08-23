@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: "create-ai-assistant-no-code",
-    title: "How to Create Your Own AI Assistant Without Coding",
+    title: "How to make Your Own AI Assistant like jarvis Without Coding",
     description:
       "Want to create your own AI assistant like Jarvis without coding? Learn how to use Gemini or ChatGPT to get an API key, run AI in a code editor. Complete Your Ai in 6 lines of code",
     date: "2025-08-22",
