@@ -11,6 +11,83 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
 
+{
+  slug: "pika-ai-assistant-new-voice-highlight-search",
+  title: "Pika AI Assistant New Update Voice search highlighted text",
+  description:
+    "The latest update of Pika AI Assistant that lets you use voice commands to search highlighted text on Google or get meanings instantly, enhancing your productivity and browsing experience.",
+  date: "2025-08-26",
+  author: "Pika AI Team",
+  content: `
+    <p class="text-lg text-gray-300 mb-6">
+      The latest update of <strong>Pika AI Assistant</strong> introduces an incredible new feature that takes your interaction with text and information retrieval to the next level. Now, users can simply highlight any text and use voice commands to either search it on Google or get the meaning instantly—all without interrupting their workflow.
+    </p>
+
+    <h2 class="text-3xl font-bold text-white mb-4">What’s New in This Update?</h2>
+    <p class="text-gray-400 mb-6">
+      With this update, Pika AI Assistant allows you to:
+    </p>
+    <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
+      <li><strong>Highlight text and ask Pika to search it on Google using voice commands.</strong></li>
+      <li><strong>Get the meaning of any highlighted word or phrase via voice interaction.</strong></li>
+      <li><strong>Seamlessly integrate these features into your daily browsing and work.</strong></li>
+    </ul>
+
+    <h2 class="text-3xl font-bold text-white mb-4">Why Use Voice Commands with Highlighted Text?</h2>
+    <p class="text-gray-300 mb-6">
+      Imagine reading an article, research paper or any content online and instantly getting definitions or searching additional info without having to switch tabs, type, or lose your flow. This update brings hands-free convenience and speed directly to your fingertips.
+    </p>
+      <div class="mb-10">
+    <img src="https://res.cloudinary.com/deibcytx1/image/upload/v1756221940/ajaira_editing_gg2wyz.jpg" alt="pika ai assistant new update class="rounded-xl shadow-lg mx-auto max-w-full" />
+  </div>
+
+    <h2 class="text-3xl font-bold text-white mb-4">How to Use This Feature</h2>
+    <ol class="list-decimal list-inside text-gray-400 mb-6 space-y-2">
+      <li>Highlight any word or phrase on your screen.</li>
+      <li>Say “Hey Pika, search this on Google” to trigger a web search for the highlighted text.</li>
+      <li>Or say “Hey Pika, what does this mean?” to get a clear voice explanation or definition.</li>
+      <li>Listen or view the results immediately without disrupting your workflow.</li>
+    </ol>
+
+    <h2 class="text-3xl font-bold text-white mb-4">Benefits of This Update</h2>
+    <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
+      <li><strong>Enhanced productivity:</strong> Get instant info and definitions without leaving your current page.</li>
+      <li><strong>Hands-free convenience:</strong> Perfect for multitasking or users with accessibility needs.</li>
+      <li><strong>Seamless integration:</strong> Works smoothly with your everyday browsing experience.</li>
+      <li><strong>Learning made easier:</strong> Quickly understand new terms and concepts on the fly.</li>
+    </ul>
+
+    <div class="my-8 p-6 bg-gray-800/50 border border-gray-700 rounded-xl">
+      <h3 class="text-2xl font-bold text-white mb-4">Try Pika AI Voice Assistant Today!</h3>
+      <p class="text-gray-300 mb-4">
+        Ready to supercharge your productivity and browsing with voice enabled AI? Visit the official Pika AI website to download the assistant and start exploring the new highlight-and-voice features right now.
+      </p>
+      <a href="https://pikaai.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+        Learn More About Pika AI Assistant
+      </a>
+    </div>
+
+    <h2 class="text-3xl font-bold text-white mb-4">Final Thoughts</h2>
+    <p class="text-gray-300">
+      The new voice commands for highlighted text search and meaning lookup update make Pika AI Assistant a must-have tool for anyone looking to streamline how they access information online. Experience the future of AI assistance today—fast, intuitive, and truly hands-free.
+    </p>
+  `,
+  keywords: [
+    "Pika AI Assistant",
+    "voice assistant",
+    "highlighted text search",
+    "voice commands",
+    "Google search voice",
+    "meaning lookup",
+    "productivity AI assistant",
+    "hands-free AI",
+    "AI assistant update",
+    "voice-enabled AI",
+  ],
+  image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756220914/20250826_2049_Pika_AI_Upgrade_simple_compose_01k3kdkpj6f74rpkmvh18mzm62_hatpdp.png"
+},
+
+
   {
     slug: "create-ai-assistant-no-code",
     title: "How to make Your Own AI Assistant like jarvis Without Coding",
