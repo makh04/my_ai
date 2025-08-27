@@ -35,23 +35,21 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo (clickable) */}
-          <motion.button
-            onClick={() => (window.location.href = "/")}
-            className="flex items-center space-x-2 focus:outline-none"
-            whileHover={{ scale: 1.05 }}
-          >
+          {/* Logo */}
+          <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
             <img src="/logo.png" alt="PIKA AI Logo" className="h-8 w-auto" />
-          </motion.button>
+          </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {["Features", "About", "More", "Blog"].map((item) => (
+            {["Features", "About", "Gaming", "More", "Blog"].map((item) => (
               <motion.button
                 key={item}
                 onClick={() => {
                   if (item === "About") {
                     window.location.href = "/about"
+                  } else if (item === "Gaming") {
+                    window.location.href = "/gaming"
                   } else if (item === "More") {
                     window.location.href = "/support"
                   } else if (item === "Blog") {
@@ -67,7 +65,6 @@ export default function Header() {
                 {item}
               </motion.button>
             ))}
-
             <motion.button
               onClick={() => (window.location.href = "/about")}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
@@ -98,14 +95,18 @@ export default function Header() {
           transition={{ duration: 0.3 }}
         >
           <div className="py-4 space-y-4 border-t border-gray-800">
-            {["Features", "About", "More"].map((item) => (
+            {["Features", "About", "Gaming", "More", "Blog"].map((item) => (
               <button
                 key={item}
                 onClick={() => {
                   if (item === "About") {
                     window.location.href = "/about"
+                  } else if (item === "Gaming") {
+                    window.location.href = "/gaming"
                   } else if (item === "More") {
                     window.location.href = "/support"
+                  } else if (item === "Blog") {
+                    window.location.href = "/blog"
                   } else {
                     scrollToSection(item.toLowerCase())
                   }
@@ -115,7 +116,6 @@ export default function Header() {
                 {item}
               </button>
             ))}
-
             <button
               onClick={() => (window.location.href = "/about")}
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
