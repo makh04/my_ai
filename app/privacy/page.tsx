@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Shield, Lock, Eye, Database, UserCheck, Globe } from "lucide-react"
+import Header from "../components/header"
 
 export default function PrivacyPolicy() {
   const sections = [
@@ -74,8 +75,9 @@ export default function PrivacyPolicy() {
   ]
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Header */}
+
+     <div className="min-h-screen bg-black text-white">
+      <Header />
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-blue-900/30 to-purple-900/30" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

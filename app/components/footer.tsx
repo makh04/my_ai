@@ -5,11 +5,8 @@ import { Code2, Youtube, Instagram, Twitter, Github, Linkedin } from "lucide-rea
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Youtube, label: "YouTube", href: "#" },
-    { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
+    { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/x_makhtum_x/" },
   ]
 
   const footerLinks = {
@@ -17,19 +14,16 @@ export default function Footer() {
     Company: [
       { name: "About", href: "/about" },
       { name: "Blog", href: "/blog" },
-      { name: "Careers", href: "#" },
-      { name: "Press", href: "#" },
+
     ],
     Support: [
       { name: "Help Center", href: "/support" },
-      { name: "Community", href: "#" },
       { name: "Contact", href: "/support" },
-      { name: "Status", href: "#" },
     ],
     Legal: [
       { name: "Privacy", href: "/privacy" },
-      { name: "Terms", href: "#" },
-      { name: "Security", href: "#" },
+      { name: "Terms", href: "/terms" },
+      { name: "Security", href: "/privacy" },
       { name: "Cookies", href: "#" },
     ],
   }

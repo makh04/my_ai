@@ -42,7 +42,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {["Features", "About", "Gaming", "More", "Blog"].map((item) => (
+            {[ "About", "Gaming", "More", "Blog"].map((item) => (
               <motion.button
                 key={item}
                 onClick={() => {
@@ -95,7 +95,7 @@ export default function Header() {
           transition={{ duration: 0.3 }}
         >
           <div className="py-4 space-y-4 border-t border-gray-800">
-            {["Features", "About", "Gaming", "More", "Blog"].map((item) => (
+            {[ "About", "Gaming", "More", "Blog"].map((item) => (
               <button
                 key={item}
                 onClick={() => {
