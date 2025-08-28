@@ -6,6 +6,8 @@ import Image from "next/image"
 import { blogPosts } from "../data"
 import Header from "../../components/header" // Import Header
 import BlogFooter from "../../components/blog-footer" // Import BlogFooter
+import SuggestedPosts from "../../components/suggested-posts"
+import CookieBanner from "../../components/cookie-banner"
 
 interface BlogPostPageProps {
   params: { slug: string }
@@ -18,13 +20,25 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
+  // Prepare suggested posts data - using actual blog posts data
+  const suggestedPosts = blogPosts.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    description: p.description,
+    image: p.image,
+    category: "AI & Tech",
+    readTime: "5 min read",
+    isPopular: Math.random() > 0.7,
+    isRecent: Math.random() > 0.8,
+  }))
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Header /> {/* Render Header */}
       {/* Header */}
-      <section className="relative py-20 overflow-hidden pt-32">
+      <section className="relative py-12 overflow-hidden pt-24">
         {" "}
-        {/* Adjusted padding for fixed header */}
+        {/* Reduced padding for better space utilization */}
         <div className="absolute inset-0 bg-gradient-to-br from-black via-blue-900/30 to-purple-900/30" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -89,7 +103,17 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </section>
+      {/* Suggested Posts */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <SuggestedPosts
+          posts={suggestedPosts}
+          currentSlug={post.slug}
+          basePath="/blog"
+          title="More AI & Tech Articles"
+        />
+      </div>
       <BlogFooter /> {/* Render BlogFooter */}
+      <CookieBanner />
     </div>
   )
 }

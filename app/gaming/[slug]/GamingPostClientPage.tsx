@@ -8,6 +8,8 @@ import { gamingPosts } from "../data"
 import Header from "../../components/header"
 import BlogFooter from "../../components/blog-footer"
 import ResponsiveAd from "../../components/responsive-ad"
+import SuggestedPosts from "../../components/suggested-posts"
+import CookieBanner from "../../components/cookie-banner"
 
 interface GamingPostPageProps {
   params: { slug: string }
@@ -19,6 +21,18 @@ export default function GamingPostPage({ params }: GamingPostPageProps) {
   if (!post) {
     notFound()
   }
+
+  // Prepare suggested posts data - using actual gaming posts data
+  const suggestedPosts = gamingPosts.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    description: p.description,
+    image: p.image,
+    category: p.category,
+    readTime: "6 min read",
+    isPopular: Math.random() > 0.6,
+    isRecent: Math.random() > 0.7,
+  }))
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -173,7 +187,13 @@ export default function GamingPostPage({ params }: GamingPostPageProps) {
         </div>
       </section>
 
+      {/* Suggested Posts */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <SuggestedPosts posts={suggestedPosts} currentSlug={post.slug} basePath="/gaming" title="More Gaming Content" />
+      </div>
+
       <BlogFooter />
+      <CookieBanner />
     </div>
   )
 }
