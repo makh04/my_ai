@@ -1,5 +1,21 @@
+# Allow Google to fully crawl and index the site
+User-agent: Googlebot
+Disallow:
+Allow: /
+
+# Allow Google Images and News for better indexing
+User-agent: Googlebot-Image
+Disallow:
+Allow: /
+
+User-agent: Googlebot-News
+Disallow:
+Allow: /
+
+# Default rule for all other bots - block only sensitive folders
 User-agent: *
 Disallow: /cgi-bin/
+Allow: /
 
+# Sitemap for search engines
 Sitemap: https://pikaai.vercel.app/sitemap.xml
-
