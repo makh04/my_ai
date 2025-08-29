@@ -12,7 +12,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "battle-of-the-titans-alexa-vs-google-assistant-unmasked",
-    title: "Alexa vs Google Assistant Unmasked",
+    title: "Alexa vs Google Assistant Unmasked Which one is best",
     description:
       "An in-depth, unbiased comparison of Amazon Alexa and Google Assistant covering responsiveness, skills, integrations, smart home control, pricing, and more to help you choose the best virtual assistant for your needs.",
     date: "2025-08-26",
