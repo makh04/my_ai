@@ -1,9 +1,11 @@
-"use client" // This marks the component as client-side
+// In StructuredData.tsx
+
+"use client" // This makes it a client component
 
 import { usePathname } from "next/navigation"
 import { useEffect } from "react"
 
-export function StructuredData() {
+export default function StructuredData() { // default export
   const pathname = usePathname()
 
   useEffect(() => {
