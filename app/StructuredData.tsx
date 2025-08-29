@@ -1,10 +1,4 @@
-import type React from "react"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { Analytics } from "@vercel/analytics/next"
-import StructuredDataComponent from "./StructuredData" // Your client component
-
-const inter = Inter({ subsets: ["latin"] })
+"use client" // This makes it a client component
 
 import { usePathname } from "next/navigation"
 import { useEffect } from "react"
@@ -194,53 +188,6 @@ function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
       },
     ]
   }
-  // Other pages like /about, /privacy, /support
-  else if (pathname === "/about") {
-    breadcrumbItems = [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: baseUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "About",
-        item: `${baseUrl}/about`,
-      },
-    ]
-  } else if (pathname === "/privacy") {
-    breadcrumbItems = [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: baseUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Privacy Policy",
-        item: `${baseUrl}/privacy`,
-      },
-    ]
-  } else if (pathname === "/support") {
-    breadcrumbItems = [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: baseUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Support",
-        item: `${baseUrl}/support`,
-      },
-    ]
-  }
 
   // Return breadcrumb schema if we have items
   if (breadcrumbItems.length > 0) {
@@ -252,59 +199,4 @@ function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
   }
 
   return null
-}
-
-export function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        {/* Additional SEO Meta Tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="application-name" content="Pika Voice Assistant" />
-        <meta name="apple-mobile-web-app-title" content="Pika Voice Assistant" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-        {/* Google site verification */}
-        <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
-
-        {/* Google Analytics Script */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLNEL3REZQ"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-CLNEL3REZQ');
-            `,
-          }}
-        />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/faviconv2.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-
-        {/* Preconnect to external domains for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
-      <body className={inter.className}>
-        {/* Render StructuredData client component here */}
-        <StructuredDataComponent />
-
-        {children}
-
-        {/* Vercel Analytics */}
-        <Analytics />
-      </body>
-    </html>
-  )
 }
