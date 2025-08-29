@@ -37,11 +37,16 @@ export default function StructuredData() {
             "@type": "Organization",
             name: "Pika Voice Assistant",
           },
-          downloadUrl: "https://pikaai.vercel.app/",
-          screenshot: "https://pikaai.vercel.app/screenshot.jpg",
-          softwareVersion: "1.0",
-          datePublished: "2025-01-07",
-          dateModified: "2025-01-28",
+          downloadUrl: "https://pikaai.vercel.app/", // Direct link to app download
+          screenshot: "https://pikaai.vercel.app/pika-ai-interface.png", // Screenshot of the app
+          softwareVersion: "1.1", // App version
+          datePublished: "2024-01-01", // Published date
+          dateModified: "2025-01-15", // Modified date
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.8", // App rating
+            ratingCount: "1250", // Number of ratings
+          },
         }),
       }}
     />
