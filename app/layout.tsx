@@ -2,7 +2,6 @@ import React from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
-import StructuredData from "./StructuredData" // Your client component
 
 const inter = Inter({ subsets: ["latin"] })
 
