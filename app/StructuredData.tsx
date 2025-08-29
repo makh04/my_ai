@@ -39,41 +39,45 @@ function generateStructuredData(pathname: string) {
   const baseUrl = "https://pikaai.vercel.app"
   const structuredDataArray = []
 
-  const softwareApplicationSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Pika Voice Assistant",
-    description: "Free personal AI-powered desktop assistant for productivity and automation",
-    applicationCategory: "ProductivityApplication",
-    operatingSystem: "Windows",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-    author: {
-      "@type": "Person",
-      name: "Nabil Mukerrob Makhtum",
-      sameAs: "https://www.instagram.com/x_makhtum_x/",
-    },
-    publisher: {
-      "@type": "Organization",
+  // Only add the product schema on the homepage or product-related pages
+  if (pathname === "/") {
+    const softwareApplicationSchema = {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
       name: "Pika Voice Assistant",
-    },
-    downloadUrl: `${baseUrl}/`,
-    screenshot: `${baseUrl}/screenshot.jpg`,
-    softwareVersion: "1.0",
-    datePublished: "2025-01-07",
-    dateModified: "2025-01-08",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      ratingCount: "1250",
-    },
+      description: "Free personal AI-powered desktop assistant for productivity and automation",
+      applicationCategory: "ProductivityApplication",
+      operatingSystem: "Windows",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      author: {
+        "@type": "Person",
+        name: "Nabil Mukerrob Makhtum",
+        sameAs: "https://www.instagram.com/x_makhtum_x/",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Pika Voice Assistant",
+      },
+      downloadUrl: `${baseUrl}/`,
+      screenshot: `${baseUrl}/screenshot.jpg`,
+      softwareVersion: "1.0",
+      datePublished: "2025-01-07",
+      dateModified: "2025-01-08",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.8",
+        ratingCount: "1250",
+      },
+    }
+
+    structuredDataArray.push(softwareApplicationSchema)
   }
 
-  structuredDataArray.push(softwareApplicationSchema)
-
+  // Generate breadcrumb based on pathname
   const breadcrumbSchema = generateBreadcrumbSchema(pathname, baseUrl)
   if (breadcrumbSchema) {
     structuredDataArray.push(breadcrumbSchema)
@@ -81,6 +85,7 @@ function generateStructuredData(pathname: string) {
 
   return structuredDataArray
 }
+
 
 function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
   let breadcrumbItems = []
