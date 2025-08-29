@@ -42,8 +42,8 @@ const suggestedPosts = blogPosts.map((p) => ({
         return "QAPage"
       case "article":
         return "Article"
-      case "blogpost":
-      case "blog post":
+      case "BlogPosting":
+      case "BlogPosting":
       default:
         return "BlogPosting"
     }

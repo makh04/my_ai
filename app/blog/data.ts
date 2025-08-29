@@ -7,7 +7,7 @@ export interface BlogPost {
   content: string
   keywords: string[]
   image?: string // Optional image for the blog post
-  postType?: "blogPost" | "article" | "howTo" | "faq" | "qna" // <-- Add this line
+  postType?: "BlogPosting" | "article" | "howTo" | "faq" | "qna" // <-- Add this line
 }
 
 export const blogPosts: BlogPost[] = [
@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     slug: "battle-of-the-titans-alexa-vs-google-assistant-unmasked",
     title: "Alexa vs Google Assistant Unmasked Which one is best ?",
     description:
-      "An in-depth, unbiased comparison of Amazon Alexa and Google Assistant covering responsiveness, skills, integrations, smart home control, pricing, and more to help you choose the best virtual assistant for your needs.",
+      "lets Find Out the best AI Assistant and get to know about which AI is cooking, Alexa or Google AI Assistant. Today we are gonna uncover the truth. Here we go",
     date: "2025-08-26",
     author: "Pika AI Team",
     content: `
@@ -41,7 +41,7 @@ export const blogPosts: BlogPost[] = [
 
       <section id="introduction" class="mb-10">
         <p class="text-lg text-gray-300 mb-6">
-          In today's rapidly evolving tech landscape, virtual assistants have moved beyond mere novelties to become indispensable components of modern living. Two names stand head and shoulders above the rest: Amazon's <strong>Alexa</strong> and <strong>Google Assistant</strong>. These digital pioneers, backed by the technological prowess of Amazon and Google respectively, have revolutionized how we interact with technology, offering unparalleled convenience and efficiency at our fingertips (or rather, at the sound of our voice).
+          Guyz in this ongoing competition of different AI assistant lets find out which one is cooking. Today we are gonna discss about the most pupular AI assistant. So lets get to the topic already . Two names stand head and shoulders above the rest: Amazon's <strong>Alexa</strong> and <strong>Google Assistant</strong>. These digital pioneers, backed by the technological prowess of Amazon and Google respectively, have revolutionized how we interact with technology, offering unparalleled convenience and efficiency at our fingertips (or rather, at the sound of our voice).
         </p>
         <p class="text-lg text-gray-300 mb-6">
           The rise of smart home technology has been nothing short of meteoric. From smart lighting and thermostats to security systems and entertainment hubs, homes are becoming increasingly connected. According to Statista, the smart home market is projected to reach <strong>$408.9 billion by 2027</strong>. This surge is fueled by the desire for efficiency, convenience, and enhanced entertainment experiences, making virtual assistants like Alexa and Google Assistant more critical than ever. They act as the central nervous system of our smart homes, orchestrating a symphony of connected devices with simple voice commands.
@@ -394,7 +394,7 @@ export const blogPosts: BlogPost[] = [
       "Google Assistant mobile"
     ],
     image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756448664/20250829_1219_Alexa_vs_Google_simple_compose_01k3t7k40tety8artv1p1w5ywv_nuf8qq.png",
-    postType: "article"
+    postType: "BlogPosting"
 
 },
 
