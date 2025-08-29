@@ -7,12 +7,13 @@ export interface BlogPost {
   content: string
   keywords: string[]
   image?: string // Optional image for the blog post
+  postType?: "blogPost" | "article" | "howTo" | "faq" | "qna" // <-- Add this line
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "battle-of-the-titans-alexa-vs-google-assistant-unmasked",
-    title: "Alexa vs Google Assistant Unmasked Which one is best",
+    title: "Alexa vs Google Assistant Unmasked Which one is best ?",
     description:
       "An in-depth, unbiased comparison of Amazon Alexa and Google Assistant covering responsiveness, skills, integrations, smart home control, pricing, and more to help you choose the best virtual assistant for your needs.",
     date: "2025-08-26",
@@ -392,8 +393,11 @@ export const blogPosts: BlogPost[] = [
       "Alexa pricing",
       "Google Assistant mobile"
     ],
-    image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756448664/20250829_1219_Alexa_vs_Google_simple_compose_01k3t7k40tety8artv1p1w5ywv_nuf8qq.png"
-  },
+    image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756448664/20250829_1219_Alexa_vs_Google_simple_compose_01k3t7k40tety8artv1p1w5ywv_nuf8qq.png",
+    postType: "article"
+
+},
+
 
   {
     slug: "amazon-alexa-download-alternatives-windows-2025",
@@ -586,9 +590,11 @@ export const blogPosts: BlogPost[] = [
       "Braina AI",
       "voice assistant Windows",
       "virtual assistant alternatives",
+      "amazon alexa download",
       "best Alexa alternatives 2025"
     ],
-    image: "/top5alexa.png"
+    image: "/top5alexa.png",
+    postType: "howTo"
   },
 
   {
@@ -902,8 +908,9 @@ export const blogPosts: BlogPost[] = [
       "passive income websites",
       "freelance SEO jobs"
     ],
-    image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756384287/assets_2Ftask_01k3ra8e9ben78cbcxqd5fj1br_2F1756384088_img_0_camfej.webp"
-  },
+    image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756384287/assets_2Ftask_01k3ra8e9ben78cbcxqd5fj1br_2F1756384088_img_0_camfej.webp",
+     postType: "article"
+},
 
 {
   slug: "pika-ai-assistant-new-voice-highlight-search",
@@ -978,7 +985,8 @@ export const blogPosts: BlogPost[] = [
     "AI assistant update",
     "voice-enabled AI",
   ],
-  image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756220914/20250826_2049_Pika_AI_Upgrade_simple_compose_01k3kdkpj6f74rpkmvh18mzm62_hatpdp.png"
+  image: "https://res.cloudinary.com/deibcytx1/image/upload/v1756220914/20250826_2049_Pika_AI_Upgrade_simple_compose_01k3kdkpj6f74rpkmvh18mzm62_hatpdp.png",
+  postType: "qna"
 },
 
 
@@ -1126,6 +1134,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
       "easy AI assistant like Jarvis",
     ],
     image: "https://res.cloudinary.com/deibcytx1/image/upload/v1755864688/assets_2Ftask_01k38d0hagedgrq6pnyx7qme62_2F1755850057_img_0_ef9tq9.webp",
+    postType: "howTo"
   },
 
 
