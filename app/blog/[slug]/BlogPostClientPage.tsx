@@ -20,9 +20,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound()
   }
-
-  // Prepare suggested posts data - using actual blog posts data
-  const suggestedPosts = blogPosts.map((p) => ({
+const suggestedPosts = blogPosts.map((p) => ({
     slug: p.slug,
     title: p.title,
     description: p.description,
@@ -32,15 +30,34 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     isPopular: Math.random() > 0.7,
     isRecent: Math.random() > 0.8,
   }))
+  // Map your manual postType to schema.org @type
+  const getSchemaType = (type?: string) => {
+    switch (type?.toLowerCase()) {
+      case "howto":
+      case "how to":
+        return "HowTo"
+      case "faq":
+        return "FAQPage"
+      case "qna":
+        return "QAPage"
+      case "article":
+        return "Article"
+      case "blogpost":
+      case "blog post":
+      default:
+        return "BlogPosting"
+    }
+  }
+
+  const schemaType = getSchemaType(post.postType)
 
   // Generate structured data for the blog post
   const generateStructuredData = () => {
     const baseUrl = "https://pikaai.vercel.app"
-    const isHowToPost = post.title.toLowerCase().includes("how to") || post.content.includes("step")
 
-    const baseSchema = {
+    const baseSchema: any = {
       "@context": "https://schema.org",
-      "@type": isHowToPost ? "HowTo" : "BlogPosting",
+      "@type": schemaType,
       headline: post.title,
       description: post.description,
       image: post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-image.jpg`,
@@ -51,7 +68,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       },
       publisher: {
         "@type": "Organization",
-        name: "Pika AI Blog",
+        name: "Pika AI",
         logo: {
           "@type": "ImageObject",
           url: `${baseUrl}/logo.png`,
@@ -70,12 +87,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       url: `${baseUrl}/blog/${post.slug}`,
     }
 
-    // Add HowTo specific properties if it's a how-to post
-    if (isHowToPost) {
+    // Add HowTo specific properties if it's a HowTo post
+    if (schemaType === "HowTo") {
       return {
         ...baseSchema,
         name: post.title,
-        totalTime: "PT10M",
+        totalTime: "PT10M", // 10 minutes reading time
         supply: [
           {
             "@type": "HowToSupply",
@@ -102,6 +119,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         ],
       }
     }
+
+    // You can add FAQPage or QAPage structured data here if needed
 
     return baseSchema
   }
