@@ -4,8 +4,11 @@ import { usePathname } from "next/navigation"
 
 export default function StructuredData() {
   const pathname = usePathname()
+
+  // Only render the schema on the homepage (`/`)
   const isHome = pathname === "/"
 
+  // If it's not the homepage, don't render the schema
   if (!isHome) return null
 
   return (

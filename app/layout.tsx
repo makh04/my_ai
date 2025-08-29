@@ -1,13 +1,12 @@
-import React, { Suspense } from "react"
+import React from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
-import StructuredData from "./StructuredData"  // Import your new client component
-
+import StructuredData from "./StructuredData" // Your client component
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Pika Voice Assistant — Your Personal AI",
   description:
     "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and workflow automation. Boost your productivity today!",
@@ -18,14 +17,10 @@ export const metadata: Metadata = {
     "desktop assistant",
     "productivity AI",
     "Pika assistant download",
-    "AI for productivity",
-    "virtual assistant download",
     "AI assistant for desktop",
-    "smart assistant software",
-    "AI personal assistant",
     "desktop assistant software",
     "best AI assistant for PC",
-    "virtual assistant for computer",
+    "pika virtual assistant",
     "free AI assistant software",
     "AI assistant for Windows",
     "AI-powered assistant",
@@ -36,7 +31,6 @@ export const metadata: Metadata = {
     "intelligent assistant for desktop",
     "Pika ai by makhtum",
     "virtual assistant technology",
-    "smart productivity tools AI",
   ].join(", "),
   authors: [{ name: "Nabil Mukerrob Makhtum" }],
   creator: "Nabil Mukerrob Makhtum",
@@ -111,9 +105,11 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-
         {/* Google site verification */}
-        <meta name="google-site-verification" content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA" />
+        <meta
+          name="google-site-verification"
+          content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA"
+        />
 
         {/* Google Analytics Script */}
         <script
@@ -131,58 +127,6 @@ export default function RootLayout({
           }}
         />
 
-          {/* Structured Data */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify([
-                {
-                  "@context": "https://schema.org",
-                  "@type": "SoftwareApplication",
-                  name: "Pika Voice Assistant",
-                  description: "Free personal AI-powered desktop assistant",
-                  applicationCategory: "ProductivityApplication",
-                  operatingSystem: "Windows",
-                  offers: {
-                    "@type": "Offer",
-                    price: "0",
-                    priceCurrency: "USD"
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Nabil Mukerrob Makhtum",
-                    sameAs: "https://www.instagram.com/x_makhtum_x/"
-                  },
-                  publisher: {
-                    "@type": "Organization",
-                    name: "Pika Voice Assistant"
-                  },
-                  downloadUrl: "https://pikaai.vercel.app/",
-                  screenshot: "https://pikaai.vercel.app/.screenshot.jpg",
-                  softwareVersion: "1.0",
-                  datePublished: "2025-01-07",
-                  dateModified: "2025-01-08",
-                  aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: "4.8",
-                    ratingCount: "1250"
-                  }
-                },
-                {
-                  "@context": "https://schema.org",
-                  "@type": "SiteNavigationElement",
-                  name: ["Home", "Blog", "About", "Download", "Support"],
-                  url: [
-                    "https://pikaai.vercel.app/",
-                    "https://pikaai.vercel.app/blog/",
-                    "https://pikaai.vercel.app/about/",
-                    "https://pikaai.vercel.app/support/"
-                  ]
-                }
-              ])
-            }}
-          />
-
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -194,6 +138,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={inter.className}>
+        {/* Render StructuredData client component here */}
+        <StructuredData />
+
         {children}
 
         {/* Vercel Analytics */}
