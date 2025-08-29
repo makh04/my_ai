@@ -1,4 +1,4 @@
-"use client" // This makes it a client component
+"use client" // This marks the component as client-side
 
 import { usePathname } from "next/navigation"
 import { useEffect } from "react"
@@ -37,7 +37,6 @@ function generateStructuredData(pathname: string) {
   const baseUrl = "https://pikaai.vercel.app"
   const structuredDataArray = []
 
-  // Always add SoftwareApplication schema for the main product
   const softwareApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -73,7 +72,6 @@ function generateStructuredData(pathname: string) {
 
   structuredDataArray.push(softwareApplicationSchema)
 
-  // Generate breadcrumb based on pathname
   const breadcrumbSchema = generateBreadcrumbSchema(pathname, baseUrl)
   if (breadcrumbSchema) {
     structuredDataArray.push(breadcrumbSchema)
@@ -85,7 +83,6 @@ function generateStructuredData(pathname: string) {
 function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
   let breadcrumbItems = []
 
-  // Homepage (/): Just 'Home'
   if (pathname === "/") {
     breadcrumbItems = [
       {
@@ -95,9 +92,7 @@ function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
         item: baseUrl,
       },
     ]
-  }
-  // Blog Page (/blog): Home > Blog
-  else if (pathname === "/blog") {
+  } else if (pathname === "/blog") {
     breadcrumbItems = [
       {
         "@type": "ListItem",
@@ -112,9 +107,7 @@ function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
         item: `${baseUrl}/blog`,
       },
     ]
-  }
-  // Gaming Page (/gaming): Home > Blog > Gaming
-  else if (pathname === "/gaming") {
+  } else if (pathname === "/gaming") {
     breadcrumbItems = [
       {
         "@type": "ListItem",
@@ -133,63 +126,10 @@ function generateBreadcrumbSchema(pathname: string, baseUrl: string) {
         position: 3,
         name: "Gaming",
         item: `${baseUrl}/gaming`,
-      },
-    ]
-  }
-  // Individual blog posts: Home > Blog > Post Title
-  else if (pathname.startsWith("/blog/")) {
-    breadcrumbItems = [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: baseUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Blog",
-        item: `${baseUrl}/blog`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Article",
-        item: `${baseUrl}${pathname}`,
-      },
-    ]
-  }
-  // Individual gaming posts: Home > Blog > Gaming > Post Title
-  else if (pathname.startsWith("/gaming/")) {
-    breadcrumbItems = [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: baseUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Blog",
-        item: `${baseUrl}/blog`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Gaming",
-        item: `${baseUrl}/gaming`,
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Gaming Article",
-        item: `${baseUrl}${pathname}`,
       },
     ]
   }
 
-  // Return breadcrumb schema if we have items
   if (breadcrumbItems.length > 0) {
     return {
       "@context": "https://schema.org",
