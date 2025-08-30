@@ -7,7 +7,7 @@ export async function GET() {
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage -->
+
   <url>
     <loc>https://pikaai.vercel.app/</loc>
     <lastmod>2025-01-15</lastmod>
@@ -15,7 +15,7 @@ export async function GET() {
     <priority>1.0</priority>
   </url>
 
-  <!-- About Page -->
+
   <url>
     <loc>https://pikaai.vercel.app/about/</loc>
     <lastmod>2025-01-15</lastmod>
@@ -23,7 +23,7 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
 
-  <!-- Privacy Policy -->
+
   <url>
     <loc>https://pikaai.vercel.app/privacy/</loc>
     <lastmod>2025-01-15</lastmod>
@@ -31,7 +31,7 @@ export async function GET() {
     <priority>0.6</priority>
   </url>
 
-  <!-- Support Center -->
+->
   <url>
     <loc>https://pikaai.vercel.app/support/</loc>
     <lastmod>2025-01-15</lastmod>
@@ -39,7 +39,7 @@ export async function GET() {
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog -->
+
   <url>
     <loc>https://pikaai.vercel.app/blog/</loc>
     <lastmod>2025-01-15</lastmod>
@@ -47,26 +47,23 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog Posts -->
+
   <url>
     <loc>https://pikaai.vercel.app/blog/real-life-jarvis/</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://pikaai.vercel.app/blog/create-ai-assistant-no-code/</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://pikaai.vercel.app/blog/best-free-ai-image-generators/</loc>
     <lastmod>2025-01-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
 </urlset>`;
