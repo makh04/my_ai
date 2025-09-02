@@ -84,7 +84,11 @@ export default function Hero() {
         value: 1,
       })
     }
+
+    // Open YouTube video in new tab
+    window.open("https://youtu.be/SKWbYVP0pF4", "_blank")
   }
+
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
