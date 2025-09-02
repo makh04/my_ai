@@ -39,7 +39,7 @@ export default function Hero() {
 
     // Open download link
     const downloadWindow = window.open(
-      "https://www.dropbox.com/scl/fi/sp5magjje3i1sv5hr5ix1/Pika-AI-PRO.exe?rlkey=9j4x0mz0ejni5cga2c9c0rrj8&st=pcivxyby&dl=1",
+      "https://www.dropbox.com/scl/fi/z038dxa8fw5kjyciuagfy/Pika-Pro.exe?rlkey=ujjmrb1qalnxqia96pggiljoz&st=5axaq9b1&dl=1",
       "_blank",
     )
 
@@ -63,7 +63,7 @@ export default function Hero() {
 
     // Open download link
     const downloadWindow = window.open(
-      "https://www.dropbox.com/scl/fi/sp5magjje3i1sv5hr5ix1/Pika-AI-PRO.exe?rlkey=9j4x0mz0ejni5cga2c9c0rrj8&st=pcivxyby&dl=1",
+      "https://www.dropbox.com/scl/fi/z038dxa8fw5kjyciuagfy/Pika-Pro.exe?rlkey=ujjmrb1qalnxqia96pggiljoz&st=5axaq9b1&dl=1",
       "_blank",
     )
 
