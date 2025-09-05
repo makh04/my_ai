@@ -30,13 +30,13 @@ export default function DownloadButton() {
   const handleBetaDownload = () => {
     const event = new CustomEvent("beta_download1")
     window.dispatchEvent(event)
-    window.location.href = 'https://www.dropbox.com/scl/fi/z038dxa8fw5kjyciuagfy/Pika-Pro.exe?rlkey=ujjmrb1qalnxqia96pggiljoz&st=5axaq9b1&dl=1'
+    window.location.href = 'https://www.dropbox.com/scl/fi/85atca39bjdqbikq0ud5w/Pika-AI-Assistant.rar?rlkey=dqrscyyznw0fjkbmyhhjqrdwa&st=23nw9d1t&dl=1'
   }
 
   const handleProDownload = () => {
     const event = new CustomEvent("pro_download1")
     window.dispatchEvent(event)
-    window.location.href = 'https://www.dropbox.com/scl/fi/z038dxa8fw5kjyciuagfy/Pika-Pro.exe?rlkey=ujjmrb1qalnxqia96pggiljoz&st=5axaq9b1&dl=1'
+    window.location.href = 'https://www.dropbox.com/scl/fi/85atca39bjdqbikq0ud5w/Pika-AI-Assistant.rar?rlkey=dqrscyyznw0fjkbmyhhjqrdwa&st=23nw9d1t&dl=1'
   }
 
   if (!isVisible) return null
