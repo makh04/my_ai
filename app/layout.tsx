@@ -136,6 +136,21 @@ export default function RootLayout({
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          {/* ✅ Chatling Chatbot Embed */}
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.chtlConfig = { chatbotId: "4652319962" };
+      `,
+    }}
+  />
+  <script
+    async
+    data-id="4652319962"
+    id="chtl-script"
+    type="text/javascript"
+    src="https://chatling.ai/js/embed.js"
+  />
       </head>
       <body className={inter.className}>
         {/* Render StructuredData client component here */}
