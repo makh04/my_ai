@@ -12,6 +12,163 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "pika-ai-voice-assistant-new-update-11-09-2025",
+    title: "Pika AI Voice Assistant New Update: Session History and UI Makeover!",
+    description:
+      "Pika AI new update includes Session History and New Cool User interface. And more advanced response and workflow. Percentage of guessing wrong command is reduced. Learn how to get this update for free",
+    date: "2025-08-29",
+    author: "Pika AI Team",
+    content: `
+<nav class="mb-8">
+  <h2 class="text-3xl font-bold text-white mb-4">Table of Contents</h2>
+  <ul class="list-decimal list-inside text-gray-400 space-y-2">
+    <li><a href="#introduction" class="text-blue-400 hover:underline">Introduction</a></li>
+    <li><a href="#what-is-pika-ai" class="text-blue-400 hover:underline">What is Pika AI Voice Assistant?</a></li>
+    <li><a href="#whats-new" class="text-blue-400 hover:underline">What's New in the Update?</a></li>
+    <li><a href="#session-history" class="text-blue-400 hover:underline">Why is Session History a Big Deal?</a></li>
+    <li><a href="#new-ui" class="text-blue-400 hover:underline">A Closer Look at the New UI</a></li>
+    <li><a href="#ui-comparison" class="text-blue-400 hover:underline">UI Comparison: Before vs After</a></li>
+    <li><a href="#how-to-get" class="text-blue-400 hover:underline">How to Get This Update</a></li>
+    <li><a href="#final-thoughts" class="text-blue-400 hover:underline">Final Thoughts</a></li>
+  </ul>
+</nav>
+
+<section id="introduction" class="mb-10">
+  <p class="text-lg text-gray-300 mb-6">
+    If you haven't heard about the <strong>Pika AI voice assistant</strong> yet, it's one of the newest and smartest virtual assistants out there, designed to help you get stuff done just by talking. Recently, the Pika AI virtual assistant rolled out a big update that's already getting users excited. This update brings two huge changes: the ability to save your session history and a fresh new user interface. Both make the app easier and more enjoyable to use, whether you're a newbie or a longtime fan.
+  </p>
+</section>
+
+<section id="what-is-pika-ai" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">What is Pika AI Voice Assistant?</h2>
+  <p class="text-gray-400 mb-6">
+    In case you're not familiar, the Pika AI voice assistant is an app that listens to your commands and helps you with daily tasks — like answering questions, setting reminders, searching the web, or even controlling smart devices. It's designed to feel natural and quick to use, so you're not stuck typing or clicking through menus.
+  </p>
+  <p class="text-gray-400 mb-6">
+    Now with this new update, the Pika AI virtual assistant is stepping up its game to be even more useful and user-friendly.
+  </p>
+</section>
+
+<section id="whats-new" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">What's New in the Update?</h2>
+  <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
+    <li><strong>Session History:</strong> Every time you talk to the assistant, your conversations are saved. You can look back at what you asked and how the assistant answered, making it easier to continue your chats or revisit important info. This fixes a big problem where previous versions didn’t remember anything once you closed the app.</li>
+    <li><strong>Updated User Interface (UI):</strong> The whole look of the app got a facelift! It’s now sleeker, more modern, and easier to navigate. Buttons and menus are more intuitive, and the conversation screen is clearer, so you can focus on what you said and what the assistant responded without distractions.</li>
+  </ul>
+</section>
+
+<section id="session-history" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">Why is Session History a Big Deal?</h2>
+  <p class="text-gray-400 mb-6">
+    Before this update, if you closed the app or finished a session, all your conversation was gone. That meant you couldn’t go back to check answers or continue where you left off. With session history, the Pika AI virtual assistant remembers every chat in a session, making your experience feel way more human and connected.
+  </p>
+  <p class="text-gray-400 mb-6">
+    For example, say you asked the assistant about a recipe this morning. Later, you can simply open the history and find that recipe again instead of asking all over. It’s a simple change, but it makes a huge difference in convenience and usability.
+  </p>
+</section>
+
+<section id="new-ui" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">A Closer Look at the New UI</h2>
+  <p class="text-gray-400 mb-6">
+    The UI redesign isn’t just about looking pretty, though it definitely does. It’s about making the assistant easier to use and understand.
+  </p>
+  <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
+    <li><strong>Clean, minimal design:</strong> The screen is less cluttered with clearer separation between your messages and the assistant’s replies.</li>
+    <li><strong>Improved voice feedback:</strong> When you talk, the assistant shows a nicer waveform animation that lets you know it’s listening.</li>
+    <li><strong>Better accessibility:</strong> Larger buttons and clearer fonts make it easier for everyone to navigate.</li>
+    <li><strong>Smooth animations:</strong> Transitions and interactions feel more natural and polished.</li>
+  </ul>
+</section>
+
+<section id="ui-comparison" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">UI Comparison: Before vs After</h2>
+  <table class="w-full text-gray-300 mb-6 border border-gray-600">
+    <thead>
+      <tr class="border-b border-gray-600">
+        <th class="p-3 text-left">Feature</th>
+        <th class="p-3 text-left">Before Update</th>
+        <th class="p-3 text-left">After Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-gray-600">
+        <td class="p-3">Design Style</td>
+        <td class="p-3">Basic, somewhat plain UI</td>
+        <td class="p-3">Modern, sleek, and visually appealing</td>
+      </tr>
+      <tr class="border-b border-gray-600">
+        <td class="p-3">Conversation View</td>
+        <td class="p-3">Messages cramped together, hard to read</td>
+        <td class="p-3">Clear separation of user and assistant messages</td>
+      </tr>
+      <tr class="border-b border-gray-600">
+        <td class="p-3">Voice Feedback</td>
+        <td class="p-3">Simple static icon</td>
+        <td class="p-3">Animated voice waveform providing real-time feedback</td>
+      </tr>
+      <tr class="border-b border-gray-600">
+        <td class="p-3">Buttons & Icons</td>
+        <td class="p-3">Smaller, less distinct</td>
+        <td class="p-3">Larger, well-spaced, and more intuitive</td>
+      </tr>
+      <tr>
+        <td class="p-3">Accessibility</td>
+        <td class="p-3">Limited</td>
+        <td class="p-3">Enhanced, better fonts and button sizes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="flex gap-6 mb-6">
+        <p class="text-gray-400 mb-6">
+UI Before
+  </p>
+    <img src="/alexa_alternative.png" />
+  </div>
+    <div class="flex gap-6 mb-6">
+      <p class="text-gray-400 mb-6">
+New UI
+  </p>
+      <img src="/pikaui.png" />
+  </div>
+</section>
+
+<section id="how-to-get" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">How to Get This Update</h2>
+  <p class="text-gray-400 mb-6">
+    If you already have the Pika AI voice assistant, uninstall it and redownload it from our website. Make sure the previous version is removed before downloading the new version.
+  </p>
+</section>
+
+<section id="final-thoughts" class="mb-10">
+  <h2 class="text-3xl font-bold text-white mb-4">Final Thoughts</h2>
+  <p class="text-gray-400 mb-6">
+    The latest update for the Pika AI virtual assistant is a great step forward in making AI assistants feel more personal and easy to use. The session history brings a much-needed memory to conversations, and the UI update makes the entire experience smoother and more pleasant.
+  </p>
+  <p class="text-gray-400 mb-6">
+    If you want a voice assistant that actually remembers your chats and looks good while doing it, Pika AI voice assistant should definitely be on your radar.
+  </p>
+</section>
+
+    `,
+    keywords: [
+      "Pika AI update",
+      "session history",
+      "voice assistant UI",
+      "virtual assistant update",
+      "Pika AI features",
+      "voice assistant comparison",
+      "smart assistant UI",
+      "AI assistant improvements",
+      "Pika AI session memory",
+      "voice assistant usability"
+    ],
+    image:
+      "https://res.cloudinary.com/deibcytx1/image/upload/v1757601151/20250911_2031_Pika_AI_Update_simple_compose_01k4wjyj27edcsr83nsj0h3r7s_dd9nf4.png",
+    postType: "BlogPosting",
+  },
+
+  {
     slug: "battle-of-the-titans-alexa-vs-google-assistant-unmasked",
     title: "Alexa vs Google Assistant Unmasked Which one is best ?",
     description:
