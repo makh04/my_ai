@@ -3,11 +3,13 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  // Detect scroll to change header style
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -16,6 +18,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Smooth scroll to section on click
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -42,7 +45,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {[ "About", "Gaming", "More", "Blog"].map((item) => (
+            {["About", "Gaming", "More", "Blog", "Updates"].map((item) => (
               <motion.button
                 key={item}
                 onClick={() => {
@@ -54,6 +57,8 @@ export default function Header() {
                     window.location.href = "/support"
                   } else if (item === "Blog") {
                     window.location.href = "/blog"
+                  } else if (item === "Updates") {
+                    window.location.href = "/updates"
                   } else {
                     scrollToSection(item.toLowerCase())
                   }
@@ -95,7 +100,7 @@ export default function Header() {
           transition={{ duration: 0.3 }}
         >
           <div className="py-4 space-y-4 border-t border-gray-800">
-            {[ "About", "Gaming", "More", "Blog"].map((item) => (
+            {["About", "Gaming", "More", "Blog"].map((item) => (
               <button
                 key={item}
                 onClick={() => {
