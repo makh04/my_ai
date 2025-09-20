@@ -11,6 +11,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+
   {
     slug: "pika-ai-voice-assistant-new-update-11-09-2025",
     title: "Pika AI Voice Assistant New Update: Session History and UI Makeover!",

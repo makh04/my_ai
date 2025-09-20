@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code2, Youtube, Instagram, Twitter, Github, Linkedin } from "lucide-react"
+import { Code2, Youtube, Instagram, Star } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   const socialLinks = [
@@ -14,7 +15,6 @@ export default function Footer() {
     Company: [
       { name: "About", href: "/about" },
       { name: "Blog", href: "/blog" },
-
     ],
     Support: [
       { name: "Help Center", href: "/support" },
@@ -61,7 +61,8 @@ export default function Footer() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                The most advanced voice-activated AI assistant. Control your digital world with just your voice — faster, smarter, and more intuitive than ever before.
+                The most advanced voice-activated AI assistant. Control your digital world with just your voice —
+                faster, smarter, and more intuitive than ever before.
               </motion.p>
 
               {/* Social Links */}
@@ -111,6 +112,42 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Review CTA Section */}
+        <motion.div
+          className="py-12 border-t border-gray-800"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">Love Pika AI? Share Your Experience!</h3>
+            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
+              Your feedback helps us improve and grow. Take a moment to share your thoughts and help other users
+              discover Pika AI.
+            </p>
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              whileHover={{ scale: 1.02 }}
+            >
+              <Link
+                href="/review"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white font-bold rounded-lg hover:from-yellow-600 hover:via-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <Star className="w-5 h-5 mr-2 fill-current" />
+                Leave a Review
+                <Star className="w-5 h-5 ml-2 fill-current" />
+              </Link>
+              <div className="flex items-center space-x-1 text-yellow-400">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-current" />
+                ))}
+                <span className="text-gray-400 ml-2">Join our satisfied users</span>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+
         {/* Contact Section */}
         <motion.div
           className="py-12 border-t border-gray-800"
@@ -122,7 +159,8 @@ export default function Footer() {
           <div className="text-center">
             <h3 className="text-2xl font-bold text-white mb-4">Experience PIKA AI</h3>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Ready to revolutionize how you interact with technology? Download PIKA AI and discover the power of voice-controlled computing.
+              Ready to revolutionize how you interact with technology? Download PIKA AI and discover the power of
+              voice-controlled computing.
             </p>
 
             <motion.a
@@ -135,7 +173,7 @@ export default function Footer() {
             </motion.a>
 
             <motion.button
-              className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg font-semibold transition-all duration-300 mt-4"
+              className="bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-3 rounded-lg font-semibold transition-all duration-300 mt-4 ml-4"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
