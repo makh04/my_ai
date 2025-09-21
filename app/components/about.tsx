@@ -64,12 +64,8 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div>
-                <div className="text-3xl font-bold text-cyan-400 mb-2">2024</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-2">2025</div>
                 <div className="text-gray-400">Launched</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">50+</div>
-                <div className="text-gray-400">AI Engineers</div>
               </div>
             </div>
 

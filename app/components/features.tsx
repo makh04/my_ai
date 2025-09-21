@@ -9,6 +9,7 @@ const features = [
   {
     icon: Brain,
     title: "🗣️ Voice-Activated AI Assistant",
+    title: "🗣️ Voice-Activated AI Assistant",
     description:
       "Just say 'Hey Pika' to instantly activate your desktop virtual assistant — no clicking, no shortcuts, just pure hands-free productivity control.",
     keywords: "voice activated AI, desktop assistant, hands-free control",
