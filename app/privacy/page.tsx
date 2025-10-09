@@ -71,6 +71,8 @@ export default function PrivacyPolicy() {
         "YouTube API for media control",
         "Web search engines for information retrieval",
         "All integrations follow strict privacy standards",
+        "We use your google calender to schedule events on your commands and no events is deleted, We only create events on based of your data on your secondary calender ",
+
       ],
     },
   ]

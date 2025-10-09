@@ -86,7 +86,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold mb-2">7. Third-Party Services</h2>
             <p>
-              Our app uses third-party APIs such as Google Gemini API and YouTube API. Use of these services is subject to their respective terms and privacy policies. We do not control and are not responsible for these third-party services.
+              Our app uses third-party APIs such as Google Gemini API and YouTube API and also Google Calender API. We Use google calender API to create and schedule new events based on your needs and we create the new events on primary Calender. Use of these services is subject to their respective terms and privacy policies. We do not control and are not responsible for these third-party services.
             </p>
           </section>
 
