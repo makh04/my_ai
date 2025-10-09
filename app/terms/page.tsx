@@ -55,10 +55,9 @@ export default function TermsOfService() {
             </p>
             <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
               <li>Google OAuth2 authentication data (name, email, profile picture)</li>
-              <li>Voice commands and text inputs</li>
+              <li>Voice commands and text inputs(Only First command)</li>
               <li>System usage patterns and preferences</li>
               <li>App launch history</li>
-              <li>Local device information</li>
             </ul>
             <p className="mt-2">
               Please refer to our Privacy Policy for detailed information on how we collect, use, and protect your data.

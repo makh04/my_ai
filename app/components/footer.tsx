@@ -195,10 +195,10 @@ export default function Footer() {
             <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-200">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <a href="terms" className="text-gray-400 hover:text-white transition-colors duration-200">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <a href="terms" className="text-gray-400 hover:text-white transition-colors duration-200">
               Cookie Policy
             </a>
           </div>

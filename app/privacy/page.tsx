@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       title: "Information We Collect",
       content: [
         "Google OAuth2 authentication data (name, email, profile picture)",
-        "Voice commands and text inputs for processing",
+        "Voice commands and text inputs for processing(Only The First command)",
         "System usage patterns and preferences",
         "App launch history and user routines",
         "Local device information for optimization",
@@ -26,6 +26,7 @@ export default function PrivacyPolicy() {
         "Improve voice recognition accuracy",
         "Enable system automation and app control",
         "Deliver relevant search results and recommendations",
+        "Fix the bugs from yours response",
       ],
     },
     {
