@@ -12,7 +12,7 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "pika-ai-voice-controlled-assistant-free-pc-management",
+    slug: "ai_assistant_for_pc",
     title: "Pika AI: The Voice‑Controlled AI Assistant That You Can Use for Free to Manage Your PC",
     description:
       "An AI assistant for pc that automates tasks, manages apps, and boosts productivity on your PC. Explore its features, functions, usage scenarios, limitations, and why it's a top choice for personal AI assistance.",
