@@ -10,6 +10,53 @@ export interface UpdatePost {
 }
 
 export const updatePosts: UpdatePost[] = [
+
+          {
+    id: "4",
+    title: "Add events to your calender",
+    description: "Now you can automate every possible task which can be done by keyboard and According to your wish.",
+    date: "2025-09-19",
+    version: "v1",
+    type: "feature",
+    slug: "Advance_reminding_system",
+    content: `
+    🗓️ New Feature Drop: Just Say It, and Pika Schedules It
+Okay, this one’s gonna make your life way easier. You can now talk to Pika like you would to a friend and it’ll actually schedule stuff for you. No buttons, no typing — just say what you want.
+
+You can be super casual, like:
+
+“Hey Pika, remind me to take my meds every Sunday, Tuesday, and Thursday until October 21, 2025.”
+
+“Schedule a meeting at 4 PM tomorrow.”
+
+“Add an event called ‘Anime binge’ at 8 PM tonight.”
+
+“Remind me to call Nabil day after tomorrow at 2 pm.”
+
+Yup, it gets all that. Even recurring stuff. Even weird combos. Even long-term reminders. You say it, it locks it in.
+
+Some fun examples:
+
+“Pika, remind me to drink water every 2 hours starting now.”
+
+“Add a task: ‘Finish chemistry notes’ at 11 PM tonight.”
+
+“Schedule a reminder to stretch every morning at 7 until nov.”
+
+“Set a recurring event: ‘Eat medicine’ every Sunday, Tuesday, and Thursday till October 21, 2025.”
+
+Boom. Done. No stress.
+What’s cool about it:
+You talk like a human, it listens like one.
+Works for one-time stuff, daily routines, or long-term goals.
+You can save your favorite commands and reuse them.
+It’s like having a personal assistant who actually gets you.
+
+Try it out next time you think “ugh I’ll do it later.” Just say it to Pika and forget about it — it’ll remember for you. Let me know if you want to build a wild recurring chain or automate your whole week. I’m down.
+
+
+    `,
+  },
       {
     id: "3",
     title: "Custom Automation according to prompt-Pika AI ",
