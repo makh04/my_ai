@@ -7,63 +7,112 @@ export async function GET() {
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
   <url>
     <loc>https://pikaai.vercel.app/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
-
 
   <url>
     <loc>https://pikaai.vercel.app/about/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
-
-
-  <url>
-    <loc>https://pikaai.vercel.app/privacy/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-->
-  <url>
-    <loc>https://pikaai.vercel.app/support/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
 
   <url>
     <loc>https://pikaai.vercel.app/blog/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
 
+  <url>
+    <loc>https://pikaai.vercel.app/support/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/real-life-jarvis/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://pikaai.vercel.app/privacy/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/terms/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/review/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/ai_assistant_for_pc/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/6-best-ai-voice-assistants-you-should-try-today/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/pika-ai-voice-assistant-new-update-11-09-2025/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/battle-of-the-titans-alexa-vs-google-assistant-unmasked/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/amazon-alexa-download-alternatives-windows-2025/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/is-pika-ai-safe-privacy-security-comprehensive-review/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/best-websites-for-making-money-2025/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/pika-ai-assistant-new-voice-highlight-search/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://pikaai.vercel.app/blog/create-ai-assistant-no-code/</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pikaai.vercel.app/blog/real-life-jarvis/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://pikaai.vercel.app/blog/best-free-ai-image-generators/</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
   </url>
 
 </urlset>`;
