@@ -13,7 +13,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "ai_assistant_for_pc",
-    title: "Pika AI: The Voice‑Controlled AI Assistant That You Can Use for Free to Manage Your PC",
+    title: "Pika AI: The Voice Controlled AI Assistant That You Can Use for Free to control Your PC",
     description:
       "An AI assistant for pc that automates tasks, manages apps, and boosts productivity on your PC. Explore its features, functions, usage scenarios, limitations, and why it's a top choice for personal AI assistance.",
     date: "2025-08-22",
@@ -1665,7 +1665,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
     slug: "real-life-jarvis",
     title: "Real Life Jarvis: 6 Best AI Virtual Assistants That Bring Iron Man's Dream to Reality",
     description:
-      "Discover the best real-life Jarvis applications available today. From free Jarvis alternatives to premium AI desktop control systems, explore how these Iron Man-inspired virtual assistants are revolutionizing productivity and smart home automation.",
+      "Discover the best real-life Jarvis applications available today. From free Jarvis alternatives to premium AI desktop control systems, explore productivity",
     date: "2025-01-15",
     author: "Pika AI Team",
     content: `
