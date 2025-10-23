@@ -1,13 +1,14 @@
 export interface BlogPost {
   slug: string
   title: string
+  pageHeading?: string // New optional field for custom heading
   description: string
   date: string
   author: string
   content: string
   keywords: string[]
-  image?: string // Optional image for the blog post
-  postType?: "BlogPosting" | "article" | "howTo" | "faq" | "qna" // <-- Add this line
+  image?: string
+  postType?: "BlogPosting" | "article" | "howTo" | "faq" | "qna"
 }
 
 export const blogPosts: BlogPost[] = [
@@ -537,6 +538,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "battle-of-the-titans-alexa-vs-google-assistant-unmasked",
     title: "Alexa vs Google Assistant Unmasked Which one is best ?",
+    pageHeading: "Battle of the Titans: Alexa vs Google Assistant — Unmasked", // Custom heading
     description:
       "lets Find Out the best AI Assistant and get to know about which AI is cooking, Alexa or Google AI Assistant. Today we are gonna uncover the truth. Here we go",
     date: "2025-08-26",
@@ -1516,15 +1518,13 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "create-ai-assistant-no-code",
     title: "How to make Your Own AI Assistant like jarvis Without Coding",
+    pageHeading: "How to Create Your Own AI Assistant Like Jarvis  No Coding Required", // Custom heading
     description:
-      "Want to create your own AI assistant like Jarvis without coding? Learn how to use Gemini or ChatGPT to get an API key, run AI in a code editor. Complete Your Ai in 6 lines of code",
+      "Step-by-step guide to build your own AI assistant in just 6 lines of code. Learn to use Gemini or ChatGPT API and run your AI in a code editor. just 6 lines of code",
     date: "2025-08-22",
     author: "Pika AI Team",
     content: `
   <section class="bg-gradient-to-br from-black via-gray-900 to-black py-16 px-6 md:px-12 text-white text-center rounded-xl mb-10 shadow-2xl">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-      How to Create Your Own AI Assistant Like Jarvis — No Coding Required
-    </h1>
     <p class="text-lg max-w-3xl mx-auto">
       Yes, you can create your very own <strong>AI assistant like Jarvis</strong> even if you have <strong>zero coding experience</strong>. In this guide, we'll walk you through the full process, from getting your free API key to running an AI with just a few steps.
     </p>
@@ -1663,16 +1663,14 @@ You don’t need to know everything on day one. But if you want to turn your sim
 
   {
     slug: "real-life-jarvis",
-    title: "Real Life Jarvis: 6 Best AI Virtual Assistants That Bring Iron Man's Dream to Reality",
+    title: "Real Life Jarvis: 6 Best AI Virtual Assistants That Actually Work Like Iron Man’s Jarvis (Free & Paid)",
+    pageHeading: " Meet Your Real-Life Jarvis, Person AI assistant that can control your pc over voice (2025)", // Custom heading
     description:
-      "Discover the best real-life Jarvis applications available today. From free Jarvis alternatives to premium AI desktop control systems, explore productivity",
+      "Personal Iron Man style AI assistant? Meet 6 real-life Jarvis programs that control your PC, automate anything and boost your productivity.",
     date: "2025-01-15",
     author: "Pika AI Team",
     content: `
   <section class="bg-gradient-to-br from-black via-gray-900 to-black py-16 px-6 md:px-12 text-white text-center rounded-xl mb-10 shadow-2xl">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-      Meet Your Real-Life Jarvis
-    </h1>
     <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-6">
       Unleash the power of AI voice assistants inspired by Iron Man. Control your PC, automate your world, and experience the future—today.
     </p>
@@ -1725,6 +1723,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
           <li>Complete system control and app launching</li>
           <li>Google Gemini AI integration for intelligent responses</li>
           <li>Web automation and media control</li>
+          <li>Reminder and Event setting function with google Calendar</li>
           <li>Secure Google OAuth2 authentication</li>
           <li>Modern cyber-style interface inspired by sci-fi aesthetics</li>
         </ul>
@@ -1905,6 +1904,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
       "desktop automation",
     ],
     image: "/jarvis-hero.png",
+    postType: "BlogPosting",
   },
   {
     slug: "best-free-ai-image-generators",
@@ -1924,7 +1924,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
         <li><strong>Experimentation:</strong> A great way to test different styles and prompts without commitment.</li>
         <li><strong>Inspiration:</strong> Generate unique ideas and concepts for your projects.</li>
       </ul>
-      
+
       <div class="my-8 p-6 bg-gray-800/50 border border-gray-700 rounded-xl">
         <h3 class="text-2xl font-bold text-white mb-4">Featured Ad: Boost Your Productivity with Pika AI!</h3>
         <p class="text-gray-300 mb-4">
@@ -1939,7 +1939,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
       <p class="text-lg text-gray-300 mb-6">
         Here are some of the best free platforms that allow you to create stunning AI-generated images:
       </p>
-      
+
       <h3 class="text-2xl font-bold text-white mb-3">1. Craiyon (formerly DALL-E mini)</h3>
       <p class="text-gray-400 mb-4">
         Craiyon is famous for its ability to generate nine images from any text prompt. While the quality can vary, it's a fun and accessible tool for quick visual ideas.

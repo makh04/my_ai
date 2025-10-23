@@ -20,7 +20,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound()
   }
-const suggestedPosts = blogPosts.map((p) => ({
+
+  const suggestedPosts = blogPosts.map((p) => ({
     slug: p.slug,
     title: p.title,
     description: p.description,
@@ -30,7 +31,7 @@ const suggestedPosts = blogPosts.map((p) => ({
     isPopular: Math.random() > 0.7,
     isRecent: Math.random() > 0.8,
   }))
-  // Map your manual postType to schema.org @type
+
   const getSchemaType = (type?: string) => {
     switch (type?.toLowerCase()) {
       case "howto":
@@ -43,7 +44,6 @@ const suggestedPosts = blogPosts.map((p) => ({
       case "article":
         return "Article"
       case "BlogPosting":
-      case "BlogPosting":
       default:
         return "BlogPosting"
     }
@@ -51,7 +51,6 @@ const suggestedPosts = blogPosts.map((p) => ({
 
   const schemaType = getSchemaType(post.postType)
 
-  // Generate structured data for the blog post
   const generateStructuredData = () => {
     const baseUrl = "https://pikaai.vercel.app"
 
@@ -87,12 +86,11 @@ const suggestedPosts = blogPosts.map((p) => ({
       url: `${baseUrl}/blog/${post.slug}`,
     }
 
-    // Add HowTo specific properties if it's a HowTo post
     if (schemaType === "HowTo") {
       return {
         ...baseSchema,
         name: post.title,
-        totalTime: "PT10M", // 10 minutes reading time
+        totalTime: "PT10M",
         supply: [
           {
             "@type": "HowToSupply",
@@ -120,10 +118,11 @@ const suggestedPosts = blogPosts.map((p) => ({
       }
     }
 
-    // You can add FAQPage or QAPage structured data here if needed
-
     return baseSchema
   }
+
+  // Use custom pageHeading if provided, otherwise use title
+  const displayHeading = post.pageHeading || post.title
 
   return (
     <>
@@ -151,7 +150,7 @@ const suggestedPosts = blogPosts.map((p) => ({
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  {post.title}
+                  {displayHeading}
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-4">{post.description}</p>
@@ -196,11 +195,10 @@ const suggestedPosts = blogPosts.map((p) => ({
               transition={{ duration: 0.8, delay: 0.4 }}
               id="content"
             >
-              {/* Dynamically render HTML content */}
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </motion.article>
 
-            {/* Ad Placeholder - Sidebar/Inline */}
+            {/* Ad Placeholder */}
             <div className="mt-12 p-6 bg-gray-800/50 border border-gray-700 rounded-xl text-center text-gray-400 text-sm">
               <span className="sr-only">Advertisement area</span>
               <p>Relevant Ad Content Here (e.g., 300x250)</p>
