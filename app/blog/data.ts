@@ -1664,7 +1664,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
   {
     slug: "real-life-jarvis",
     title: "Real Life Jarvis: 6 Best AI Virtual Assistants That Actually Work Like Iron Man’s Jarvis (Free & Paid)",
-    pageHeading: " Meet Your Real-Life Jarvis, Person AI assistant that can control your pc over voice (2025)", // Custom heading
+    pageHeading: "Real-Life Jarvis: Personal AI Assistants That Control Your PC with Voice ", // Custom heading
     description:
       "Personal Iron Man style AI assistant? Meet 6 real-life Jarvis programs that control your PC, automate anything and boost your productivity.",
     date: "2025-01-15",
