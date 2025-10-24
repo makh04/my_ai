@@ -92,8 +92,7 @@ export default function AboutClient() {
              </Link>
            </h1>
             <p className="text-xl text-gray-300 mb-8">
-              A revolutionary Python-based AI virtual assistant integrating Google Gemini API for smart responses,
-              voice/text control, and personalized desktop productivity experience.
+              A revolutionary AI virtual assistant integrating Google Gemini API for smart responses, voice/text control, and a personalized desktop productivity experience
             </p>
             <div className="sr-only">
               Pika AI desktop virtual assistant, AI assistant for Windows, productivity software, voice-activated
@@ -125,7 +124,7 @@ export default function AboutClient() {
                   assistant.
                 </p>
                 <p>
-                  Built with Python 3.10+ and advanced voice automation features, Pika AI represents the culmination of
+                  Built with AI backend and advanced voice automation features, Pika AI represents the culmination of
                   innovative thinking and technical expertise in desktop AI assistant development.
                 </p>
                 <p>
@@ -164,7 +163,7 @@ export default function AboutClient() {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-gray-300">Programming Language</span>
-                    <span className="text-cyan-400 font-semibold">Python 3.10+</span>
+                    <span className="text-cyan-400 font-semibold">Python 3.10+/C++/etc</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-300">AI Engine</span>
