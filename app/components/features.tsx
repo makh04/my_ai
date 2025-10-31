@@ -43,6 +43,13 @@ const features = [
     keywords: "focus mode, productivity booster, distraction blocker",
   },
   {
+      icon: Shield,
+    title: "Advance Reminder and event setup",
+    description:
+      "Make you routine over voice. Schedule Task or events just by speaking it and It will be Auto added to your Calender and get the notification on both your Pc and Mobile phone. ",
+    keywords: "Task Management, Reminder, Calender Event setup",
+  },
+  {
     icon: Play,
     title: "🎬 Universal Media Controller",
     description:

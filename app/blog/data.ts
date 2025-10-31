@@ -13,13 +13,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "free_ai_apis",
+    slug: "top-free-ai-api",
     title: "Free AI APIs for Developers and Small Businesses",
     pageHeading: "5 Best Free AI APIs to Try, Open Source & Freemium Options ", // Custom heading
     description:
-      "Explore free AI APIs for developers and startups, With Full guide on how to get them. Image Generation, Conversational AI and more",
-    date: "2025-10-30",
-    author: "Makhtum",
+      "Listing top 5 free AI API to use for new business and developer categories are Image Generation, Conversational AI and more",
+    date: "2025-10-31",
+    author: "Pika AI Team",
     content: `
 <nav class="mb-8">
   <h2 class="text-3xl font-bold text-white mb-4">Table of Contents</h2>
