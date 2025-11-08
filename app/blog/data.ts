@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
   title: "Desktop Assistant Alternatives to Google Assistant (Download)",
   description:
     "Control your PC with voice using the best free desktop assistant more powerful and feature-rich than Google Assistant",
-  date: "2025-08-24",
+  date: "2025-11-09",
   author: "Pika AI team",
   content: `
 <nav class="mb-8">
