@@ -32,6 +32,8 @@ export const blogPosts: BlogPost[] = [
     <li><a href="#why-choose-pika" class="text-blue-400 hover:underline">Why You Might Choose Pika AI as Your Desktop Voice Assistant</a></li>
     <li><a href="#tips-considerations" class="text-blue-400 hover:underline">A Few Tips & Considerations</a></li>
     <li><a href="#final-thoughts" class="text-blue-400 hover:underline">Final Thoughts</a></li>
+     <li><a href="#download" class="text-blue-400 hover:underline">Download for PC</a></li>
+
   </ul>
 </nav>
 
@@ -43,7 +45,7 @@ export const blogPosts: BlogPost[] = [
 <section id="what-is-pika-ai">
   <h2 class="text-3xl font-bold text-white mb-4">What is Pika AI – the Desktop Voice Assistant</h2>
   <p class="text-gray-300 mb-4">So, in simple words: Pika AI is an AI voice assistant built specifically for desktops (Windows/macOS) so you can say “Hey Pika” and it’ll listen, do things, launch apps, control websites — basically, that dream of “Hey Computer, do this” becomes real. On the official site it calls itself a “voice-activated smart assistant software that controls your digital world, hands-free.”</p>
-  <p class="text-gray-300 mb-4">When we talk about “desktop voice assistant” or “AI voice assistant” or “AI desktop voice assistant” we’re referring to tools like this — but Pika stands out because it’s built for the PC desktop environment (not just mobile), and has rich automation features. And yes, if you search for “desktop voice assistant download”, you’ll find Pika’s download link on that site.</p>
+  <p class="text-gray-300 mb-4">When we talk about “desktop voice assistant” or “AI voice assistant” or “AI voice assistant for PC” we’re referring to tools like this — but Pika stands out because it’s built for the PC desktop environment (not just mobile), and has rich automation features. And yes, if you search for “desktop voice assistant download”, you’ll find Pika’s download link on that site.</p>
 </section>
 
 <section id="why-matters">
@@ -53,14 +55,25 @@ export const blogPosts: BlogPost[] = [
 </section>
 
 <section id="key-features">
-  <h2 class="text-3xl font-bold text-white mb-4">Key Features of Pika AI (your new AI desktop voice assistant)</h2>
+  <h2 class="text-3xl font-bold text-white mb-4">Key Features of Pika AI (your new AI voice assistant for PC)</h2>
+  <div class="mt-8 flex justify-center">
+  <a
+    href="https://pikaai.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg"
+  >
+    🚀 Download Pika Now
+  </a>
+</div>
+
   <p class="text-gray-300 mb-4">Let’s dive into what it can do. These are the features that make it shine when we say “desktop voice assistant” in full meaning.</p>
   <h3 class="text-2xl font-bold text-white mb-4">🗣 Voice Activation & Hands-Free Control</h3>
   <p class="text-gray-300 mb-4">Say “Hey Pika” (or similar) and the assistant wakes up – no need to click menus.</p>
   <p class="text-gray-300 mb-4">It listens to your voice commands to control apps, websites, media.</p>
   <p class="text-gray-300 mb-4">Also supports text commands if you prefer typing instead of voice. According to the About page: “Voice & Text Commands — Seamless operation through both voice recognition and text interfaces.”</p>
   <h3 class="text-2xl font-bold text-white mb-4">⚡ App & Website Launching with Voice</h3>
-  <img src="/opening-app.png" alt="Screenshot of opening an app via Pika AI" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6" />
+  <img src="/opening-appp.png" alt="Screenshot of opening an app via Pika AI" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6" />
 
   <p class="text-gray-300 mb-4">You can open any application or website just by speaking its name: like “Open Chrome”, “Open Facebook”, etc.</p>
   <p class="text-gray-300 mb-4">Manage system commands: close windows, shutdown computer, etc. For example: “Close current window”, “Shutdown computer”.</p>
@@ -68,7 +81,7 @@ export const blogPosts: BlogPost[] = [
   <p class="text-gray-300 mb-4">Handle communication tasks via voice: send messages, manage emails. On the website: “Send messages, manage emails, and handle communications using voice commands.”</p>
   <p class="text-gray-300 mb-4">Perfect for multitasking: while you’re working you can dictate rather than switch over to the mail app.</p>
   <h3 class="text-2xl font-bold text-white mb-4">🎯 Productivity & Focus Mode</h3>
-  <img src="/setting-reminder.png" alt="Screenshot of setting a reminder in Pika AI" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6" />
+  <img src="/setting-reminderr.png" alt="Screenshot of setting a reminder in Pika AI" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg mb-6" />
 
   <p class="text-gray-300 mb-4">“Focus Mode & Productivity Booster” – block distracting apps, websites, set reminders, tasks.</p>
   <p class="text-gray-300 mb-4">Set timers, reminders via voice: “Set 25-minute timer”, “Create reminder”, etc. From About page sample commands.</p>
@@ -138,6 +151,19 @@ export const blogPosts: BlogPost[] = [
   <p class="text-gray-300 mb-4">If you’ve been actively looking for a real desktop voice assistant download or an AI desktop voice assistant that is more than half-baked, the arrival of Pika AI is pretty exciting. It brings together voice activation, system/app control, media commands, automation, productivity focus, and smart AI responses into one friendly package.</p>
   <p class="text-gray-300 mb-4">In short, this desktop voice assistant (or AI voice assistant) bridges that gap: we all wondered if there was one, and now, it’s here. Better than what we had before for desktops, because it’s built for desktop only and automates more tasks than many mobile-centric assistants.</p>
 </section>
+<section id="download">
+<div class="mt-8 flex justify-center">
+  <a
+    href="https://pikaai.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg"
+  >
+    🚀 Download Pika Now
+  </a>
+</div>
+</section>
+
   `,
   keywords: [
     "Pika AI",

@@ -114,11 +114,18 @@ export async function GET() {
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
-    <url>
+  <url>
     <loc>https://pikaai.vercel.app/blog/top-free-ai-api/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
+
+    <url>
+    <loc>https://pikaai.vercel.app/blog/real-life-jarvis/</loc>
+    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 
 </urlset>`;
 
