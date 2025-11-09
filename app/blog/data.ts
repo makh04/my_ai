@@ -1804,7 +1804,7 @@ export const blogPosts: BlogPost[] = [
 
   {
     slug: "create-ai-assistant-no-code",
-    title: "How to make Your Own AI Assistant like jarvis Without Coding",
+    title: "How to make Your Own AI Assistant like jarvis Without Coding - Pika AI Blog",
     pageHeading: "How to Create Your Own AI Assistant Like Jarvis  No Coding Required", // Custom heading
     description:
       "Step-by-step guide to build your own AI assistant in just 6 lines of code. Learn to use Gemini or ChatGPT API and run your AI in a code editor. just 6 lines of code",
@@ -1950,7 +1950,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
 
   {
     slug: "real-life-jarvis",
-    title: "Real-Life Jarvis for Free? 6 AI Tools That Feel Futuristic",
+    title: "Real-Life Jarvis for Free? 6 AI Tools That Feel Futuristic - Pika AI Blog",
     pageHeading: "Real-Life Jarvis: Personal AI Assistants That Control Your PC with Voice ", // Custom heading
     description:
       "Personal Iron Man style AI assistant? Meet 6 real-life Jarvis programs that control your PC, automate anything and boost your productivity.",

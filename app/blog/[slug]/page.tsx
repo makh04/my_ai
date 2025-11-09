@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: `${post.title} - Pika AI Blog`,
+    title: `${post.title}`,
     description: post.description,
     keywords: post.keywords.join(", "),
     openGraph: {
