@@ -111,6 +111,9 @@ export default function RootLayout({
           content="K7BD1CKn97LzZoT7Q01SJX72FVBanF4vmHChPmQnbPA"
         />
 
+        {/* ✅ Google AdSense verification */}
+         <meta name="google-adsense-account" content="ca-pub-1946417185597901" />
+
         {/* Google Analytics Script */}
         <script
           async
