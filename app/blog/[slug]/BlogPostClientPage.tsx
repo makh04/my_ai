@@ -67,7 +67,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       },
       publisher: {
         "@type": "Organization",
-        name: "Pika AI",
+        name: "Pika AI", // ← keep brand name for publisher (normal)
         logo: {
           "@type": "ImageObject",
           url: `${baseUrl}/logo.png`,
@@ -127,8 +127,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   return (
     <>
       <Head>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1946417185597901"
-     crossorigin="anonymous"></script>
+        {/* ✅ No “Pika AI Blog” auto-added anywhere */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1946417185597901"
+          crossOrigin="anonymous"
+        ></script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -140,7 +144,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="min-h-screen bg-black text-white">
         <Header />
 
-        {/* Header */}
+        {/* Header Section */}
         <section className="relative py-12 overflow-hidden pt-24">
           <div className="absolute inset-0 bg-gradient-to-br from-black via-blue-900/30 to-purple-900/30" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
