@@ -298,7 +298,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             {[
-              { number: "100+", label: "Downloads", description: "Users trust Pika AI" },
+              { number: "200+", label: "Downloads", description: "Users trust Pika AI" },
               { number: "30+", label: "AI Features", description: "Productivity tools" },
               { number: "99.9%", label: "Uptime", description: "Reliable assistant" },
             ].map((stat, index) => (

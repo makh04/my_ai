@@ -71,12 +71,12 @@ export default function Header() {
               </motion.button>
             ))}
             <motion.button
-              onClick={() => (window.location.href = "/about")}
+              onClick={() => (window.location.href = "/")}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Coming Soon
+              Download Now
             </motion.button>
           </nav>
 
@@ -122,10 +122,10 @@ export default function Header() {
               </button>
             ))}
             <button
-              onClick={() => (window.location.href = "/about")}
+              onClick={() => (window.location.href = "/")}
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
             >
-              Coming Soon
+              Download Now
             </button>
           </div>
         </motion.div>
