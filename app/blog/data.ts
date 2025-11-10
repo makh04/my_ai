@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
   {
   slug: "desktop-assistant-voice",
   title: "Desktop Assistant Alternatives to Google Assistant (Download)",
-  pageHeading: "Desktop Assistant for Windows PC — Better Than Google Assistant Desktop", // Custom heading
+  pageHeading: "Desktop Assistant for Windows PC — Better Than Google Assistant", // Custom heading
   description:
     "Control your PC with voice using the best free desktop assistant more powerful and feature-rich than Google Assistant",
   date: "2025-11-09",
