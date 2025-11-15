@@ -1,135 +1,186 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { useState } from "react"
 import Link from "next/link"
+import { Menu, X, ChevronDown } from 'lucide-react'
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
-  // Detect scroll to change header style
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
-  // Smooth scroll to section on click
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-    setIsMobileMenuOpen(false)
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [showGamingPopup, setShowGamingPopup] = useState(false)
 
   return (
-    <motion.header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/95 backdrop-blur-md border-b border-gray-800" : "bg-transparent"
-      }`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
-            <img src="/logo.png" alt="PIKA AI Logo" className="h-8 w-auto" />
-          </motion.div>
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">P</span>
+            </div>
+            <span className="text-white font-semibold text-lg">Pika</span>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {["About", "Gaming", "More", "Blog", "Updates"].map((item) => (
-              <motion.button
-                key={item}
-                onClick={() => {
-                  if (item === "About") {
-                    window.location.href = "/about"
-                  } else if (item === "Gaming") {
-                    window.location.href = "/gaming"
-                  } else if (item === "More") {
-                    window.location.href = "/support"
-                  } else if (item === "Blog") {
-                    window.location.href = "/blog"
-                  } else if (item === "Updates") {
-                    window.location.href = "/updates"
-                  } else {
-                    scrollToSection(item.toLowerCase())
-                  }
-                }}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {item}
-              </motion.button>
-            ))}
-            <motion.button
-              onClick={() => (window.location.href = "/")}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+              Home
+            </Link>
+
+            {/* Blog with Gaming Popup */}
+            <div
+              className="relative"
+              onMouseEnter={() => setShowGamingPopup(true)}
+              onMouseLeave={() => setShowGamingPopup(false)}
             >
-              Download Now
-            </motion.button>
+              <Link
+                href="/blog"
+                className="text-gray-300 hover:text-white transition-colors flex items-center space-x-1"
+              >
+                <span>Blog</span>
+                <ChevronDown className="w-4 h-4" />
+              </Link>
+
+              <AnimatePresence>
+                {showGamingPopup && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-md border border-gray-700 rounded-lg shadow-xl min-w-[200px] py-2"
+                  >
+                    <Link
+                      href="/blog"
+                      className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors"
+                    >
+                      All Blog Posts
+                    </Link>
+                    <Link
+                      href="/gaming"
+                      className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors"
+                    >
+                      🎮 Gaming
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <Link href="/updates" className="text-gray-300 hover:text-white transition-colors">
+              Updates
+            </Link>
+            <div className="relative">
+              <Link
+                href="/about"
+                className="text-gray-300 hover:text-white transition-colors flex items-center space-x-1"
+              >
+                <span>About</span>
+                <ChevronDown className="w-4 h-4" />
+              </Link>
+              <AnimatePresence>
+                {showGamingPopup && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-2 bg-gray-900/95 backdrop-blur-md border border-gray-700 rounded-lg shadow-xl min-w-[200px] py-2"
+                  >
+                    <Link
+                      href="/about"
+                      className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/portfolio"
+                      className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors"
+                    >
+                      Portfolio
+                    </Link>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+            <Link href="/support" className="text-gray-300 hover:text-white transition-colors">
+              Support
+            </Link>
+            <Link href="/review" className="text-gray-300 hover:text-white transition-colors">
+              Review
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-gray-300 hover:text-white"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <button className="md:hidden text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <motion.div
-          className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
-          initial={{ opacity: 0, height: 0 }}
-          animate={{
-            opacity: isMobileMenuOpen ? 1 : 0,
-            height: isMobileMenuOpen ? "auto" : 0,
-          }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="py-4 space-y-4 border-t border-gray-800">
-            {["About", "Gaming", "More", "Blog"].map((item) => (
-              <button
-                key={item}
-                onClick={() => {
-                  if (item === "About") {
-                    window.location.href = "/about"
-                  } else if (item === "Gaming") {
-                    window.location.href = "/gaming"
-                  } else if (item === "More") {
-                    window.location.href = "/support"
-                  } else if (item === "Blog") {
-                    window.location.href = "/blog"
-                  } else {
-                    scrollToSection(item.toLowerCase())
-                  }
-                }}
-                className="block w-full text-left text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-gray-800">
+            <nav className="flex flex-col space-y-4">
+              <Link
+                href="/"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
-                {item}
-              </button>
-            ))}
-            <button
-              onClick={() => (window.location.href = "/")}
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
-            >
-              Download Now
-            </button>
+                Home
+              </Link>
+              <Link
+                href="/blog"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/gaming"
+                className="text-gray-300 hover:text-white transition-colors pl-4"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                🎮 Gaming
+              </Link>
+              <Link
+                href="/updates"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Updates
+              </Link>
+              <Link
+                href="/about"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="/portfolio"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Portfolio
+              </Link>
+              <Link
+                href="/support"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Support
+              </Link>
+              <Link
+                href="/review"
+                className="text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Review
+              </Link>
+            </nav>
           </div>
-        </motion.div>
+        )}
       </div>
-    </motion.header>
+    </header>
   )
 }

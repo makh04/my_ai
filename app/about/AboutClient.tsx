@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Globe, Zap, Users, Rocket, Star, Shield, Lock, Eye } from "lucide-react"
+import { Code, Globe, Zap, Users, Rocket, Star, Shield, Lock, Eye } from 'lucide-react'
 import Link from "next/link"
 
 export default function AboutClient() {
@@ -84,16 +84,21 @@ export default function AboutClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-             <Link href="/" className="hover:underline focus:outline-none">
-               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                 About Pika AI Desktop Assistant
-               </span>
-             </Link>
-           </h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                About Pika AI Desktop Assistant
+              </span>
+            </h1>
             <p className="text-xl text-gray-300 mb-8">
-              A revolutionary AI virtual assistant integrating Google Gemini API for smart responses, voice/text control, and a personalized desktop productivity experience
+              A revolutionary Python-based AI virtual assistant integrating Google Gemini API for smart responses,
+              voice/text control, and personalized desktop productivity experience.
             </p>
+            <Link
+              href="/portfolio"
+              className="inline-block mt-4 px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              View My Portfolio
+            </Link>
             <div className="sr-only">
               Pika AI desktop virtual assistant, AI assistant for Windows, productivity software, voice-activated
               assistant, desktop automation tool, AI-powered productivity, smart assistant software
@@ -124,7 +129,7 @@ export default function AboutClient() {
                   assistant.
                 </p>
                 <p>
-                  Built with AI backend and advanced voice automation features, Pika AI represents the culmination of
+                  Built with Python 3.10+ and advanced voice automation features, Pika AI represents the culmination of
                   innovative thinking and technical expertise in desktop AI assistant development.
                 </p>
                 <p>
@@ -163,7 +168,7 @@ export default function AboutClient() {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-gray-300">Programming Language</span>
-                    <span className="text-cyan-400 font-semibold">Python 3.10+/C++/etc</span>
+                    <span className="text-cyan-400 font-semibold">Python 3.10+</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-300">AI Engine</span>
