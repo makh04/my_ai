@@ -13,7 +13,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "2",
     title: "Modern Web Store",
-    url: "https://kagenougaden.vercel.app",
+    url: "https://kagenougarden.vercel.app",
   },
 
 ]
