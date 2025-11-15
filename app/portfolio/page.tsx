@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "project building",
     "Bangladesh developer",
   ].join(", "),
+  alternates: {
+    canonical: "https://pikaai.vercel.app/portfolio",
+  },
   openGraph: {
     title: "Nabil Mukerrob Makhtum — Programmer",
     description:
