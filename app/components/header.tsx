@@ -27,6 +27,7 @@ export default function Header() {
     setIsMobileMenuOpen(false)
   }
 
+
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -43,42 +44,95 @@ export default function Header() {
             <img src="/logo.png" alt="PIKA AI Logo" className="h-8 w-auto" />
           </motion.div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {["About", "Gaming", "More", "Blog", "Updates"].map((item) => (
-              <motion.button
-                key={item}
-                onClick={() => {
-                  if (item === "About") {
-                    window.location.href = "/about"
-                  } else if (item === "Gaming") {
-                    window.location.href = "/gaming"
-                  } else if (item === "More") {
-                    window.location.href = "/support"
-                  } else if (item === "Blog") {
-                    window.location.href = "/blog"
-                  } else if (item === "Updates") {
-                    window.location.href = "/updates"
-                  } else {
-                    scrollToSection(item.toLowerCase())
-                  }
-                }}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {item}
-              </motion.button>
-            ))}
-            <motion.button
-              onClick={() => (window.location.href = "/")}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+{/* Desktop Navigation */}
+<nav className="hidden md:flex items-center space-x-8">
+  {["About", "Gaming", "More", "Blog", "Updates"].map((item) => {
+    const [showDropdown, setShowDropdown] = useState(false);
+    let dropdownTimeout: NodeJS.Timeout;
+
+    if (item === "More") {
+      return (
+        <div
+          key={item}
+          className="relative"
+          onMouseEnter={() => {
+            clearTimeout(dropdownTimeout);
+            setShowDropdown(true);
+          }}
+          onMouseLeave={() => {
+            dropdownTimeout = setTimeout(() => setShowDropdown(false), 300); // adjust delay here
+          }}
+        >
+          {/* Main "More" button */}
+          <motion.button
+            className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            More
+          </motion.button>
+
+          {/* Dropdown menu */}
+          {showDropdown && (
+            <motion.div
+              initial={{ opacity: 0, y: -5 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -5 }}
+              transition={{ duration: 0.15 }}
+              className="absolute left-0 top-full mt-2 bg-gray-900/90 border border-gray-700 backdrop-blur-lg
+                         rounded-lg px-4 py-3 shadow-lg z-50 space-y-2"
             >
-              Download Now
-            </motion.button>
-          </nav>
+              <button
+                onClick={() => (window.location.href = "/support")}
+                className="block text-left w-full text-gray-300 hover:text-white transition-colors"
+              >
+                Support
+              </button>
+
+              <button
+                onClick={() => (window.location.href = "/portfolio")}
+                className="block text-left w-full text-gray-300 hover:text-white transition-colors"
+              >
+                Portfolio
+              </button>
+            </motion.div>
+          )}
+        </div>
+      );
+    }
+
+    // Normal navigation items
+    return (
+      <motion.button
+        key={item}
+        onClick={() => {
+          if (item === "About") window.location.href = "/about";
+          else if (item === "Gaming") window.location.href = "/gaming";
+          else if (item === "Blog") window.location.href = "/blog";
+          else if (item === "Updates") window.location.href = "/updates";
+        }}
+        className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        {item}
+      </motion.button>
+    );
+  })}
+
+  {/* Download Now button */}
+  <motion.button
+    onClick={() => (window.location.href = "/")}
+    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-medium transition-all duration-200"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    Download Now
+  </motion.button>
+</nav>
+
+
+
 
           {/* Mobile Menu Button */}
           <button
