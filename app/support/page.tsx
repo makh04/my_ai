@@ -1,10 +1,9 @@
-"use client"
+"use client";
 
-import type React from "react"
-
-import { motion } from "framer-motion"
-import { useState } from "react"
-import { Mail, MessageCircle, HelpCircle, Book, Send, CheckCircle } from "lucide-react"
+import type React from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Mail, MessageCircle, HelpCircle, Book, Send, CheckCircle } from "lucide-react";
 
 export default function Support() {
   const [formData, setFormData] = useState({
@@ -12,36 +11,37 @@ export default function Support() {
     email: "",
     subject: "",
     message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Create mailto link
-    const mailtoLink = `mailto:nabilmakhtum@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
-    )}`
+  const res = await fetch("/api/send", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
 
-    // Open email client
-    window.location.href = mailtoLink
+  const data = await res.json();
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({ name: "", email: "", subject: "", message: "" })
-    }, 1000)
+  setIsSubmitting(false);
+  setIsSubmitted(data.success);
+
+  if (data.success) {
+    setFormData({ name: "", email: "", subject: "", message: "" });
   }
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   const faqs = [
     {
@@ -71,7 +71,7 @@ export default function Support() {
       question: "How do I update PIKA AI?",
       answer: "Updates are automatically downloaded and installed. You'll be notified when a new version is available.",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -101,7 +101,7 @@ export default function Support() {
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Contact Form */}
+            {/* Form */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -122,78 +122,63 @@ export default function Support() {
                 >
                   <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
-                  <p className="text-gray-300">
-                    Your email client should open shortly. We'll respond as soon as possible.
-                  </p>
+                  <p className="text-gray-300">We’ll respond to your message as soon as possible.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                        Name
-                      </label>
+                      <label className="block text-sm font-medium text-gray-300 mb-2">Name</label>
                       <input
                         type="text"
-                        id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                        placeholder="Your name"
+                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                        Email
-                      </label>
+                      <label className="block text-sm font-medium text-gray-300 mb-2">Email</label>
                       <input
                         type="email"
-                        id="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                        placeholder="your@email.com"
+                        className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white"
                       />
                     </div>
                   </div>
+
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                      Subject
-                    </label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">Subject</label>
                     <input
                       type="text"
-                      id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400"
-                      placeholder="How can we help?"
+                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white"
                     />
                   </div>
+
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                      Message
-                    </label>
+                    <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
                     <textarea
-                      id="message"
                       name="message"
+                      rows={6}
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows={6}
-                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400 resize-none"
-                      placeholder="Describe your issue or question in detail..."
+                      className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg text-white"
                     />
                   </div>
+
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center space-x-2 transition-all duration-300 disabled:opacity-50"
+                    className="w-full bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 px-8 py-4 rounded-lg font-semibold text-lg flex items-center justify-center space-x-2 disabled:opacity-50"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -223,38 +208,30 @@ export default function Support() {
               <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
 
               <div className="space-y-6">
-                <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
                   <div className="flex items-center mb-4">
                     <Mail className="w-6 h-6 text-cyan-400 mr-3" />
-                    <h3 className="text-lg font-semibold text-white">Email Support</h3>
+                    <h3 className="text-lg font-semibold">Email Support</h3>
                   </div>
-                  <p className="text-gray-300 mb-2">For technical support and general inquiries:</p>
-                  <a
-                    href="mailto:nabilmakhtum@gmail.com"
-                    className="text-cyan-400 hover:text-cyan-300 transition-colors"
-                  >
-                    nabilmakhtum@gmail.com
-                  </a>
+                  <a href="mailto:nabilmakhtum@gmail.com" className="text-cyan-400">nabilmakhtum@gmail.com</a>
                 </div>
 
-                <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
                   <div className="flex items-center mb-4">
                     <MessageCircle className="w-6 h-6 text-blue-400 mr-3" />
-                    <h3 className="text-lg font-semibold text-white">Response Time</h3>
+                    <h3 className="text-lg font-semibold">Response Time</h3>
                   </div>
-                  <p className="text-gray-300">We typically respond within 24-48 hours during business days.</p>
+                  <p className="text-gray-300">We typically respond within 24–48 hours.</p>
                 </div>
 
-                <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6">
+                <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
                   <div className="flex items-center mb-4">
                     <Book className="w-6 h-6 text-purple-400 mr-3" />
-                    <h3 className="text-lg font-semibold text-white">Developer</h3>
+                    <h3 className="text-lg font-semibold">Developer</h3>
                   </div>
                   <p className="text-gray-300">
-                    <strong>Nabil Mukerrob Makhtum</strong>
-                    <br />
-                    17-year-old developer from Bangladesh 🇧🇩
-                    <br />
+                    <strong>Nabil Mukerrob Makhtum</strong><br />
+                    17-year-old developer from Bangladesh 🇧🇩<br />
                     Creator of PIKA AI Assistant
                   </p>
                 </div>
@@ -264,7 +241,7 @@ export default function Support() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ */}
       <section className="py-20 bg-gray-900/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -279,22 +256,22 @@ export default function Support() {
                 Frequently Asked Questions
               </span>
             </h2>
-            <p className="text-xl text-gray-300">Find quick answers to common questions about PIKA AI</p>
+            <p className="text-xl text-gray-300">Find quick answers to common questions about PIKA AI.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6"
+                className="bg-gray-800/50 border border-gray-700 rounded-xl p-6"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
                 <div className="flex items-start mb-4">
-                  <HelpCircle className="w-6 h-6 text-cyan-400 mr-3 mt-1 flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
+                  <HelpCircle className="w-6 h-6 text-cyan-400 mr-3 mt-1" />
+                  <h3 className="text-lg font-semibold">{faq.question}</h3>
                 </div>
                 <p className="text-gray-300 ml-9">{faq.answer}</p>
               </motion.div>
@@ -303,5 +280,5 @@ export default function Support() {
         </div>
       </section>
     </div>
-  )
+  );
 }
