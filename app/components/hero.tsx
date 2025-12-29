@@ -188,79 +188,30 @@ export default function Hero() {
 
 {showDownloadSteps && (
   <motion.div
-    className="mt-12 max-w-4xl mx-auto"
+    className="mt-12 max-w-2xl mx-auto"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
+    transition={{ duration: 0.6 }}
   >
-    <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8">
-      <h3 className="text-2xl font-bold text-white mb-6 text-center">
-        🎉 Download Started! Follow These Steps to Install Pika AI
+    <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 text-center">
+      <h3 className="text-2xl font-bold text-white mb-4">
+        🎉 Thanks for Downloading Pika AI!
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Step 1 */}
-        <div className="text-center">
-          <img
-            src="https://res.cloudinary.com/deibcytx1/image/upload/v1755770788/Screenshot_2025-08-21_160440_dbn6sy.png"
-            alt="Click Pika AI app setup"
-            className="w-full h-48 object-cover rounded-xl mb-4 mx-auto"
-          />
-          <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-3 font-bold">
-            1
-          </div>
-          <h4 className="text-lg font-semibold text-white mb-2">Click Pika AI App Setup</h4>
-          <p className="text-gray-400 text-sm">
-            Locate the downloaded setup file and double-click to start the installation.
-          </p>
-        </div>
+      <p className="text-gray-300 text-base mb-4">
+        Say <span className="text-white font-semibold">“Hey pika”</span> or type your command to begin using your AI assistant.
+      </p>
 
-        {/* Step 2 */}
-        <div className="text-center">
-          <img
-            src="https://res.cloudinary.com/deibcytx1/image/upload/v1755770540/Screenshot_2025-08-21_160205_ylg2di.png"
-            alt="Windows SmartScreen Warning"
-            className="w-full h-48 object-cover rounded-xl mb-4 mx-auto"
-          />
-          <div className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-3 font-bold">
-            2
-          </div>
-          <h4 className="text-lg font-semibold text-white mb-2">Windows SmartScreen Warning</h4>
-          <p className="text-gray-400 text-sm">
-            If you see a SmartScreen warning, click <strong>More info</strong>. This happens because the app is new and not yet in the Microsoft Store.
-          </p>
-        </div>
+      <p className="text-gray-400 text-sm">
+        ⏳ Please wait at least <span className="text-white font-semibold">30 seconds</span> after installation to allow Pika to fully initialize and stabilize.
+      </p>
 
-        {/* Step 3 */}
-        <div className="text-center">
-          <img
-            src="https://res.cloudinary.com/deibcytx1/image/upload/v1755770582/Screenshot_2025-08-21_160222_wq6roh.png"
-            alt="Run anyway"
-            className="w-full h-48 object-cover rounded-xl mb-4 mx-auto"
-          />
-          <div className="bg-cyan-600 text-white rounded-full w-8 h-8 flex items-center justify-center mx-auto mb-3 font-bold">
-            3
-          </div>
-          <h4 className="text-lg font-semibold text-white mb-2">Run Anyway</h4>
-          <p className="text-gray-400 text-sm">
-            Click <strong>Run anyway</strong> to proceed with installation and enjoy your new AI assistant!
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-8 p-4 bg-blue-900/30 border border-blue-500/30 rounded-xl">
-        <h4 className="text-lg font-semibold text-white mb-2">💡 Quick Start Tip</h4>
-        <p className="text-gray-300 text-sm">
-          After installation, say "Hey Pika" to activate your AI assistant and start controlling your computer with voice commands!
-        </p>
-      </div>
-
-      <div className="text-center mt-6">
+      <div className="mt-6">
         <button
           onClick={() => setShowDownloadSteps(false)}
           className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
         >
-          Hide Instructions
+          Hide Message
         </button>
       </div>
     </div>
