@@ -39,7 +39,7 @@ export default function Hero() {
 
     // Open download link
     const downloadWindow = window.open(
-      "https://www.dropbox.com/scl/fi/nbe39nbui95q3sw7doubc/Pika-Voice.exe?rlkey=ax5qfo0fis01imx4lr55qd9m8&st=xuf0rtjn&dl=1",
+      "https://www.dropbox.com/scl/fi/lo1u4x61b1at3xvnray20/pika_0.1.0_x64-setup.exe?rlkey=qdqiz2gbm2n6tpuj20sn7mmps&st=q613rcur&dl=1",
       "_blank",
     )
 
@@ -63,7 +63,7 @@ export default function Hero() {
 
     // Open download link
     const downloadWindow = window.open(
-      "https://www.dropbox.com/scl/fi/nbe39nbui95q3sw7doubc/Pika-Voice.exe?rlkey=ax5qfo0fis01imx4lr55qd9m8&st=xuf0rtjn&dl=1",
+      "https://www.dropbox.com/scl/fi/lo1u4x61b1at3xvnray20/pika_0.1.0_x64-setup.exe?rlkey=qdqiz2gbm2n6tpuj20sn7mmps&st=q613rcur&dl=1",
       "_blank",
     )
 
