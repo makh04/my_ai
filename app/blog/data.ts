@@ -13,12 +13,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-  "slug": "best-ai-research-tools-2026",
-  "title": "Best AI Research Tools in 2026 (I Actually Tested These)",
-  "description": "Discover the top AI research tools in 2026 that I personally tested for speed, accuracy, and reliability. From Perplexity AI to Research Rabbit",
-  "date": "2026-01-15",
-  "author": "Pika Team",
-  "content": `
+    slug: "best-ai-research-tools-2026",
+    title: "Best AI Deep Research Tools in 2026 (I Actually Tested )",
+    pageHeading: "These are the list top AI Deep research tools according to me for 2026",
+    description: "Top unbiased AI Deep research tools in 2026 that I personally tested for speed, accuracy, and reliability. From Perplexity AI to Research Rabbit",
+    date: "2026-01-15",
+    author: "Pika Team",
+    content: `
 <nav class="mb-8">
   <h2 class="text-3xl font-bold text-white mb-4">Table of Contents</h2>
   <ul class="list-decimal list-inside text-gray-400 space-y-2">
