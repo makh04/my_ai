@@ -1,6 +1,6 @@
 {
-  "version": "1.0.3",
-  "notes": "Fixed previous bugs and improved the UI (Added new loading screen and math drawing) and overall performance.",
-  "pub_date": "20266-01-14T12:00:00Z",
-  "critical": false
+  "version": "1.0.4",
+  "notes": "Fixed the google log in failed Error and Calander event error",
+  "pub_date": "2026-01-20T12:00:00Z",
+  "critical": true
 }
