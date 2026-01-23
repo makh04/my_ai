@@ -124,24 +124,24 @@ export default function AboutClient() {
               </h2>
               <div className="space-y-4 text-gray-300">
                 <p className="text-lg">
-                  <strong className="text-white">Nabil Mukerrob Makhtum</strong> - A passionate 17-year-old software
+                  <strong className="text-white">Nabil Mukerrob Makhtum</strong> - A passionate young software
                   developer and AI enthusiast from Bangladesh 🇧🇩, creator of the revolutionary Pika AI desktop virtual
                   assistant.
                 </p>
                 <p>
-                  Built with Python 3.10+ and advanced voice automation features, Pika AI represents the culmination of
+                  Built with AI and advanced voice automation features, Pika AI represents the culmination of
                   innovative thinking and technical expertise in desktop AI assistant development.
                 </p>
                 <p>
-                  Powered by Google Gemini API and designed with a sleek Cyber-Style UI using PyQt5, this project
+                  Powered by Google Authentication and designed with a cool User interface, this project
                   showcases the future of AI-powered personal productivity assistants for desktop users.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-cyan-400 mb-2">17</div>
-                  <div className="text-gray-400">Years Old Developer</div>
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">Student</div>
+                  <div className="text-gray-400">Qualification</div>
                 </div>
                 <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-4">
                   <div className="text-2xl font-bold text-purple-400 mb-2">🇧🇩</div>
@@ -167,16 +167,16 @@ export default function AboutClient() {
                 <h3 className="text-xl font-bold text-white mb-4">Technical Stack & AI Technology</h3>
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-300">Programming Language</span>
-                    <span className="text-cyan-400 font-semibold">Python 3.10+</span>
+                    <span className="text-gray-300">System Usage</span>
+                    <span className="text-cyan-400 font-semibold">70 Mb On Average</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-300">AI Engine</span>
-                    <span className="text-blue-400 font-semibold">Google Gemini API</span>
+                    <span className="text-gray-300">Builded for</span>
+                    <span className="text-purple-400 font-semibold">Windows</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-300">UI Framework</span>
-                    <span className="text-purple-400 font-semibold">PyQt5</span>
+                    <span className="text-gray-300">Used scope in Google</span>
+                    <span className="text-purple-400 font-semibold">User name and Google Calender</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-300">Authentication</span>
