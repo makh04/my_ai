@@ -8,7 +8,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "1",
     title: "Pika AI - Desktop Voice Assistant",
-    url: "https://pikaai.vercel.app",
+    url: "https://pikavoice.com/",
   },
   {
     id: "2",

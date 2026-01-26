@@ -350,7 +350,7 @@ export const blogPosts: BlogPost[] = [
   <h2 class="text-3xl font-bold text-white mb-4">Key Features of Pika AI (your new AI voice assistant for PC)</h2>
   <div class="mt-8 flex justify-center">
   <a
-    href="https://pikaai.vercel.app/"
+    href="https://pikavoice.com/"
     target="_blank"
     rel="noopener noreferrer"
     class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg"
@@ -446,7 +446,7 @@ export const blogPosts: BlogPost[] = [
 <section id="download">
 <div class="mt-8 flex justify-center">
   <a
-    href="https://pikaai.vercel.app/"
+    href="https://pikavoice.com/"
     target="_blank"
     rel="noopener noreferrer"
     class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-lg"
@@ -1540,7 +1540,7 @@ export const blogPosts: BlogPost[] = [
           One of the best alternatives to Alexa for Windows users is <strong>Pika AI</strong>. With its easy-to-use interface and powerful AI capabilities, Pika AI can be a solid replacement for Alexa's functionality. It’s a web-based AI assistant that allows you to interact with an intelligent assistant right from your browser. From voice commands to smart automation, Pika AI does it all.
         </p>
         <p class="text-gray-400 mb-6">
-          Check it out here: <a href="https://pikaai.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Pika AI</a>
+          Check it out here: <a href="https://pikavoice.com/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Pika AI</a>
         </p>
         <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
           <li><strong>User-Friendly Interface:</strong> The web interface is clean and easy to use, making it accessible for users of all technical backgrounds.</li>
@@ -2067,7 +2067,7 @@ export const blogPosts: BlogPost[] = [
       <p class="text-gray-300 mb-4">
         Ready to supercharge your productivity and browsing with voice enabled AI? Visit the official Pika AI website to download the assistant and start exploring the new highlight-and-voice features right now.
       </p>
-      <a href="https://pikaai.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+      <a href="https://pikavoice.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300">
         Learn More About Pika AI Assistant
       </a>
     </div>
@@ -2307,7 +2307,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
           <li>Modern cyber-style interface inspired by sci-fi aesthetics</li>
         </ul>
       </div>
-      <a href="https://pikaai.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 mb-8">
+      <a href="https://pikavoice.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300 mb-8">
         Download Pika AI - Free Jarvis Alternative
       </a>
 
@@ -2423,7 +2423,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
           <li>Regular updates and active development</li>
           <li>User-friendly interface designed for both beginners and power users</li>
         </ul>
-        <a href="https://pikaai.vercel.app/about/" class="inline-block mt-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+        <a href="https://pikavoice.com/about/" class="inline-block mt-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 px-6 py-3 rounded-lg font-semibold transition-all duration-300">
           Learn More About Pika AI
         </a>
       </div>
@@ -2461,7 +2461,7 @@ You don’t need to know everything on day one. But if you want to turn your sim
         Whether you're looking for a <strong>free Jarvis</strong> alternative or the <strong>best AI application</strong> for desktop control, the options available today offer unprecedented capabilities. Start your journey into the future of AI assistance by downloading one of these remarkable applications and experience firsthand what it's like to have your very own J.A.R.V.I.S.
       </p>
       <div class="text-center mt-8">
-        <a href="https://pikaai.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
+        <a href="https://pikavoice.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 hover:from-cyan-700 hover:via-blue-700 hover:to-purple-700 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300">
           Download Pika AI - Your Free Real Life Jarvis
         </a>
       </div>

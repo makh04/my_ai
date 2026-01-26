@@ -32,17 +32,17 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       title: `${post.title} - Pika AI Blog`,
       description: post.description,
       type: "article",
-      url: `https://pikaai.vercel.app/blog/${post.slug}`,
-      images: post.image ? [{ url: `https://pikaai.vercel.app/${post.image}` }] : [],
+      url: `https://pikavoice.com/blog/${post.slug}`,
+      images: post.image ? [{ url: `https://pikavoice.com/${post.image}` }] : [],
     },
     twitter: {
       card: "summary_large_image",
       title: `${post.title} - Pika AI Blog`,
       description: post.description,
-      images: post.image ? [`https://pikaai.vercel.app/${post.image}`] : [],
+      images: post.image ? [`https://pikavoice.com/${post.image}`] : [],
     },
     alternates: {
-      canonical: `https://pikaai.vercel.app/blog/${post.slug}`, // Canonical URL for individual blog posts
+      canonical: `https://pikavoice.com/blog/${post.slug}`, // Canonical URL for individual blog posts
     },
   }
 }

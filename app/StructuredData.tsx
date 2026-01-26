@@ -36,7 +36,7 @@ export default function StructuredData() { // default export
 }
 
 function generateStructuredData(pathname: string) {
-  const baseUrl = "https://pikaai.vercel.app"
+  const baseUrl = "https://pikavoice.com/"
   const structuredDataArray = []
 
   // Only add the product schema on the homepage or product-related pages

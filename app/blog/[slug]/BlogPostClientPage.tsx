@@ -52,7 +52,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const schemaType = getSchemaType(post.postType)
 
   const generateStructuredData = () => {
-    const baseUrl = "https://pikaai.vercel.app"
+    const baseUrl = "https://pikavoice.com/"
 
     const baseSchema: any = {
       "@context": "https://schema.org",

@@ -49,7 +49,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pikaai.vercel.app",
+    url: "https://pikavoice.com/",
     title: "Pika Voice Assistant — Your Personal AI",
     description:
       "Download Pika Voice Assistant, your personal AI-powered desktop assistant designed to help with task management, emails, and workflow automation. Boost your productivity today!",
@@ -72,7 +72,7 @@ export const metadata = {
     creator: "@PikaAI",
   },
   alternates: {
-    canonical: "https://pikaai.vercel.app/",
+    canonical: "https://pikavoice.com/",
   },
   category: "Technology",
   classification: "AI Assistant Software",

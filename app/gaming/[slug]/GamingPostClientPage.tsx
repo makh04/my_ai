@@ -37,7 +37,7 @@ export default function GamingPostPage({ params }: GamingPostPageProps) {
 
   // Generate structured data for the gaming post
   const generateStructuredData = () => {
-    const baseUrl = "https://pikaai.vercel.app"
+    const baseUrl = "https://pikavoice.com/"
     const isHowToPost =
       post.title.toLowerCase().includes("how to") ||
       post.title.toLowerCase().includes("guide") ||

@@ -8,120 +8,120 @@ export async function GET() {
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://pikaai.vercel.app/</loc>
+    <loc>https://pikavoice.com/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/about/</loc>
+    <loc>https://pikavoice.com/about/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/</loc>
+    <loc>https://pikavoice.com/blog/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/support/</loc>
+    <loc>https://pikavoice.com/support/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/privacy/</loc>
+    <loc>https://pikavoice.com/privacy/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/terms/</loc>
+    <loc>https://pikavoice.com/terms/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/review/</loc>
+    <loc>https://pikavoice.com/review/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/ai_assistant_for_pc/</loc>
+    <loc>https://pikavoice.com/blog/ai_assistant_for_pc/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/6-best-ai-voice-assistants-you-should-try-today/</loc>
+    <loc>https://pikavoice.com/blog/6-best-ai-voice-assistants-you-should-try-today/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/pika-ai-voice-assistant-new-update-11-09-2025/</loc>
+    <loc>https://pikavoice.com/blog/pika-ai-voice-assistant-new-update-11-09-2025/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/battle-of-the-titans-alexa-vs-google-assistant-unmasked/</loc>
+    <loc>https://pikavoice.com/blog/battle-of-the-titans-alexa-vs-google-assistant-unmasked/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/amazon-alexa-download-alternatives-windows-2025/</loc>
+    <loc>https://pikavoice.com/blog/amazon-alexa-download-alternatives-windows-2025/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/is-pika-ai-safe-privacy-security-comprehensive-review/</loc>
+    <loc>https://pikavoice.com/blog/is-pika-ai-safe-privacy-security-comprehensive-review/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/best-websites-for-making-money-2025/</loc>
+    <loc>https://pikavoice.com/blog/best-websites-for-making-money-2025/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/pika-ai-assistant-new-voice-highlight-search/</loc>
+    <loc>https://pikavoice.com/blog/pika-ai-assistant-new-voice-highlight-search/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/create-ai-assistant-no-code/</loc>
+    <loc>https://pikavoice.com/blog/create-ai-assistant-no-code/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/real-life-jarvis/</loc>
+    <loc>https://pikavoice.com/blog/real-life-jarvis/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://pikaai.vercel.app/blog/best-free-ai-image-generators/</loc>
+    <loc>https://pikavoice.com/blog/best-free-ai-image-generators/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pikaai.vercel.app/blog/top-free-ai-api/</loc>
+    <loc>https://pikavoice.com/blog/top-free-ai-api/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
     <url>
-    <loc>https://pikaai.vercel.app/blog/desktop-assistant-voice/</loc>
+    <loc>https://pikavoice.com/blog/desktop-assistant-voice/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
