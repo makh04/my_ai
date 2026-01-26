@@ -1,6 +1,6 @@
 {
-  "version": "1.0.4",
-  "notes": "Fixed the google log in failed Error and Calander event error",
-  "pub_date": "2026-01-20T12:00:00Z",
+  "version": "1.0.5",
+  "notes": "Added custom automation, Fixed time indentify related issues, Added Context History feature, Improved performance and stability.",
+  "pub_date": "2026-01-27T12:00:00Z",
   "critical": true
 }
