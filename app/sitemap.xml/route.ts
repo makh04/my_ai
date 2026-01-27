@@ -9,7 +9,7 @@ export async function GET() {
 
   <url>
     <loc>https://pikavoice.com/</loc>
-    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <lastmod>2026-01-17T13:28:30+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 
@@ -40,6 +40,12 @@ export async function GET() {
   <url>
     <loc>https://pikavoice.com/terms/</loc>
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://pikavoice.com/updates/</loc>
+    <lastmod>2026-01-27T13:28:30+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
@@ -105,7 +111,7 @@ export async function GET() {
 
   <url>
     <loc>https://pikavoice.com/blog/real-life-jarvis/</loc>
-    <lastmod>2025-10-17T13:28:30+00:00</lastmod>
+    <lastmod>2025-12-18T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
 
@@ -125,6 +131,13 @@ export async function GET() {
     <lastmod>2025-10-17T13:28:30+00:00</lastmod>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://pikavoice.com/blog/making_ai_from_scratch/</loc>
+    <lastmod>2026-01-26T13:28:30+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
 
 
 </urlset>`;

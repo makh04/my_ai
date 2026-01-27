@@ -10,6 +10,20 @@ export interface UpdatePost {
 }
 
 export const updatePosts: UpdatePost[] = [
+          {
+    id: "5",
+    title: "Add custom commands and Fixed Time context error",
+    description: "Now you can add custom words which will trigger a definite action",
+    date: "2026-01-27",
+    version: "v1.0.4",
+    type: "feature",
+    slug: "update104",
+    content: `
+    The latest update to our AI voice assistant makes your PC automation smarter than ever. 
+    Users can now set custom voice commands — say ‘Good morning’ to launch your daily routine, or ‘Editing time’ 
+    to open Photoshop and all your essential tools instantly. Personalize your workflow and control your computer with just your voice!
+    `,
+  },  
 
           {
     id: "4",
