@@ -13,6 +13,215 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+  slug: "making_ai_from_scratch",
+  title: "How to Make AI from Scratch with Training Data",
+  pageHeading: "How I Built My Own AI from Scratch on a Low-End PC",
+  description:
+    "Step-by-step guide to make AI from scratch: collect data, train your model, and build AI even on a low-end PC. All resources included",
+  date: "2026-01-27",
+  author: "Pika AI Team",
+  content: `
+<nav class="mb-8">
+  <h2 class="text-3xl font-bold text-white mb-4">Table of Contents</h2>
+  <ul class="list-decimal list-inside text-gray-400 space-y-2">
+    <li><a href="#introduction" class="text-blue-400 hover:underline">Introduction</a></li>
+    <li><a href="#setup-colab" class="text-blue-400 hover:underline">Google Colab Setup</a></li>
+    <li><a href="#dataset-collection" class="text-blue-400 hover:underline">Dataset Collection</a></li>
+    <li><a href="#preprocessing" class="text-blue-400 hover:underline">Preprocessing & Augmentation</a></li>
+    <li><a href="#model-training" class="text-blue-400 hover:underline">Model Training</a></li>
+    <li><a href="#testing" class="text-blue-400 hover:underline">Testing the AI</a></li>
+    <li><a href="#final-verdict" class="text-blue-400 hover:underline">Final Verdict</a></li>
+  </ul>
+</nav>
+
+<section id="introduction">
+  <h1 class="text-4xl font-bold text-white mb-6">
+    I Built an Actual AI From Scratch Using a Potato PC 🍃🤖
+  </h1>
+  <p class="text-gray-300 mb-4">
+    Yes, this is a real AI. Not a script. Not a trick. An actual image detection model.
+    In this project, I built a <strong>Leaf Detection AI</strong> that can identify different
+    types of leaves like Oak, Maple, Ginkgo, Banyan, and Lemon — all using <strong>Google Colab</strong>.
+  </p>
+  <p class="text-gray-300 mb-4"> And All the resources including the full folder you will get in the link below named as Resources </p>
+  <p class="text-gray-300 mb-4">
+    If your PC can barely open Chrome without lagging then this post is totally Ok For you, don’t worry. Mine can’t either.
+    That’s exactly why this guide exists.
+  </p>
+</section>
+
+<section id="setup-colab">
+  <h2 class="text-3xl font-bold text-white mb-4">Step 1: Google Colab Setup (No Powerful PC Needed)</h2>
+  <p class="text-gray-300 mb-4">
+    First, we move everything to Google Colab. This gives us free CPU/GPU power without
+    killing our PC
+  </p>
+  <p class="text-gray-300 mb-4">But if you are rich unlike me then you can run same code on normal code editor, You just simply need to install all the libraries mentioned in the code. </p>
+  <p class="text-gray-300 mb-4"> If you want to run all in a simple click then press Run All or If you want to understand each code then run each cell seperately. I used comments in the code which will help you to catch it and If you get stuck feel free to contact me </p>
+  <img
+    src="/1.png"
+    alt="Running and installing libraries in Google Colab using Run All"
+    class="rounded-lg mb-6"
+  />
+
+  <p class="text-gray-300 mb-4">
+    Here, we install and run all the required libraries directly in Colab.
+    Just click <strong>Run All</strong> and let Google handle the heavy work.
+  </p>
+</section>
+
+<section id="dataset-collection">
+  <h2 class="text-3xl font-bold text-white mb-4">Step 2: Image Collection & Dataset Structure</h2>
+<p class="text-gray-300 mb-4">
+  To train our AI, we collected leaf images automatically using the
+  <strong>bing-image-downloader</strong> library.
+  Our goal was around <strong>60 images per leaf type</strong>.
+  Basically, we just give it a keyword (like the leaf name), and it goes
+  online, searches Bing, and downloads a bunch of relevant images for us.
+  No manual saving, no pain and the most boring part of this project is collecting data and now it will be done by automating it.
+</p>
+
+  <p class="text-gray-300 mb-4">The most important thing which make an AI best is the data used to train it. So, If you want more accurate data then I would recommend using 100 image samples.
+  <p class="text-gray-300 mb-4"> Here this line controls how many image to download for each leaf </p>
+  <pre style="background:#1e1e1e; color:#d4d4d4; padding:16px; border-radius:8px; overflow-x:auto;">
+<code>
+num_images_per_type = 60  # We will download 60 images for each leaf type for a diverse dataset
+</code>
+</pre>
+
+
+  <img
+    src="/2.png"
+    alt="Leaf image dataset downloaded and visible in Google Colab file structure"
+    class="rounded-lg mb-6"
+  />
+
+  <p class="text-gray-300 mb-4">
+    After downloading, we verified the directory structure and checked for corrupted files.
+    Everything was clean and ready for training.
+  </p>
+</section>
+
+<section id="preprocessing">
+  <h2 class="text-3xl font-bold text-white mb-4">Step 3: Image Preprocessing & Data Augmentation</h2>
+  <p class="text-gray-300 mb-4">
+    Raw images aren’t AI-friendly. So we resized all images to <strong>150×150</strong>,
+    normalized pixel values, and applied data augmentation like rotation, zoom,
+    shifts, and flips.
+  </p>
+  <p class="text-gray-300 mb-4">
+    This helps the model generalize better, especially with a small dataset.
+  </p>
+</section>
+
+<section id="model-training">
+  <h2 class="text-3xl font-bold text-white mb-4">Step 4: Building & Training the CNN Model</h2>
+<p class="text-gray-300 mb-4">
+  We built a basic <strong>Convolutional Neural Network (CNN)</strong> using TensorFlow/Keras.
+  A CNN is really good at working with images, so it made sense for this project.
+  The convolution layers scan the leaf images and learn important visual patterns
+  like edges, shapes, and textures. Pooling layers then reduce the image size,
+  which helps the model focus on what matters and keeps training faster.
+  Finally, dense layers at the end take everything the model learned and turn it
+  into a final prediction for the leaf type.
+</p>
+<p class="text-gray-300 mb-4">
+  We compiled the model using the <strong>Adam optimizer</strong> and the
+  <strong>categorical crossentropy</strong> loss function, which are pretty standard
+  choices for multi-class image classification. Adam helps the model learn efficiently
+  by adjusting itself during training, while the loss function measures how wrong
+  the predictions are. The model was then trained for 10 epochs, meaning it went
+  through the dataset multiple times and gradually improved its accuracy with
+  each pass.
+</p>
+
+</section>
+
+<section id="testing">
+  <h2 class="text-3xl font-bold text-white mb-4">Step 5: Testing With a Sample Image</h2>
+<p class="text-gray-300 mb-4">
+  Finally, we tested the trained model using a sample leaf image.
+  This is the moment of truth — where we find out if the AI actually learned
+  anything or if it was just vibing during training. By giving the model a brand
+  new image it has never seen before, we can see how well it generalizes and
+  makes predictions in real-world scenarios.
+</p>
+<p class="text-gray-300 mb-4">
+  This step is especially important when you’re <strong>making AI from scratch</strong>,
+  because testing shows whether the whole pipeline — from data collection to
+  model training — actually worked. If the prediction is correct, it means our
+  AI successfully learned visual patterns from the leaf images and can now apply
+  that knowledge to new inputs. If not, it tells us what needs improvement, like
+  better data, more training time, or tweaks to the model architecture.
+</p>
+<p class="text-gray-300 mb-4">
+  Overall, this project demonstrates the full process of <strong>AI making AI from scratch</strong>:
+  collecting data, building a neural network, training it, and finally testing
+  it in action. Instead of using a pre-trained solution, everything was built
+  step by step, which helps in understanding how image-based AI systems actually
+  work under the hood.
+</p>
+
+
+  <img
+    src="/3.png"
+    alt="Adding a sample leaf image for prediction in Google Colab"
+    class="rounded-lg mb-6"
+  />
+
+  <img
+    src="/4.png"
+    alt="Leaf detection AI prediction result shown in Google Colab output"
+    class="rounded-lg mb-6"
+  />
+
+  <p class="text-gray-300 mb-4">
+    The model predicted an Oak leaf as Maple — which shows the AI works,
+    but also that more data and tuning are needed.
+    This is expected for a baseline model.
+    
+  </p>
+</section>
+<a
+  href="https://colab.research.google.com/drive/1YVoylYv1bacbT_-Wcza5drsy0ibnWocB?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+>
+  Resources
+</a>
+
+
+<section id="final-verdict">
+  <h2 class="text-3xl font-bold text-white mb-4">Final Verdict</h2>
+  <p class="text-gray-300 mb-4">
+    You didn’t just write code — you built a real AI system.
+    From data collection to prediction, this project proves that
+    <strong>anyone can start AI development using Google Colab</strong>,
+    even with a low-end PC.
+  </p>
+  <p class="text-gray-300 mb-4">
+    Improve the dataset, train longer, or use transfer learning —
+    and this leaf detection AI can become production-ready.
+  </p>
+</section>
+  `,
+  keywords: [
+    "leaf detection AI",
+    "image classification AI",
+    "google colab AI project",
+    "CNN image detection",
+    "Make AI scratch",
+    "AI with low end PC",
+    "How to make AI",
+    "computer vision beginner project",
+  ],
+  image: "https://res.cloudinary.com/deibcytx1/image/upload/v1769531078/20260127_2157_Image_Generation_simple_compose_01kg02rkn1favsdk5kq1rk206s_anmkf5.png",
+  postType: "BlogPosting",
+},
+
+
+  {
     slug: "best-ai-research-tools-2026",
     title: "Best AI Deep Research Tools in 2026 (I Actually Tested )",
     pageHeading: "These are the list top AI Deep research tools according to me for 2026",
