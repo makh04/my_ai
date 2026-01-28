@@ -516,9 +516,9 @@ num_images_per_type = 60  # We will download 60 images for each leaf type for a 
   {
   slug: "desktop-assistant-voice",
   title: "Best AI voice assistant for PC/windows (download)",
-  pageHeading: "Desktop Assistant for Windows PC — Better Than Google Assistant", // Custom heading
+  pageHeading: "Desktop Assistant for Windows PC —Better Than Google Assistant (control PC)", // Custom heading
   description:
-    "Control your PC with voice using the best free desktop assistant more powerful and feature-rich than Google Assistant",
+    "Control your PC with voice using the best free desktop assistant more powerful than Google Assistant",
   date: "2025-11-09",
   author: "Pika AI team",
   content: `
@@ -545,7 +545,7 @@ num_images_per_type = 60  # We will download 60 images for each leaf type for a 
 
 <section id="what-is-pika-ai">
   <h2 class="text-3xl font-bold text-white mb-4">What is Pika AI – the Desktop Voice Assistant</h2>
-  <p class="text-gray-300 mb-4">So, in simple words: Pika AI is an AI voice assistant built specifically for desktops (Windows/macOS) so you can say “Hey Pika” and it’ll listen, do things, launch apps, control websites — basically, that dream of “Hey Computer, do this” becomes real. On the official site it calls itself a “voice-activated smart assistant software that controls your digital world, hands-free.”</p>
+  <p class="text-gray-300 mb-4">Pika AI is an AI voice assistant to control pc which is built for desktop automation so you can say “Hey Pika” and it’ll listen, do things, launch apps, control websites — basically, that dream of “Hey Computer, do this” becomes real. On the official site it calls itself a “voice-activated smart assistant software that controls your digital world, hands-free.”</p>
   <p class="text-gray-300 mb-4">When we talk about “desktop voice assistant” or “AI voice assistant” or “AI voice assistant for PC” we’re referring to tools like this — but Pika stands out because it’s built for the PC desktop environment (not just mobile), and has rich automation features. And yes, if you search for “desktop voice assistant download”, you’ll find Pika’s download link on that site.</p>
 </section>
 
