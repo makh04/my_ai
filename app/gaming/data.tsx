@@ -12,6 +12,185 @@ export interface GamingPost {
 
 export const gamingPosts: GamingPost[] = [
   {
+slug: "best-games-for-4gb-ram-pc",
+title: "Best Games for 4GB RAM PC That Actually Run Smooth",
+description:
+  "Best pc games for low-end systems which includes games version like fifa, spider man and some bus simulators runs on 4gb ram pc.",
+date: "2026-01-31",
+author: "Pika Gaming Team",
+category: "Low-End PC Gaming",
+content: `
+<nav class="mb-8">
+  <h2 class="text-3xl font-bold text-white mb-4">Table of Contents</h2>
+  <ul class="list-decimal list-inside text-gray-400 space-y-2">
+    <li><a href="#introduction" class="text-blue-400 hover:underline">Introduction</a></li>
+    <li><a href="#pc-specs" class="text-blue-400 hover:underline">My PC Specs (Proof)</a></li>
+    <li><a href="#fifa-12" class="text-blue-400 hover:underline">FIFA 12</a></li>
+    <li><a href="#ets" class="text-blue-400 hover:underline">Euro Truck Simulator</a></li>
+    <li><a href="#scania" class="text-blue-400 hover:underline">Scania Truck Driving Simulator</a></li>
+    <li><a href="#spiderman" class="text-blue-400 hover:underline">The Amazing Spider-Man 2</a></li>
+    <li><a href="#why-work" class="text-blue-400 hover:underline">Why These Games Run on 4GB RAM</a></li>
+    <li><a href="#performance-tips" class="text-blue-400 hover:underline">Performance Tips</a></li>
+    <li><a href="#final-thoughts" class="text-blue-400 hover:underline">Final Thoughts</a></li>
+  </ul>
+</nav>
+
+<section id="introduction">
+  <h2 class="text-4xl font-bold text-white mb-6">Introduction</h2>
+  <p class="text-gray-300 mb-4">
+    Let’s be honest for a second. Not everyone has an RTX graphics card, 16GB RAM,
+    and some NASA-level setup. Some of us are still gaming on a 4GB RAM PC with
+    integrated graphics and hoping the game doesn’t crash after the loading screen.
+  </p>
+  <p class="text-gray-300 mb-4">
+    I’ve been there. I am there. So if you’re searching for the <strong>best games
+    for 4GB RAM PC</strong>, this post is for you. These are not theoretical games —
+    I actually played them on a low-end system.
+  </p>
+</section>
+
+<section id="pc-specs">
+  <h2 class="text-3xl font-bold text-white mb-4">My PC Specs (So You Know I’m Not Lying)</h2>
+  <ul class="list-disc list-inside text-gray-300 space-y-2">
+    <li>RAM: 4GB</li>
+    <li>Graphics: Integrated Intel HD</li>
+    <li>CPU: Old Intel i3 / Pentium level</li>
+    <li>Storage: HDD (yes… not even SSD 😭)</li>
+  </ul>
+  <p class="text-gray-300 mt-4">
+    Nothing fancy. Just a basic low-end PC — exactly what most people searching
+    for 4GB RAM games are using.
+  </p>
+</section>
+
+<section id="fifa-12">
+  <h2 class="text-3xl font-bold text-white mb-4">1. FIFA 12 – Still a Beast on Low-End PCs</h2>
+  <img 
+  src="/best-games-4gb-ram-pc.png"
+  alt="Best games for 4GB RAM PC"
+  class="w-full max-w-3xl mx-auto rounded-lg shadow-lg mb-6"
+/>
+
+  <p class="text-gray-300 mb-4">
+    I don’t care what anyone says — FIFA 12 is still fun and runs insanely well
+    on a 4GB RAM PC.
+  </p>
+
+  <h3 class="text-2xl font-bold text-white mb-2">Performance</h3>
+  <ul class="list-disc list-inside text-gray-300 mb-4">
+    <li>Runs smoothly even on high settings</li>
+    <li>No stutters during replays or corners</li>
+    <li>Fast loading times</li>
+  </ul>
+
+  <h3 class="text-2xl font-bold text-white mb-2">Gameplay Feel</h3>
+  <p class="text-gray-300 mb-4">
+    Dribbling feels responsive, shots feel powerful, and career mode is still
+    addictive. You can play career mode, kick-off, or tournaments without worrying
+    about lag.
+  </p>
+
+  <p class="text-gray-300 italic">
+    My experience: FIFA 12 felt like it was made for low-end PCs.
+  </p>
+</section>
+
+<section id="ets">
+  <h2 class="text-3xl font-bold text-white mb-4">2. Euro Truck Simulator – Chill Gaming</h2>
+  <p class="text-gray-300 mb-4">
+    Euro Truck Simulator isn’t about speed or explosions. It’s about vibes.
+    And yes — it runs on a 4GB RAM PC.
+  </p>
+
+  <h3 class="text-2xl font-bold text-white mb-2">Performance</h3>
+  <ul class="list-disc list-inside text-gray-300 mb-4">
+    <li>Runs well on low to medium settings</li>
+    <li>Integrated graphics friendly</li>
+    <li>Stable FPS after tweaking shadows</li>
+  </ul>
+
+  <p class="text-gray-300 italic">
+    My experience: Late-night driving with music, no lag, no crashes — just chill.
+  </p>
+</section>
+
+<section id="scania">
+  <h2 class="text-3xl font-bold text-white mb-4">3. Scania Truck Driving Simulator</h2>
+  <p class="text-gray-300 mb-4">
+    This game is underrated. It’s lighter than Euro Truck Simulator and focuses
+    more on driving challenges.
+  </p>
+
+  <ul class="list-disc list-inside text-gray-300 mb-4">
+    <li>Very friendly for 4GB RAM PCs</li>
+    <li>Stable FPS</li>
+    <li>Lower GPU usage</li>
+  </ul>
+
+  <p class="text-gray-300 italic">
+    My experience: Stable performance with no major FPS drops.
+  </p>
+</section>
+
+<section id="spiderman">
+  <h2 class="text-3xl font-bold text-white mb-4">4. The Amazing Spider-Man 2</h2>
+  <p class="text-gray-300 mb-4">
+    This is the most demanding game on the list. It runs on 4GB RAM, but CPU power
+    really matters here.
+  </p>
+
+  <ul class="list-disc list-inside text-gray-300 mb-4">
+    <li>Playable on 4GB RAM</li>
+    <li>Needs a decent CPU (i3 recommended)</li>
+    <li>Lower graphics settings required</li>
+  </ul>
+
+  <p class="text-gray-300 italic">
+    My experience: Some lag, but swinging around New York was still worth it.
+  </p>
+</section>
+
+<section id="why-work">
+  <h2 class="text-3xl font-bold text-white mb-4">Why These Games Work on 4GB RAM PCs</h2>
+  <p class="text-gray-300 mb-4">
+    These games run well because they’re optimized, not bloated with unnecessary
+    effects, and designed for older hardware.
+  </p>
+</section>
+
+<section id="performance-tips">
+  <h2 class="text-3xl font-bold text-white mb-4">Tips to Get Better Performance</h2>
+  <ul class="list-disc list-inside text-gray-300 mb-4">
+    <li>Close background apps</li>
+    <li>Lower shadows and reflections</li>
+    <li>Play at 720p</li>
+    <li>Update graphics drivers</li>
+    <li>Disable startup programs</li>
+  </ul>
+</section>
+
+<section id="final-thoughts">
+  <h2 class="text-3xl font-bold text-white mb-4">Final Thoughts</h2>
+  <p class="text-gray-300 mb-4">
+    Gaming on a 4GB RAM PC is still possible. You just need the right games and
+    realistic expectations. If you’re broke, upgrading later, or stuck with a
+    low-end system — you’re not alone.
+  </p>
+</section>
+  `,
+  keywords: [
+    "best games for 4GB RAM PC",
+    "low end PC games",
+    "4GB RAM games",
+    "games for integrated graphics",
+    "PC games without graphics card",
+    "old PC games",
+    "low spec PC gaming"
+  ],
+  image: "/low_end_games.png",
+},
+
+  {
     slug: "best-gaming-ai-assistants-2025",
     title: "Best AI Gaming Assistants",
     description:
