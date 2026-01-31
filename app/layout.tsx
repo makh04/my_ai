@@ -129,7 +129,16 @@ export default function RootLayout({
             `,
           }}
         />
+      {/*Ezoic Ads Script */}
 
+         <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+         <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+        
+        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+        <script>
+          window.ezstandalone = window.ezstandalone || {};
+          ezstandalone.cmd = ezstandalone.cmd || [];
+        </script>
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
