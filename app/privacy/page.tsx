@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, Lock, Eye, Database, UserCheck, Globe } from "lucide-react"
+import { Shield, Lock, Eye, Database, UserCheck, Globe, Monitor, Megaphone, Link as LinkIcon, Mail } from "lucide-react"
 import Header from "../components/header"
 
 export default function PrivacyPolicy() {
@@ -11,10 +11,12 @@ export default function PrivacyPolicy() {
       title: "Information We Collect",
       content: [
         "Google OAuth2 authentication data (name, email, profile picture)",
-        "Voice commands and text inputs for processing(Only The First command)",
+        "Voice commands and text inputs for processing (Only the first command)",
         "System usage patterns and preferences",
         "App launch history and user routines",
         "Local device information for optimization",
+        "Website visit information including IP address, browser type, and pages visited",
+        "Cookies and similar tracking technologies for analytics and advertising",
       ],
     },
     {
@@ -26,7 +28,9 @@ export default function PrivacyPolicy() {
         "Improve voice recognition accuracy",
         "Enable system automation and app control",
         "Deliver relevant search results and recommendations",
-        "Fix the bugs from yours response",
+        "Fix bugs based on your responses",
+        "Analyze website traffic and user behavior for performance improvements",
+        "Serve relevant advertisements through third-party ad networks like Ezoic",
       ],
     },
     {
@@ -36,8 +40,9 @@ export default function PrivacyPolicy() {
         "Local data storage by default - your data stays on your device",
         "Google OAuth2 for secure authentication",
         "Encrypted connections for all API communications",
-        "No ads or telemetry tracking",
+        "No ads or telemetry tracking without consent",
         "Optional cloud sync with explicit user consent",
+        "We take reasonable steps to protect your data against unauthorized access",
       ],
     },
     {
@@ -49,6 +54,7 @@ export default function PrivacyPolicy() {
         "Voice data is processed locally when possible",
         "Anonymous usage statistics may be collected for improvements",
         "No data sharing without explicit user consent",
+        "Information may be shared with advertising partners to serve personalized ads",
       ],
     },
     {
@@ -60,6 +66,8 @@ export default function PrivacyPolicy() {
         "Opt-out of cloud synchronization",
         "Control voice data retention settings",
         "Request data portability",
+        "Opt-out of personalized advertising through Ezoic and other networks",
+        "Unsubscribe from newsletters and marketing communications",
       ],
     },
     {
@@ -71,15 +79,51 @@ export default function PrivacyPolicy() {
         "YouTube API for media control",
         "Web search engines for information retrieval",
         "All integrations follow strict privacy standards",
-        "We use your google calender to schedule events on your commands and no events is deleted, We only create events on based of your data on your secondary calender ",
-
+        "We use your Google Calendar to schedule events on your commands; no events are deleted",
+      ],
+    },
+    {
+      icon: Monitor,
+      title: "Analytics and Cookies",
+      content: [
+        "We use cookies and similar technologies to enhance user experience",
+        "Third-party analytics services may collect information about site usage",
+        "Cookies are also used to serve personalized advertisements",
+        "You can disable cookies through your browser settings, but some features may not function properly",
+      ],
+    },
+    {
+      icon: Megaphone,
+      title: "Advertising Partners",
+      content: [
+        "We work with third-party ad networks such as Ezoic to display ads",
+        "These partners may collect information about your visits to deliver relevant ads",
+        "We do not share personally identifiable information without consent",
+        "Ads are displayed in a way that does not interfere with app downloads or core functionality",
+      ],
+    },
+    {
+      icon: LinkIcon,
+      title: "Links to Other Websites",
+      content: [
+        "Our site may contain links to third-party websites",
+        "We are not responsible for the privacy practices or content of external sites",
+        "We encourage you to review the privacy policies of any third-party websites you visit",
+      ],
+    },
+    {
+      icon: Mail,
+      title: "Communication & Newsletters",
+      content: [
+        "If you subscribe to our newsletter, we will collect your email address",
+        "Your email is used only to send updates, promotions, or news",
+        "You may unsubscribe at any time using the link in the newsletter",
       ],
     },
   ]
 
   return (
-
-     <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white">
       <Header />
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-blue-900/30 to-purple-900/30" />
@@ -98,7 +142,7 @@ export default function PrivacyPolicy() {
             <p className="text-xl text-gray-300 mb-8">
               Your privacy is our priority. Learn how PIKA AI protects and handles your data.
             </p>
-            <div className="text-sm text-gray-400">Last updated: January 2025</div>
+            <div className="text-sm text-gray-400">Last updated: January 2026</div>
           </motion.div>
         </div>
       </section>
